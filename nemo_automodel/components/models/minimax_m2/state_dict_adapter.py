@@ -72,7 +72,12 @@ class MiniMaxM2StateDictAdapter(MoESplitExpertsStateDictMixin, StateDictAdapter)
         for key, weight in state_dict.items():
             if key.endswith(".weight") and key + "_scale_inv" in state_dict:
                 scale_inv = state_dict[key + "_scale_inv"]
-                state_dict[key] = dequantize_from_fp8(weight, scale_inv, dtype=self.dtype, name=key)
+                dequantized = dequantize_from_fp8(weight, scale_inv, dtype=self.dtype, name=key)
+                # Keep checkpoint-conversion tensors on CPU to avoid load-time
+                # GPU memory spikes for very large MoE models.
+                if isinstance(dequantized, torch.Tensor) and dequantized.is_cuda:
+                    dequantized = dequantized.to("cpu")
+                state_dict[key] = dequantized
                 scale_inv_keys.append(key + "_scale_inv")
 
         for key in scale_inv_keys:
@@ -135,6 +140,9 @@ class MiniMaxM2StateDictAdapter(MoESplitExpertsStateDictMixin, StateDictAdapter)
                 break
 
         self._dequantize(hf_state_dict)
+        for key, value in list(hf_state_dict.items()):
+            if isinstance(value, torch.Tensor) and value.is_cuda:
+                hf_state_dict[key] = value.to("cpu")
         for key in list(hf_state_dict.keys()):
             new_key = self._hf_key_to_native(key)
             if new_key != key:

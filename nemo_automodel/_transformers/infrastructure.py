@@ -425,9 +425,11 @@ def apply_model_infrastructure(
     # Handle checkpointer config updates if checkpointer is provided
     if checkpointer is not None:
         if checkpointer.config.dequantize_base_checkpoint is None:
-            checkpointer.config.dequantize_base_checkpoint = hasattr(
-                getattr(model, "config", None), "quantization_config"
-            )
+            quant_cfg = getattr(getattr(model, "config", None), "quantization_config", None)
+            if isinstance(quant_cfg, dict):
+                checkpointer.config.dequantize_base_checkpoint = bool(quant_cfg.get("dequantize", False))
+            else:
+                checkpointer.config.dequantize_base_checkpoint = bool(getattr(quant_cfg, "dequantize", False))
 
     # Apply PEFT and lower precision if configured
     # When on meta device, wrap in init_empty_weights() so new LoRA modules are also on meta device

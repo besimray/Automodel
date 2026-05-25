@@ -461,16 +461,18 @@ class MoESplitExpertsStateDictMixin:
                                     gate_weight = gate_weight.to_local()
                                 if is_dtensor(up_weight):
                                     up_weight = up_weight.to_local()
-                                gate_t = gate_weight.transpose(0, 1)
-                                up_t = up_weight.transpose(0, 1)
-                                tensors.append(torch.cat([gate_t, up_t], dim=-1))
+                                gate_t_cpu = gate_weight.transpose(0, 1).to(device="cpu", copy=True)
+                                up_t_cpu = up_weight.transpose(0, 1).to(device="cpu", copy=True)
+                                tensors.append(torch.cat([gate_t_cpu, up_t_cpu], dim=-1))
                             else:
                                 up_weight = expert_data
                                 if is_dtensor(up_weight):
                                     up_weight = up_weight.to_local()
-                                tensors.append(up_weight.transpose(0, 1))
+                                tensors.append(up_weight.transpose(0, 1).to(device="cpu", copy=True))
 
                         stacked = torch.stack(tensors, dim=0).to(self.dtype)
+                        if torch.cuda.is_available():
+                            torch.cuda.empty_cache()
                         state_dict[native_key] = create_dtensor_from_local(stacked, device_mesh, rank)
 
                         # Free completed expert tensors to release GPU memory
@@ -493,11 +495,13 @@ class MoESplitExpertsStateDictMixin:
                             if is_dtensor(down_weight):
                                 down_weight = down_weight.to_local()
 
-                            down_t = down_weight.transpose(0, 1)  # [inter_dim, dim]
+                            down_t = down_weight.transpose(0, 1).to(device="cpu", copy=True)  # [inter_dim, dim]
                             ordered.append(down_t)
 
                         stacked = torch.stack(ordered, dim=0)
                         stacked = stacked.to(self.dtype)
+                        if torch.cuda.is_available():
+                            torch.cuda.empty_cache()
 
                         dtensor = create_dtensor_from_local(stacked, device_mesh, rank)
                         state_dict[native_key] = dtensor

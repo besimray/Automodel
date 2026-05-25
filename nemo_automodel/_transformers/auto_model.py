@@ -217,6 +217,14 @@ def _maybe_dequantize_fp8_for_peft(hf_native_quant_cfg, peft_config, pretrained_
     Returns True if the config was mutated, False otherwise.
     """
     if peft_config is not None and isinstance(pretrained_path, str):
+        # MiniMax-M2.x checkpoints are extremely large; forcing dequantize during PEFT
+        # can exceed single-node memory at load time. Keep FP8 unless explicitly requested.
+        if "MiniMax-M2" in pretrained_path:
+            logger.warning(
+                "FP8 model with PEFT: skipping forced dequantize for %s to reduce load-time memory.",
+                pretrained_path,
+            )
+            return False
         if isinstance(hf_native_quant_cfg, dict) and hf_native_quant_cfg.get("quant_method") == "fp8":
             hf_native_quant_cfg["dequantize"] = True
             logger.info("FP8 model with PEFT: setting dequantize=True for compatibility")
