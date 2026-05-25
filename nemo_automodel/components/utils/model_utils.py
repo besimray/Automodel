@@ -278,6 +278,23 @@ def print_trainable_parameters(model: nn.Module) -> tuple[int, int]:
     except Exception:
         logging.info("Model summary: <unavailable>")
 
+    # Optional detailed per-parameter dump for PEFT/debugging.
+    # Enable with: AUTOMODEL_PRINT_PARAM_GRAD_INFO=1
+    if os.getenv("AUTOMODEL_PRINT_PARAM_GRAD_INFO", "0").lower() in {"1", "true", "yes"}:
+        max_lines_env = os.getenv("AUTOMODEL_PRINT_PARAM_GRAD_MAX_LINES", "0")
+        try:
+            max_lines = int(max_lines_env)
+        except ValueError:
+            max_lines = 0
+        printed = 0
+        logging.info("Parameter gradient flags (name | requires_grad | shape):")
+        for name, param in model.named_parameters():
+            if max_lines > 0 and printed >= max_lines:
+                logging.info("... truncated parameter gradient dump at %d rows", max_lines)
+                break
+            logging.info(f"{name:60s} requires_grad={param.requires_grad}  shape={tuple(param.shape)}")
+            printed += 1
+
     return trainable_params, total_params
 
 

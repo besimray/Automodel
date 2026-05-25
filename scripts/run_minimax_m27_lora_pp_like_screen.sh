@@ -17,6 +17,11 @@ SESSION_NAME="${SESSION_NAME:-minimax_m27_lora_pp_like}"
 MAX_STEPS="${MAX_STEPS:-100}" # Match original LoRA recipe step budget.
 LOCAL_BATCH_SIZE="${LOCAL_BATCH_SIZE:-2}"
 GLOBAL_BATCH_SIZE="${GLOBAL_BATCH_SIZE:-512}" # Match original LoRA effective global batch size.
+LR="${LR:-1e-5}"
+PEFT_DIM="${PEFT_DIM:-8}"
+PEFT_ALPHA="${PEFT_ALPHA:-32}"
+PRINT_PARAM_GRADS="${PRINT_PARAM_GRADS:-0}"
+PARAM_GRAD_MAX_LINES="${PARAM_GRAD_MAX_LINES:-0}"
 IMAGE="${IMAGE:-nvcr.io/nvidia/nemo-automodel:26.04}"
 
 TIMESTAMP="$(date +%Y%m%d_%H%M%S)"
@@ -30,6 +35,8 @@ cd "${ROOT_DIR}" && docker run --rm --gpus all --network host --shm-size=64g \
   -e HF_HOME=/root/.cache/huggingface \
   -e HF_DATASETS_CACHE=/root/.cache/huggingface/datasets \
   -e PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
+  -e AUTOMODEL_PRINT_PARAM_GRAD_INFO=${PRINT_PARAM_GRADS} \
+  -e AUTOMODEL_PRINT_PARAM_GRAD_MAX_LINES=${PARAM_GRAD_MAX_LINES} \
   "${IMAGE}" \
   automodel --nproc-per-node=4 \
   examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml \
@@ -50,6 +57,9 @@ cd "${ROOT_DIR}" && docker run --rm --gpus all --network host --shm-size=64g \
   --model.backend.linear te \
   --model.backend.rope_fusion false \
   --model.backend.experts torch_mm \
+  --optimizer.lr ${LR} \
+  --peft.dim ${PEFT_DIM} \
+  --peft.alpha ${PEFT_ALPHA} \
   --step_scheduler.local_batch_size ${LOCAL_BATCH_SIZE} \
   --step_scheduler.global_batch_size ${GLOBAL_BATCH_SIZE} \
   --step_scheduler.max_steps ${MAX_STEPS} \
