@@ -1,0 +1,511 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 26.02 (build 305635159)
+PyTorch Version 2.11.0a0+eb65b36
+Container image Copyright (c) 2025, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+GOVERNING TERMS: The software and materials are governed by the NVIDIA Software License Agreement
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-software-license-agreement/)
+and the Product-Specific Terms for NVIDIA AI Products
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/product-specific-terms-for-ai-products/).
+
+NOTE: CUDA Forward Compatibility mode ENABLED.
+  Using CUDA 13.1 driver version 590.48.01 with kernel driver version 580.126.09.
+  See https://docs.nvidia.com/deploy/cuda-compatibility/ for details.
+
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+W0526 18:52:47.242000 1 torch/distributed/run.py:851] 
+W0526 18:52:47.242000 1 torch/distributed/run.py:851] *****************************************
+W0526 18:52:47.242000 1 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0526 18:52:47.242000 1 torch/distributed/run.py:851] *****************************************
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+> initializing torch distributed with 8 workers.
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+2026-05-26 18:53:02 | INFO | nemo_automodel.components.loggers.log_utils | Setting logging level to 20
+2026-05-26 18:53:03 | INFO | nemo_automodel.shared.te_patches | Applied FusedAdam QuantizedTensor monkey-patch.
+2026-05-26 18:53:03 | INFO | root | Experiment_details:
+2026-05-26 18:53:03 | INFO | root | Timestamp: '2026-05-26T18:53:03'
+2026-05-26 18:53:03 | INFO | root | User: root
+2026-05-26 18:53:03 | INFO | root | Host: shadecloud
+2026-05-26 18:53:03 | INFO | root | World size: 8
+2026-05-26 18:53:03 | INFO | root | Backend: nccl
+2026-05-26 18:53:03 | INFO | root | Recipe: TrainFinetuneRecipeForNextTokenPrediction
+2026-05-26 18:53:03 | INFO | root | Model name: MiniMaxAI/MiniMax-M2.7
+recipe: TrainFinetuneRecipeForNextTokenPrediction
+seed: 1234
+step_scheduler:
+  global_batch_size: 512
+  local_batch_size: 4
+  ckpt_every_steps: 1000
+  val_every_steps: 20
+  max_steps: 160
+distributed:
+  strategy: fsdp2
+  tp_size: 1
+  cp_size: 1
+  pp_size: 1
+  dp_replicate_size: 1
+  ep_size: 8
+  sequence_parallel: false
+  moe:
+    reshard_after_forward: false
+    wrap_outer_model: false
+  activation_checkpointing: true
+dist_env:
+  backend: nccl
+  timeout_minutes: 10
+model:
+  _target_: nemo_automodel.NeMoAutoModelForCausalLM.from_pretrained
+  pretrained_model_name_or_path: MiniMaxAI/MiniMax-M2.7
+  trust_remote_code: true
+  backend:
+    _target_: nemo_automodel.components.models.common.BackendConfig
+    attn: te
+    linear: torch
+    rms_norm: torch_fp32
+    rope_fusion: true
+    dispatcher: deepep
+    experts: gmm
+    fake_balanced_gate: false
+    enable_hf_state_dict_adapter: true
+    enable_fsdp_optimizations: true
+peft:
+  _target_: nemo_automodel.components._peft.lora.PeftConfig
+  match_all_linear: false
+  dim: 128
+  alpha: 256
+  use_triton: true
+  moe_rank_scaling: true
+  target_modules:
+  - '*.self_attn.q_proj'
+  - '*.self_attn.k_proj'
+  - '*.self_attn.v_proj'
+  - '*.self_attn.o_proj'
+  - '*.mlp.experts'
+checkpoint:
+  enabled: false
+loss_fn:
+  _target_: nemo_automodel.components.loss.masked_ce.MaskedCrossEntropy
+dataset:
+  _target_: nemo_automodel.components.datasets.llm.hellaswag.HellaSwag
+  path_or_dataset: rowan/hellaswag
+  split: train
+packed_sequence:
+  packed_sequence_size: 0
+dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  collate_fn:
+    _target_: nemo_automodel.components.datasets.utils.default_collater
+    pad_seq_len_divisible: 160
+  shuffle: true
+validation_dataset:
+  _target_: nemo_automodel.components.datasets.llm.hellaswag.HellaSwag
+  path_or_dataset: rowan/hellaswag
+  split: train
+validation_dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  collate_fn:
+    _target_: nemo_automodel.components.datasets.utils.default_collater
+    pad_seq_len_divisible: 160
+  shuffle: true
+  drop_last: true
+optimizer:
+  _target_: torch.optim.Adam
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-08
+  lr: 0.0003
+  weight_decay: 0
+master-port: 29661
+unfreeze_modules: mlp.gate,lm_head
+2026-05-26 18:53:03 | INFO | root | Library versions:
+2026-05-26 18:53:03 | INFO | root | - nemo_automodel: 0.4.0 (/opt/Automodel/nemo_automodel/__init__.py)
+2026-05-26 18:53:03 | INFO | root | - transformers: 5.5.0 (/opt/venv/lib/python3.12/site-packages/transformers/__init__.py)
+2026-05-26 18:53:03 | INFO | root | - torch: 2.11.0a0+eb65b36914.nv26.02 CUDA 13.1
+2026-05-26 18:53:03 | INFO | root | No clip_grad_norm.max_norm specified in config, using default value of 1.0
+2026-05-26 18:53:03 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:53:03 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:53:03 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:53:03 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 18:53:03 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:53:03 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:53:03 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:53:03 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:53:03 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:53:03 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 18:53:04 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:53:04 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:53:04 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:53:04 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:53:04 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:53:04 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 18:53:04 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:53:04 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:53:04 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7/revision/main "HTTP/1.1 200 OK"
+Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 11245.98it/s]
+2026-05-26 18:53:04 | INFO | nemo_automodel._transformers.model_init | Using custom model implementation for MiniMaxM2ForCausalLM
+Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 10453.91it/s]
+Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 12479.11it/s]
+Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 134695.85it/s]
+Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 12365.57it/s]
+Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 11254.77it/s]
+Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 11681.57it/s]
+Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 12528.48it/s]
+2026-05-26 18:58:56 | INFO | root | Model summary:
+2026-05-26 18:58:56 | INFO | root | --------------------------------
+2026-05-26 18:58:56 | INFO | root | Trainable parameters: 2,941,779,968
+2026-05-26 18:58:56 | INFO | root | Total parameters: 231,631,528,960
+2026-05-26 18:58:56 | INFO | root | Trainable parameters percentage: 1.27%
+2026-05-26 18:58:56 | INFO | root | Param L2 norm: 4805178.8919
+2026-05-26 18:58:56 | INFO | root | --------------------------------
+2026-05-26 18:58:56 | INFO | root | Unfroze parameters matching: ['mlp.gate', 'lm_head']
+2026-05-26 18:58:56 | INFO | root | Using model config to instantiate tokenizer
+2026-05-26 18:58:56 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:58:56 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:58:56 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:58:56 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 18:58:56 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:58:56 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:58:56 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:58:56 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:58:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:58:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 18:58:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:58:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:58:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:58:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-26 18:58:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:58:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-26 18:58:57 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-26 18:58:57 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-26 18:58:58 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7 "HTTP/1.1 200 OK"
+2026-05-26 18:58:58 | WARNING | nemo_automodel._transformers.tokenization.nemo_auto_tokenizer | Tokenizer 'MiniMaxAI/MiniMax-M2.7' has pad_token_id=None; defaulting to 0. This can cause incorrect MoE auxiliary loss calculations if valid tokens share token ID 0. Set pad_token_id explicitly in your tokenizer config to avoid this.
+2026-05-26 18:58:58 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:58:58 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:58:59 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/Rowan/hellaswag/218ec52e09a7e7462a5400043bb9a69a41d06b76/README.md "HTTP/1.1 200 OK"
+2026-05-26 18:58:59 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/hellaswag.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:58:59 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/hellaswag.py "HTTP/1.1 404 Not Found"
+2026-05-26 18:58:59 | INFO | httpx | HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/rowan/hellaswag/rowan/hellaswag.py "HTTP/1.1 404 Not Found"
+2026-05-26 18:58:59 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/datasets/rowan/hellaswag/revision/218ec52e09a7e7462a5400043bb9a69a41d06b76 "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:58:59 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/datasets/Rowan/hellaswag/revision/218ec52e09a7e7462a5400043bb9a69a41d06b76 "HTTP/1.1 200 OK"
+2026-05-26 18:59:00 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/.huggingface.yaml "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:00 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-05-26 18:59:00 | INFO | httpx | HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=rowan/hellaswag "HTTP/1.1 404 Not Found"
+2026-05-26 18:59:00 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/datasets/rowan/hellaswag/tree/218ec52e09a7e7462a5400043bb9a69a41d06b76/data?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:00 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/datasets/Rowan/hellaswag/tree/218ec52e09a7e7462a5400043bb9a69a41d06b76/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-26 18:59:00 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/datasets/rowan/hellaswag/tree/218ec52e09a7e7462a5400043bb9a69a41d06b76?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:01 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/datasets/Rowan/hellaswag/tree/218ec52e09a7e7462a5400043bb9a69a41d06b76?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-05-26 18:59:01 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/dataset_infos.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:01 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-05-26 18:59:05 | INFO | root | Using model config to instantiate tokenizer
+2026-05-26 18:59:05 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:05 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:59:05 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:05 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 18:59:06 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:06 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:59:06 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:06 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:59:06 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:06 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 18:59:06 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:06 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 18:59:06 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:06 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-26 18:59:06 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:06 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-26 18:59:07 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-26 18:59:07 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-26 18:59:08 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7 "HTTP/1.1 200 OK"
+2026-05-26 18:59:08 | WARNING | nemo_automodel._transformers.tokenization.nemo_auto_tokenizer | Tokenizer 'MiniMaxAI/MiniMax-M2.7' has pad_token_id=None; defaulting to 0. This can cause incorrect MoE auxiliary loss calculations if valid tokens share token ID 0. Set pad_token_id explicitly in your tokenizer config to avoid this.
+2026-05-26 18:59:08 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:08 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:08 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/Rowan/hellaswag/218ec52e09a7e7462a5400043bb9a69a41d06b76/README.md "HTTP/1.1 200 OK"
+2026-05-26 18:59:08 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/hellaswag.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:08 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/hellaswag.py "HTTP/1.1 404 Not Found"
+2026-05-26 18:59:09 | INFO | httpx | HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/rowan/hellaswag/rowan/hellaswag.py "HTTP/1.1 404 Not Found"
+2026-05-26 18:59:09 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/.huggingface.yaml "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:09 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-05-26 18:59:09 | INFO | httpx | HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=rowan/hellaswag "HTTP/1.1 404 Not Found"
+2026-05-26 18:59:09 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/dataset_infos.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 18:59:09 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-05-26 18:59:15 | INFO | root | Signal handler installed for 15
+2026-05-26 18:59:15 | INFO | root | Model Part 0:
+2026-05-26 18:59:15 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 18:59:15 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 18:59:15 | INFO | root |     (embed_tokens): FSDPEmbedding(200064, 3072)
+2026-05-26 18:59:15 | INFO | root |     (layers): ModuleDict(
+2026-05-26 18:59:15 | INFO | root |       (0): FSDPCheckpointWrapper(
+2026-05-26 18:59:15 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 18:59:15 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 18:59:15 | INFO | root |             (q_proj): PatchedLinearLoRA(
+2026-05-26 18:59:15 | INFO | root |               in_features=3072, out_features=6144, bias=False
+2026-05-26 18:59:15 | INFO | root |               (lora_A): Linear(in_features=3072, out_features=128, bias=False)
+2026-05-26 18:59:15 | INFO | root |               (lora_B): Linear(in_features=128, out_features=6144, bias=False)
+2026-05-26 18:59:15 | INFO | root |             )
+2026-05-26 18:59:15 | INFO | root |             (k_proj): PatchedLinearLoRA(
+2026-05-26 18:59:15 | INFO | root |               in_features=3072, out_features=1024, bias=False
+2026-05-26 18:59:15 | INFO | root |               (lora_A): Linear(in_features=3072, out_features=128, bias=False)
+2026-05-26 18:59:15 | INFO | root |               (lora_B): Linear(in_features=128, out_features=1024, bias=False)
+2026-05-26 18:59:15 | INFO | root |             )
+2026-05-26 18:59:15 | INFO | root |             (v_proj): PatchedLinearLoRA(
+2026-05-26 18:59:15 | INFO | root |               in_features=3072, out_features=1024, bias=False
+2026-05-26 18:59:15 | INFO | root |               (lora_A): Linear(in_features=3072, out_features=128, bias=False)
+2026-05-26 18:59:15 | INFO | root |               (lora_B): Linear(in_features=128, out_features=1024, bias=False)
+2026-05-26 18:59:15 | INFO | root |             )
+2026-05-26 18:59:15 | INFO | root |             (o_proj): PatchedLinearLoRA(
+2026-05-26 18:59:15 | INFO | root |               in_features=6144, out_features=3072, bias=False
+2026-05-26 18:59:15 | INFO | root |               (lora_A): Linear(in_features=6144, out_features=128, bias=False)
+2026-05-26 18:59:15 | INFO | root |               (lora_B): Linear(in_features=128, out_features=3072, bias=False)
+2026-05-26 18:59:15 | INFO | root |             )
+2026-05-26 18:59:15 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 18:59:15 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 18:59:15 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 18:59:15 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 18:59:15 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 18:59:15 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 18:59:15 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 18:59:15 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 18:59:15 | INFO | root |               )
+2026-05-26 18:59:15 | INFO | root |             )
+2026-05-26 18:59:15 | INFO | root |           )
+2026-05-26 18:59:15 | INFO | root |           (mlp): MoE(
+2026-05-26 18:59:15 | INFO | root |             (gate): Gate()
+2026-05-26 18:59:15 | INFO | root | ...
+2026-05-26 18:59:15 | INFO | root | Optimizer:
+2026-05-26 18:59:15 | INFO | root | Adam (
+2026-05-26 18:59:15 | INFO | root | Parameter Group 0
+2026-05-26 18:59:15 | INFO | root |     amsgrad: False
+2026-05-26 18:59:15 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 18:59:15 | INFO | root |     capturable: False
+2026-05-26 18:59:15 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 18:59:15 | INFO | root |     differentiable: False
+2026-05-26 18:59:15 | INFO | root |     eps: 1e-08
+2026-05-26 18:59:15 | INFO | root |     foreach: None
+2026-05-26 18:59:15 | INFO | root |     fused: None
+2026-05-26 18:59:15 | INFO | root |     lr: 0.0003
+2026-05-26 18:59:15 | INFO | root |     maximize: False
+2026-05-26 18:59:15 | INFO | root |     weight_decay: 0
+2026-05-26 18:59:15 | INFO | root | )
+2026-05-26 18:59:15 | INFO | root | LR scheduler: <unavailable>
+2026-05-26 18:59:16 | INFO | root | Step scheduler:
+2026-05-26 18:59:16 | INFO | root | - Gradient accumulation steps: 16
+2026-05-26 18:59:16 | INFO | root | - Checkpoint every steps: 1000
+2026-05-26 18:59:16 | INFO | root | - Garbage collect every steps: None
+2026-05-26 18:59:16 | INFO | root | - Current Epoch: 0
+2026-05-26 18:59:16 | INFO | root | - Number of epochs: 10
+2026-05-26 18:59:16 | INFO | root | - Validation every steps: 20
+2026-05-26 18:59:16 | INFO | root | - Max train steps: 160
+Training:   0%|          | 0/160 [00:00<?, ?step/s]2026-05-26 19:00:14 | INFO | root | step 0 | epoch 0 | loss 13.0972 | grad_norm 17.9007 | lr 3.00e-04 | mem 107.72 GiB | tps 666.94(83.37/gpu) | num_label_tokens 15349
+Training:   0%|          | 0/160 [00:58<?, ?step/s, loss=13.0972, lr=3.00e-04, tps=667]Training:   1%|          | 1/160 [00:58<2:35:11, 58.56s/step, loss=13.0972, lr=3.00e-04, tps=667]2026-05-26 19:00:40 | INFO | root | step 1 | epoch 0 | loss 10.5191 | grad_norm 26.3170 | lr 3.00e-04 | mem 69.48 GiB | tps 1605.63(200.70/gpu) | num_label_tokens 15843
+Training:   1%|          | 1/160 [01:23<2:35:11, 58.56s/step, loss=10.5191, lr=3.00e-04, tps=1606]Training:   1%|▏         | 2/160 [01:23<1:42:50, 39.05s/step, loss=10.5191, lr=3.00e-04, tps=1606]2026-05-26 19:01:07 | INFO | root | step 2 | epoch 0 | loss 9.2984 | grad_norm 11.5670 | lr 3.00e-04 | mem 69.48 GiB | tps 1491.04(186.38/gpu) | num_label_tokens 15542
+Training:   1%|▏         | 2/160 [01:51<1:42:50, 39.05s/step, loss=9.2984, lr=3.00e-04, tps=1491] Training:   2%|▏         | 3/160 [01:51<1:27:50, 33.57s/step, loss=9.2984, lr=3.00e-04, tps=1491]2026-05-26 19:01:31 | INFO | root | step 3 | epoch 0 | loss 8.7192 | grad_norm 14.1293 | lr 3.00e-04 | mem 69.48 GiB | tps 1628.96(203.62/gpu) | num_label_tokens 15270
+Training:   2%|▏         | 3/160 [02:15<1:27:50, 33.57s/step, loss=8.7192, lr=3.00e-04, tps=1629]Training:   2%|▎         | 4/160 [02:15<1:17:42, 29.89s/step, loss=8.7192, lr=3.00e-04, tps=1629]2026-05-26 19:01:55 | INFO | root | step 4 | epoch 0 | loss 8.4284 | grad_norm 15.6353 | lr 3.00e-04 | mem 69.48 GiB | tps 1684.28(210.54/gpu) | num_label_tokens 15622
+Training:   2%|▎         | 4/160 [02:39<1:17:42, 29.89s/step, loss=8.4284, lr=3.00e-04, tps=1684]Training:   3%|▎         | 5/160 [02:39<1:11:40, 27.75s/step, loss=8.4284, lr=3.00e-04, tps=1684]2026-05-26 19:02:18 | INFO | root | step 5 | epoch 0 | loss 8.1627 | grad_norm 10.6450 | lr 3.00e-04 | mem 69.48 GiB | tps 1671.14(208.89/gpu) | num_label_tokens 15290
+Training:   3%|▎         | 5/160 [03:02<1:11:40, 27.75s/step, loss=8.1627, lr=3.00e-04, tps=1671]Training:   4%|▍         | 6/160 [03:02<1:07:32, 26.31s/step, loss=8.1627, lr=3.00e-04, tps=1671]2026-05-26 19:02:44 | INFO | root | step 6 | epoch 0 | loss 7.8861 | grad_norm 7.6959 | lr 3.00e-04 | mem 69.48 GiB | tps 1550.12(193.76/gpu) | num_label_tokens 15764
+Training:   4%|▍         | 6/160 [03:28<1:07:32, 26.31s/step, loss=7.8861, lr=3.00e-04, tps=1550]Training:   4%|▍         | 7/160 [03:28<1:06:43, 26.17s/step, loss=7.8861, lr=3.00e-04, tps=1550]2026-05-26 19:03:08 | INFO | root | step 7 | epoch 0 | loss 7.8118 | grad_norm 11.1763 | lr 3.00e-04 | mem 69.48 GiB | tps 1778.04(222.26/gpu) | num_label_tokens 16132
+Training:   4%|▍         | 7/160 [03:51<1:06:43, 26.17s/step, loss=7.8118, lr=3.00e-04, tps=1778]Training:   5%|▌         | 8/160 [03:51<1:03:56, 25.24s/step, loss=7.8118, lr=3.00e-04, tps=1778]2026-05-26 19:03:32 | INFO | root | step 8 | epoch 0 | loss 7.7434 | grad_norm 11.0601 | lr 3.00e-04 | mem 69.48 GiB | tps 1633.57(204.20/gpu) | num_label_tokens 15737
+Training:   5%|▌         | 8/160 [04:16<1:03:56, 25.24s/step, loss=7.7434, lr=3.00e-04, tps=1634]Training:   6%|▌         | 9/160 [04:16<1:02:51, 24.98s/step, loss=7.7434, lr=3.00e-04, tps=1634]2026-05-26 19:03:55 | INFO | root | step 9 | epoch 0 | loss 7.6487 | grad_norm 6.9522 | lr 3.00e-04 | mem 69.48 GiB | tps 1693.96(211.74/gpu) | num_label_tokens 15405
+Training:   6%|▌         | 9/160 [04:39<1:02:51, 24.98s/step, loss=7.6487, lr=3.00e-04, tps=1694]Training:   6%|▋         | 10/160 [04:39<1:01:16, 24.51s/step, loss=7.6487, lr=3.00e-04, tps=1694]2026-05-26 19:04:24 | INFO | root | step 10 | epoch 0 | loss 7.5334 | grad_norm 5.5229 | lr 3.00e-04 | mem 69.48 GiB | tps 1409.73(176.22/gpu) | num_label_tokens 15645
+Training:   6%|▋         | 10/160 [05:08<1:01:16, 24.51s/step, loss=7.5334, lr=3.00e-04, tps=1410]Training:   7%|▋         | 11/160 [05:08<1:03:59, 25.77s/step, loss=7.5334, lr=3.00e-04, tps=1410]2026-05-26 19:04:48 | INFO | root | step 11 | epoch 0 | loss 7.4215 | grad_norm 5.3682 | lr 3.00e-04 | mem 69.48 GiB | tps 1728.31(216.04/gpu) | num_label_tokens 16044
+Training:   7%|▋         | 11/160 [05:32<1:03:59, 25.77s/step, loss=7.4215, lr=3.00e-04, tps=1728]Training:   8%|▊         | 12/160 [05:32<1:02:14, 25.23s/step, loss=7.4215, lr=3.00e-04, tps=1728]2026-05-26 19:05:13 | INFO | root | step 12 | epoch 0 | loss 7.3836 | grad_norm 5.1146 | lr 3.00e-04 | mem 69.48 GiB | tps 1611.34(201.42/gpu) | num_label_tokens 15879
+Training:   8%|▊         | 12/160 [05:57<1:02:14, 25.23s/step, loss=7.3836, lr=3.00e-04, tps=1611]Training:   8%|▊         | 13/160 [05:57<1:01:53, 25.26s/step, loss=7.3836, lr=3.00e-04, tps=1611]2026-05-26 19:05:42 | INFO | root | step 13 | epoch 0 | loss 7.3395 | grad_norm 5.6917 | lr 3.00e-04 | mem 69.48 GiB | tps 1407.19(175.90/gpu) | num_label_tokens 15673
+Training:   8%|▊         | 13/160 [06:26<1:01:53, 25.26s/step, loss=7.3395, lr=3.00e-04, tps=1407]Training:   9%|▉         | 14/160 [06:26<1:04:06, 26.35s/step, loss=7.3395, lr=3.00e-04, tps=1407]2026-05-26 19:06:08 | INFO | root | step 14 | epoch 0 | loss 7.3496 | grad_norm 5.4680 | lr 3.00e-04 | mem 69.48 GiB | tps 1540.68(192.58/gpu) | num_label_tokens 15872
+Training:   9%|▉         | 14/160 [06:52<1:04:06, 26.35s/step, loss=7.3496, lr=3.00e-04, tps=1541]Training:   9%|▉         | 15/160 [06:52<1:03:35, 26.31s/step, loss=7.3496, lr=3.00e-04, tps=1541]2026-05-26 19:06:32 | INFO | root | step 15 | epoch 0 | loss 7.2402 | grad_norm 4.9860 | lr 3.00e-04 | mem 69.48 GiB | tps 1729.14(216.14/gpu) | num_label_tokens 15901
+Training:   9%|▉         | 15/160 [07:16<1:03:35, 26.31s/step, loss=7.2402, lr=3.00e-04, tps=1729]Training:  10%|█         | 16/160 [07:16<1:01:13, 25.51s/step, loss=7.2402, lr=3.00e-04, tps=1729]2026-05-26 19:06:56 | INFO | root | step 16 | epoch 0 | loss 7.1792 | grad_norm 4.4583 | lr 3.00e-04 | mem 69.48 GiB | tps 1705.01(213.13/gpu) | num_label_tokens 16116
+Training:  10%|█         | 16/160 [07:40<1:01:13, 25.51s/step, loss=7.1792, lr=3.00e-04, tps=1705]Training:  11%|█         | 17/160 [07:40<59:46, 25.08s/step, loss=7.1792, lr=3.00e-04, tps=1705]  2026-05-26 19:07:25 | INFO | root | step 17 | epoch 0 | loss 7.1902 | grad_norm 4.0847 | lr 3.00e-04 | mem 69.48 GiB | tps 1450.32(181.29/gpu) | num_label_tokens 16410
+Training:  11%|█         | 17/160 [08:09<59:46, 25.08s/step, loss=7.1902, lr=3.00e-04, tps=1450]Training:  11%|█▏        | 18/160 [08:09<1:01:58, 26.19s/step, loss=7.1902, lr=3.00e-04, tps=1450]2026-05-26 19:07:48 | INFO | root | step 18 | epoch 0 | loss 7.1354 | grad_norm 3.7861 | lr 3.00e-04 | mem 69.48 GiB | tps 1718.74(214.84/gpu) | num_label_tokens 15950
+Training:  11%|█▏        | 18/160 [08:32<1:01:58, 26.19s/step, loss=7.1354, lr=3.00e-04, tps=1719]Training:  12%|█▏        | 19/160 [08:32<59:41, 25.40s/step, loss=7.1354, lr=3.00e-04, tps=1719]  2026-05-26 19:08:12 | INFO | root | step 19 | epoch 0 | loss 7.1474 | grad_norm 3.9935 | lr 3.00e-04 | mem 69.48 GiB | tps 1699.57(212.45/gpu) | num_label_tokens 15695
+Training:  12%|█▏        | 19/160 [08:56<59:41, 25.40s/step, loss=7.1474, lr=3.00e-04, tps=1700]Training:  12%|█▎        | 20/160 [08:56<58:16, 24.97s/step, loss=7.1474, lr=3.00e-04, tps=1700]2026-05-26 19:14:43 | INFO | root | [val] name "default" | step 19 | epoch 0 | loss 7.0445 | lr 3.00e-04 | num_label_tokens 1231570
+2026-05-26 19:15:08 | INFO | root | step 20 | epoch 0 | loss 7.0776 | grad_norm 3.6266 | lr 3.00e-04 | mem 69.48 GiB | tps 96.11(12.01/gpu) | num_label_tokens 15626
+Training:  12%|█▎        | 20/160 [15:52<58:16, 24.97s/step, loss=7.0776, lr=3.00e-04, tps=96]  Training:  13%|█▎        | 21/160 [15:52<5:29:32, 142.25s/step, loss=7.0776, lr=3.00e-04, tps=96]2026-05-26 19:15:32 | INFO | root | step 21 | epoch 0 | loss 7.0741 | grad_norm 3.2115 | lr 3.00e-04 | mem 69.48 GiB | tps 1691.88(211.49/gpu) | num_label_tokens 15872
+Training:  13%|█▎        | 21/160 [16:16<5:29:32, 142.25s/step, loss=7.0741, lr=3.00e-04, tps=1692]Training:  14%|█▍        | 22/160 [16:16<4:05:37, 106.79s/step, loss=7.0741, lr=3.00e-04, tps=1692]2026-05-26 19:15:57 | INFO | root | step 22 | epoch 0 | loss 7.0968 | grad_norm 3.2100 | lr 3.00e-04 | mem 69.48 GiB | tps 1659.55(207.44/gpu) | num_label_tokens 15971
+Training:  14%|█▍        | 22/160 [16:41<4:05:37, 106.79s/step, loss=7.0968, lr=3.00e-04, tps=1660]Training:  14%|█▍        | 23/160 [16:41<3:07:32, 82.13s/step, loss=7.0968, lr=3.00e-04, tps=1660] 2026-05-26 19:16:23 | INFO | root | step 23 | epoch 0 | loss 7.0376 | grad_norm 3.1328 | lr 3.00e-04 | mem 69.48 GiB | tps 1542.64(192.83/gpu) | num_label_tokens 15600
+Training:  14%|█▍        | 23/160 [17:07<3:07:32, 82.13s/step, loss=7.0376, lr=3.00e-04, tps=1543]Training:  15%|█▌        | 24/160 [17:07<2:28:02, 65.31s/step, loss=7.0376, lr=3.00e-04, tps=1543]2026-05-26 19:16:48 | INFO | root | step 24 | epoch 0 | loss 7.0033 | grad_norm 3.3652 | lr 3.00e-04 | mem 69.48 GiB | tps 1623.26(202.91/gpu) | num_label_tokens 15350
+Training:  15%|█▌        | 24/160 [17:31<2:28:02, 65.31s/step, loss=7.0033, lr=3.00e-04, tps=1623]Training:  16%|█▌        | 25/160 [17:31<1:59:28, 53.10s/step, loss=7.0033, lr=3.00e-04, tps=1623]2026-05-26 19:17:11 | INFO | root | step 25 | epoch 0 | loss 6.9741 | grad_norm 3.2670 | lr 3.00e-04 | mem 69.48 GiB | tps 1759.66(219.96/gpu) | num_label_tokens 16084
+Training:  16%|█▌        | 25/160 [17:55<1:59:28, 53.10s/step, loss=6.9741, lr=3.00e-04, tps=1760]Training:  16%|█▋        | 26/160 [17:55<1:38:42, 44.19s/step, loss=6.9741, lr=3.00e-04, tps=1760]2026-05-26 19:17:35 | INFO | root | step 26 | epoch 0 | loss 7.0154 | grad_norm 3.6544 | lr 3.00e-04 | mem 69.48 GiB | tps 1669.97(208.75/gpu) | num_label_tokens 15633
+Training:  16%|█▋        | 26/160 [18:18<1:38:42, 44.19s/step, loss=7.0154, lr=3.00e-04, tps=1670]Training:  17%|█▋        | 27/160 [18:18<1:24:18, 38.03s/step, loss=7.0154, lr=3.00e-04, tps=1670]2026-05-26 19:18:00 | INFO | root | step 27 | epoch 0 | loss 6.9854 | grad_norm 3.1260 | lr 3.00e-04 | mem 69.48 GiB | tps 1562.18(195.27/gpu) | num_label_tokens 15468
+Training:  17%|█▋        | 27/160 [18:44<1:24:18, 38.03s/step, loss=6.9854, lr=3.00e-04, tps=1562]Training:  18%|█▊        | 28/160 [18:44<1:15:33, 34.35s/step, loss=6.9854, lr=3.00e-04, tps=1562]2026-05-26 19:18:25 | INFO | root | step 28 | epoch 0 | loss 6.8838 | grad_norm 3.5387 | lr 3.00e-04 | mem 69.48 GiB | tps 1665.09(208.14/gpu) | num_label_tokens 15851
+Training:  18%|█▊        | 28/160 [19:09<1:15:33, 34.35s/step, loss=6.8838, lr=3.00e-04, tps=1665]Training:  18%|█▊        | 29/160 [19:09<1:08:41, 31.46s/step, loss=6.8838, lr=3.00e-04, tps=1665]2026-05-26 19:18:49 | INFO | root | step 29 | epoch 0 | loss 6.9801 | grad_norm 4.0476 | lr 3.00e-04 | mem 69.48 GiB | tps 1661.17(207.65/gpu) | num_label_tokens 15541
+Training:  18%|█▊        | 29/160 [19:33<1:08:41, 31.46s/step, loss=6.9801, lr=3.00e-04, tps=1661]Training:  19%|█▉        | 30/160 [19:33<1:03:22, 29.25s/step, loss=6.9801, lr=3.00e-04, tps=1661]2026-05-26 19:19:13 | INFO | root | step 30 | epoch 0 | loss 6.9563 | grad_norm 3.4796 | lr 3.00e-04 | mem 69.48 GiB | tps 1743.21(217.90/gpu) | num_label_tokens 16028
+Training:  19%|█▉        | 30/160 [19:57<1:03:22, 29.25s/step, loss=6.9563, lr=3.00e-04, tps=1743]Training:  19%|█▉        | 31/160 [19:57<59:11, 27.53s/step, loss=6.9563, lr=3.00e-04, tps=1743]  2026-05-26 19:19:38 | INFO | root | step 31 | epoch 0 | loss 6.9655 | grad_norm 3.1560 | lr 3.00e-04 | mem 69.48 GiB | tps 1591.38(198.92/gpu) | num_label_tokens 15741
+Training:  19%|█▉        | 31/160 [20:22<59:11, 27.53s/step, loss=6.9655, lr=3.00e-04, tps=1591]Training:  20%|██        | 32/160 [20:22<57:22, 26.89s/step, loss=6.9655, lr=3.00e-04, tps=1591]2026-05-26 19:20:04 | INFO | root | step 32 | epoch 0 | loss 6.9357 | grad_norm 3.7915 | lr 3.00e-04 | mem 69.48 GiB | tps 1582.79(197.85/gpu) | num_label_tokens 15660
+Training:  20%|██        | 32/160 [20:47<57:22, 26.89s/step, loss=6.9357, lr=3.00e-04, tps=1583]Training:  21%|██        | 33/160 [20:47<56:01, 26.47s/step, loss=6.9357, lr=3.00e-04, tps=1583]2026-05-26 19:20:28 | INFO | root | step 33 | epoch 0 | loss 6.8744 | grad_norm 3.9737 | lr 3.00e-04 | mem 69.48 GiB | tps 1680.48(210.06/gpu) | num_label_tokens 15814
+Training:  21%|██        | 33/160 [21:12<56:01, 26.47s/step, loss=6.8744, lr=3.00e-04, tps=1680]Training:  21%|██▏       | 34/160 [21:12<54:08, 25.78s/step, loss=6.8744, lr=3.00e-04, tps=1680]2026-05-26 19:20:52 | INFO | root | step 34 | epoch 0 | loss 6.9044 | grad_norm 3.8331 | lr 3.00e-04 | mem 69.48 GiB | tps 1682.00(210.25/gpu) | num_label_tokens 15955
+Training:  21%|██▏       | 34/160 [21:36<54:08, 25.78s/step, loss=6.9044, lr=3.00e-04, tps=1682]Training:  22%|██▏       | 35/160 [21:36<52:46, 25.33s/step, loss=6.9044, lr=3.00e-04, tps=1682]2026-05-26 19:21:17 | INFO | root | step 35 | epoch 0 | loss 6.8503 | grad_norm 3.5712 | lr 3.00e-04 | mem 69.48 GiB | tps 1634.96(204.37/gpu) | num_label_tokens 15825
+Training:  22%|██▏       | 35/160 [22:01<52:46, 25.33s/step, loss=6.8503, lr=3.00e-04, tps=1635]Training:  22%|██▎       | 36/160 [22:01<52:02, 25.18s/step, loss=6.8503, lr=3.00e-04, tps=1635]2026-05-26 19:21:41 | INFO | root | step 36 | epoch 0 | loss 6.8294 | grad_norm 3.3916 | lr 3.00e-04 | mem 69.48 GiB | tps 1651.00(206.38/gpu) | num_label_tokens 15495
+Training:  22%|██▎       | 36/160 [22:25<52:02, 25.18s/step, loss=6.8294, lr=3.00e-04, tps=1651]Training:  23%|██▎       | 37/160 [22:25<51:03, 24.91s/step, loss=6.8294, lr=3.00e-04, tps=1651]2026-05-26 19:22:06 | INFO | root | step 37 | epoch 0 | loss 6.7886 | grad_norm 2.8078 | lr 3.00e-04 | mem 69.48 GiB | tps 1591.40(198.92/gpu) | num_label_tokens 15296
+Training:  23%|██▎       | 37/160 [22:50<51:03, 24.91s/step, loss=6.7886, lr=3.00e-04, tps=1591]Training:  24%|██▍       | 38/160 [22:50<50:37, 24.90s/step, loss=6.7886, lr=3.00e-04, tps=1591]2026-05-26 19:22:31 | INFO | root | step 38 | epoch 0 | loss 6.7473 | grad_norm 3.1714 | lr 3.00e-04 | mem 69.48 GiB | tps 1650.36(206.29/gpu) | num_label_tokens 15898
+Training:  24%|██▍       | 38/160 [23:15<50:37, 24.90s/step, loss=6.7473, lr=3.00e-04, tps=1650]Training:  24%|██▍       | 39/160 [23:15<50:11, 24.89s/step, loss=6.7473, lr=3.00e-04, tps=1650]2026-05-26 19:22:55 | INFO | root | step 39 | epoch 0 | loss 6.7264 | grad_norm 2.5117 | lr 3.00e-04 | mem 69.48 GiB | tps 1663.52(207.94/gpu) | num_label_tokens 15504
+Training:  24%|██▍       | 39/160 [23:39<50:11, 24.89s/step, loss=6.7264, lr=3.00e-04, tps=1664]Training:  25%|██▌       | 40/160 [23:39<49:20, 24.67s/step, loss=6.7264, lr=3.00e-04, tps=1664]2026-05-26 19:29:17 | INFO | root | [val] name "default" | step 39 | epoch 0 | loss 6.6492 | lr 3.00e-04 | num_label_tokens 1231570
+2026-05-26 19:29:42 | INFO | root | step 40 | epoch 0 | loss 6.6788 | grad_norm 2.8704 | lr 3.00e-04 | mem 69.48 GiB | tps 102.09(12.76/gpu) | num_label_tokens 16189
+Training:  25%|██▌       | 40/160 [30:26<49:20, 24.67s/step, loss=6.6788, lr=3.00e-04, tps=102] Training:  26%|██▌       | 41/160 [30:26<4:36:34, 139.45s/step, loss=6.6788, lr=3.00e-04, tps=102]2026-05-26 19:30:08 | INFO | root | step 41 | epoch 0 | loss 6.7613 | grad_norm 2.7224 | lr 3.00e-04 | mem 69.48 GiB | tps 1582.91(197.86/gpu) | num_label_tokens 15693
+Training:  26%|██▌       | 41/160 [30:52<4:36:34, 139.45s/step, loss=6.7613, lr=3.00e-04, tps=1583]Training:  26%|██▋       | 42/160 [30:52<3:27:02, 105.28s/step, loss=6.7613, lr=3.00e-04, tps=1583]2026-05-26 19:30:33 | INFO | root | step 42 | epoch 0 | loss 6.7440 | grad_norm 2.7313 | lr 3.00e-04 | mem 69.48 GiB | tps 1622.63(202.83/gpu) | num_label_tokens 15662
+Training:  26%|██▋       | 42/160 [31:17<3:27:02, 105.28s/step, loss=6.7440, lr=3.00e-04, tps=1623]Training:  27%|██▋       | 43/160 [31:17<2:38:21, 81.21s/step, loss=6.7440, lr=3.00e-04, tps=1623] 2026-05-26 19:30:58 | INFO | root | step 43 | epoch 0 | loss 6.6749 | grad_norm 3.1590 | lr 3.00e-04 | mem 69.48 GiB | tps 1583.52(197.94/gpu) | num_label_tokens 15947
+Training:  27%|██▋       | 43/160 [31:42<2:38:21, 81.21s/step, loss=6.6749, lr=3.00e-04, tps=1584]Training:  28%|██▊       | 44/160 [31:42<2:04:40, 64.49s/step, loss=6.6749, lr=3.00e-04, tps=1584]2026-05-26 19:31:24 | INFO | root | step 44 | epoch 0 | loss 6.7207 | grad_norm 3.1087 | lr 3.00e-04 | mem 69.48 GiB | tps 1579.05(197.38/gpu) | num_label_tokens 15678
+Training:  28%|██▊       | 44/160 [32:08<2:04:40, 64.49s/step, loss=6.7207, lr=3.00e-04, tps=1579]Training:  28%|██▊       | 45/160 [32:08<1:41:08, 52.77s/step, loss=6.7207, lr=3.00e-04, tps=1579]2026-05-26 19:31:50 | INFO | root | step 45 | epoch 0 | loss 6.7423 | grad_norm 2.6430 | lr 3.00e-04 | mem 69.48 GiB | tps 1599.42(199.93/gpu) | num_label_tokens 16717
+Training:  28%|██▊       | 45/160 [32:34<1:41:08, 52.77s/step, loss=6.7423, lr=3.00e-04, tps=1599]Training:  29%|██▉       | 46/160 [32:34<1:25:03, 44.77s/step, loss=6.7423, lr=3.00e-04, tps=1599]2026-05-26 19:32:15 | INFO | root | step 46 | epoch 0 | loss 6.6757 | grad_norm 2.9867 | lr 3.00e-04 | mem 69.48 GiB | tps 1586.91(198.36/gpu) | num_label_tokens 15373
+Training:  29%|██▉       | 46/160 [32:59<1:25:03, 44.77s/step, loss=6.6757, lr=3.00e-04, tps=1587]Training:  29%|██▉       | 47/160 [32:59<1:13:03, 38.79s/step, loss=6.6757, lr=3.00e-04, tps=1587]2026-05-26 19:32:40 | INFO | root | step 47 | epoch 0 | loss 6.6376 | grad_norm 2.7733 | lr 3.00e-04 | mem 69.48 GiB | tps 1664.10(208.01/gpu) | num_label_tokens 16624
+Training:  29%|██▉       | 47/160 [33:24<1:13:03, 38.79s/step, loss=6.6376, lr=3.00e-04, tps=1664]Training:  30%|███       | 48/160 [33:24<1:04:56, 34.79s/step, loss=6.6376, lr=3.00e-04, tps=1664]2026-05-26 19:33:04 | INFO | root | step 48 | epoch 0 | loss 6.6301 | grad_norm 2.5802 | lr 3.00e-04 | mem 69.48 GiB | tps 1652.50(206.56/gpu) | num_label_tokens 15679
+Training:  30%|███       | 48/160 [33:48<1:04:56, 34.79s/step, loss=6.6301, lr=3.00e-04, tps=1652]Training:  31%|███       | 49/160 [33:48<58:30, 31.62s/step, loss=6.6301, lr=3.00e-04, tps=1652]  2026-05-26 19:33:30 | INFO | root | step 49 | epoch 0 | loss 6.6088 | grad_norm 2.5431 | lr 3.00e-04 | mem 69.48 GiB | tps 1594.49(199.31/gpu) | num_label_tokens 16264
+Training:  31%|███       | 49/160 [34:14<58:30, 31.62s/step, loss=6.6088, lr=3.00e-04, tps=1594]Training:  31%|███▏      | 50/160 [34:14<54:53, 29.94s/step, loss=6.6088, lr=3.00e-04, tps=1594]2026-05-26 19:33:57 | INFO | root | step 50 | epoch 0 | loss 6.6170 | grad_norm 2.4774 | lr 3.00e-04 | mem 69.48 GiB | tps 1562.26(195.28/gpu) | num_label_tokens 15829
+Training:  31%|███▏      | 50/160 [34:40<54:53, 29.94s/step, loss=6.6170, lr=3.00e-04, tps=1562]Training:  32%|███▏      | 51/160 [34:40<52:18, 28.79s/step, loss=6.6170, lr=3.00e-04, tps=1562]2026-05-26 19:34:22 | INFO | root | step 51 | epoch 0 | loss 6.5843 | grad_norm 3.1446 | lr 3.00e-04 | mem 69.48 GiB | tps 1636.76(204.60/gpu) | num_label_tokens 16378
+Training:  32%|███▏      | 51/160 [35:06<52:18, 28.79s/step, loss=6.5843, lr=3.00e-04, tps=1637]Training:  32%|███▎      | 52/160 [35:06<50:07, 27.84s/step, loss=6.5843, lr=3.00e-04, tps=1637]2026-05-26 19:34:47 | INFO | root | step 52 | epoch 0 | loss 6.5564 | grad_norm 2.7645 | lr 3.00e-04 | mem 69.48 GiB | tps 1667.63(208.45/gpu) | num_label_tokens 15637
+Training:  32%|███▎      | 52/160 [35:30<50:07, 27.84s/step, loss=6.5564, lr=3.00e-04, tps=1668]Training:  33%|███▎      | 53/160 [35:30<47:47, 26.80s/step, loss=6.5564, lr=3.00e-04, tps=1668]2026-05-26 19:35:12 | INFO | root | step 53 | epoch 0 | loss 6.5670 | grad_norm 3.2685 | lr 3.00e-04 | mem 69.48 GiB | tps 1622.94(202.87/gpu) | num_label_tokens 15881
+Training:  33%|███▎      | 53/160 [35:55<47:47, 26.80s/step, loss=6.5670, lr=3.00e-04, tps=1623]Training:  34%|███▍      | 54/160 [35:55<46:24, 26.27s/step, loss=6.5670, lr=3.00e-04, tps=1623]2026-05-26 19:35:38 | INFO | root | step 54 | epoch 0 | loss 6.5905 | grad_norm 2.9338 | lr 3.00e-04 | mem 69.48 GiB | tps 1545.19(193.15/gpu) | num_label_tokens 15999
+Training:  34%|███▍      | 54/160 [36:22<46:24, 26.27s/step, loss=6.5905, lr=3.00e-04, tps=1545]Training:  34%|███▍      | 55/160 [36:22<46:13, 26.41s/step, loss=6.5905, lr=3.00e-04, tps=1545]2026-05-26 19:36:05 | INFO | root | step 55 | epoch 0 | loss 6.5950 | grad_norm 2.6153 | lr 3.00e-04 | mem 69.48 GiB | tps 1595.39(199.42/gpu) | num_label_tokens 16398
+Training:  34%|███▍      | 55/160 [36:48<46:13, 26.41s/step, loss=6.5950, lr=3.00e-04, tps=1595]Training:  35%|███▌      | 56/160 [36:48<45:38, 26.34s/step, loss=6.5950, lr=3.00e-04, tps=1595]2026-05-26 19:36:29 | INFO | root | step 56 | epoch 0 | loss 6.5088 | grad_norm 3.0474 | lr 3.00e-04 | mem 69.48 GiB | tps 1686.39(210.80/gpu) | num_label_tokens 16028
+Training:  35%|███▌      | 56/160 [37:13<45:38, 26.34s/step, loss=6.5088, lr=3.00e-04, tps=1686]Training:  36%|███▌      | 57/160 [37:13<44:10, 25.73s/step, loss=6.5088, lr=3.00e-04, tps=1686]2026-05-26 19:36:53 | INFO | root | step 57 | epoch 0 | loss 6.6148 | grad_norm 3.7049 | lr 3.00e-04 | mem 69.48 GiB | tps 1699.61(212.45/gpu) | num_label_tokens 16287
+Training:  36%|███▌      | 57/160 [37:37<44:10, 25.73s/step, loss=6.6148, lr=3.00e-04, tps=1700]Training:  36%|███▋      | 58/160 [37:37<43:06, 25.36s/step, loss=6.6148, lr=3.00e-04, tps=1700]2026-05-26 19:37:20 | INFO | root | step 58 | epoch 0 | loss 6.5470 | grad_norm 2.9175 | lr 3.00e-04 | mem 69.48 GiB | tps 1524.32(190.54/gpu) | num_label_tokens 15880
+Training:  36%|███▋      | 58/160 [38:04<43:06, 25.36s/step, loss=6.5470, lr=3.00e-04, tps=1524]Training:  37%|███▋      | 59/160 [38:04<43:22, 25.77s/step, loss=6.5470, lr=3.00e-04, tps=1524]2026-05-26 19:37:46 | INFO | root | step 59 | epoch 0 | loss 6.4838 | grad_norm 2.9766 | lr 3.00e-04 | mem 69.48 GiB | tps 1522.28(190.29/gpu) | num_label_tokens 15501
+Training:  37%|███▋      | 59/160 [38:30<43:22, 25.77s/step, loss=6.4838, lr=3.00e-04, tps=1522]Training:  38%|███▊      | 60/160 [38:30<43:06, 25.86s/step, loss=6.4838, lr=3.00e-04, tps=1522]2026-05-26 19:44:10 | INFO | root | [val] name "default" | step 59 | epoch 0 | loss 6.4215 | lr 3.00e-04 | num_label_tokens 1231570
+2026-05-26 19:44:34 | INFO | root | step 60 | epoch 0 | loss 6.5204 | grad_norm 4.1285 | lr 3.00e-04 | mem 69.48 GiB | tps 97.02(12.13/gpu) | num_label_tokens 15522
+Training:  38%|███▊      | 60/160 [45:18<43:06, 25.86s/step, loss=6.5204, lr=3.00e-04, tps=97]  Training:  38%|███▊      | 61/160 [45:18<3:51:49, 140.50s/step, loss=6.5204, lr=3.00e-04, tps=97]2026-05-26 19:45:01 | INFO | root | step 61 | epoch 0 | loss 6.5088 | grad_norm 3.0881 | lr 3.00e-04 | mem 69.48 GiB | tps 1456.15(182.02/gpu) | num_label_tokens 15109
+Training:  38%|███▊      | 61/160 [45:45<3:51:49, 140.50s/step, loss=6.5088, lr=3.00e-04, tps=1456]Training:  39%|███▉      | 62/160 [45:45<2:53:51, 106.44s/step, loss=6.5088, lr=3.00e-04, tps=1456]2026-05-26 19:45:26 | INFO | root | step 62 | epoch 0 | loss 6.4900 | grad_norm 2.5414 | lr 3.00e-04 | mem 69.48 GiB | tps 1647.11(205.89/gpu) | num_label_tokens 16387
+Training:  39%|███▉      | 62/160 [46:10<2:53:51, 106.44s/step, loss=6.4900, lr=3.00e-04, tps=1647]Training:  39%|███▉      | 63/160 [46:10<2:12:40, 82.07s/step, loss=6.4900, lr=3.00e-04, tps=1647] 2026-05-26 19:45:52 | INFO | root | step 63 | epoch 0 | loss 6.4234 | grad_norm 2.5614 | lr 3.00e-04 | mem 69.48 GiB | tps 1522.45(190.31/gpu) | num_label_tokens 15288
+Training:  39%|███▉      | 63/160 [46:36<2:12:40, 82.07s/step, loss=6.4234, lr=3.00e-04, tps=1522]Training:  40%|████      | 64/160 [46:36<1:44:26, 65.27s/step, loss=6.4234, lr=3.00e-04, tps=1522]2026-05-26 19:46:17 | INFO | root | step 64 | epoch 0 | loss 6.4358 | grad_norm 3.0685 | lr 3.00e-04 | mem 69.48 GiB | tps 1595.53(199.44/gpu) | num_label_tokens 15268
+Training:  40%|████      | 64/160 [47:01<1:44:26, 65.27s/step, loss=6.4358, lr=3.00e-04, tps=1596]Training:  41%|████      | 65/160 [47:01<1:24:07, 53.14s/step, loss=6.4358, lr=3.00e-04, tps=1596]2026-05-26 19:46:43 | INFO | root | step 65 | epoch 0 | loss 6.3928 | grad_norm 3.1323 | lr 3.00e-04 | mem 69.48 GiB | tps 1592.74(199.09/gpu) | num_label_tokens 15785
+Training:  41%|████      | 65/160 [47:27<1:24:07, 53.14s/step, loss=6.3928, lr=3.00e-04, tps=1593]Training:  41%|████▏     | 66/160 [47:27<1:10:21, 44.90s/step, loss=6.3928, lr=3.00e-04, tps=1593]2026-05-26 19:47:08 | INFO | root | step 66 | epoch 0 | loss 6.4127 | grad_norm 2.7738 | lr 3.00e-04 | mem 69.48 GiB | tps 1642.86(205.36/gpu) | num_label_tokens 16002
+Training:  41%|████▏     | 66/160 [47:52<1:10:21, 44.90s/step, loss=6.4127, lr=3.00e-04, tps=1643]Training:  42%|████▏     | 67/160 [47:52<1:00:19, 38.92s/step, loss=6.4127, lr=3.00e-04, tps=1643]2026-05-26 19:47:34 | INFO | root | step 67 | epoch 0 | loss 6.4228 | grad_norm 2.4183 | lr 3.00e-04 | mem 69.48 GiB | tps 1550.49(193.81/gpu) | num_label_tokens 15708
+Training:  42%|████▏     | 67/160 [48:18<1:00:19, 38.92s/step, loss=6.4228, lr=3.00e-04, tps=1550]Training:  42%|████▎     | 68/160 [48:18<53:47, 35.08s/step, loss=6.4228, lr=3.00e-04, tps=1550]  2026-05-26 19:47:59 | INFO | root | step 68 | epoch 0 | loss 6.4979 | grad_norm 2.7537 | lr 3.00e-04 | mem 69.48 GiB | tps 1592.04(199.00/gpu) | num_label_tokens 15414
+Training:  42%|████▎     | 68/160 [48:43<53:47, 35.08s/step, loss=6.4979, lr=3.00e-04, tps=1592]Training:  43%|████▎     | 69/160 [48:43<48:44, 32.14s/step, loss=6.4979, lr=3.00e-04, tps=1592]2026-05-26 19:48:23 | INFO | root | step 69 | epoch 0 | loss 6.4516 | grad_norm 2.7792 | lr 3.00e-04 | mem 69.48 GiB | tps 1693.05(211.63/gpu) | num_label_tokens 15881
+Training:  43%|████▎     | 69/160 [49:07<48:44, 32.14s/step, loss=6.4516, lr=3.00e-04, tps=1693]Training:  44%|████▍     | 70/160 [49:07<44:35, 29.73s/step, loss=6.4516, lr=3.00e-04, tps=1693]2026-05-26 19:48:49 | INFO | root | step 70 | epoch 0 | loss 6.4110 | grad_norm 2.8637 | lr 3.00e-04 | mem 69.48 GiB | tps 1609.18(201.15/gpu) | num_label_tokens 16172
+Training:  44%|████▍     | 70/160 [49:33<44:35, 29.73s/step, loss=6.4110, lr=3.00e-04, tps=1609]Training:  44%|████▍     | 71/160 [49:33<42:14, 28.48s/step, loss=6.4110, lr=3.00e-04, tps=1609]2026-05-26 19:49:15 | INFO | root | step 71 | epoch 0 | loss 6.4086 | grad_norm 2.6451 | lr 3.00e-04 | mem 69.48 GiB | tps 1532.84(191.60/gpu) | num_label_tokens 15482
+Training:  44%|████▍     | 71/160 [49:59<42:14, 28.48s/step, loss=6.4086, lr=3.00e-04, tps=1533]Training:  45%|████▌     | 72/160 [49:59<40:36, 27.69s/step, loss=6.4086, lr=3.00e-04, tps=1533]2026-05-26 19:49:41 | INFO | root | step 72 | epoch 0 | loss 6.3824 | grad_norm 3.3081 | lr 3.00e-04 | mem 69.48 GiB | tps 1569.60(196.20/gpu) | num_label_tokens 16020
+Training:  45%|████▌     | 72/160 [50:25<40:36, 27.69s/step, loss=6.3824, lr=3.00e-04, tps=1570]Training:  46%|████▌     | 73/160 [50:25<39:25, 27.19s/step, loss=6.3824, lr=3.00e-04, tps=1570]2026-05-26 19:50:05 | INFO | root | step 73 | epoch 0 | loss 6.3677 | grad_norm 2.7967 | lr 3.00e-04 | mem 69.48 GiB | tps 1699.32(212.42/gpu) | num_label_tokens 16098
+Training:  46%|████▌     | 73/160 [50:49<39:25, 27.19s/step, loss=6.3677, lr=3.00e-04, tps=1699]Training:  46%|████▋     | 74/160 [50:49<37:43, 26.31s/step, loss=6.3677, lr=3.00e-04, tps=1699]2026-05-26 19:50:30 | INFO | root | step 74 | epoch 0 | loss 6.3928 | grad_norm 2.6635 | lr 3.00e-04 | mem 69.48 GiB | tps 1651.35(206.42/gpu) | num_label_tokens 16299
+Training:  46%|████▋     | 74/160 [51:14<37:43, 26.31s/step, loss=6.3928, lr=3.00e-04, tps=1651]Training:  47%|████▋     | 75/160 [51:14<36:43, 25.92s/step, loss=6.3928, lr=3.00e-04, tps=1651]2026-05-26 19:50:56 | INFO | root | step 75 | epoch 0 | loss 6.3602 | grad_norm 2.8951 | lr 3.00e-04 | mem 69.48 GiB | tps 1584.88(198.11/gpu) | num_label_tokens 15602
+Training:  47%|████▋     | 75/160 [51:39<36:43, 25.92s/step, loss=6.3602, lr=3.00e-04, tps=1585]Training:  48%|████▊     | 76/160 [51:39<36:06, 25.79s/step, loss=6.3602, lr=3.00e-04, tps=1585]2026-05-26 19:51:23 | INFO | root | step 76 | epoch 0 | loss 6.3201 | grad_norm 2.6317 | lr 3.00e-04 | mem 69.48 GiB | tps 1470.81(183.85/gpu) | num_label_tokens 15547
+Training:  48%|████▊     | 76/160 [52:07<36:06, 25.79s/step, loss=6.3201, lr=3.00e-04, tps=1471]Training:  48%|████▊     | 77/160 [52:07<36:17, 26.24s/step, loss=6.3201, lr=3.00e-04, tps=1471]2026-05-26 19:51:46 | INFO | root | step 77 | epoch 0 | loss 6.3203 | grad_norm 2.9561 | lr 3.00e-04 | mem 69.48 GiB | tps 1659.39(207.42/gpu) | num_label_tokens 14991
+Training:  48%|████▊     | 77/160 [52:30<36:17, 26.24s/step, loss=6.3203, lr=3.00e-04, tps=1659]Training:  49%|████▉     | 78/160 [52:30<34:35, 25.31s/step, loss=6.3203, lr=3.00e-04, tps=1659]2026-05-26 19:58:08 | INFO | root | [val] name "default" | step 77 | epoch 0 | loss 6.2825 | lr 3.00e-04 | num_label_tokens 1231570
+2026-05-26 19:58:32 | INFO | root | step 78 | epoch 1 | loss 6.2352 | grad_norm 2.1417 | lr 3.00e-04 | mem 69.48 GiB | tps 99.25(12.41/gpu) | num_label_tokens 15867
+Training:  49%|████▉     | 78/160 [59:16<34:35, 25.31s/step, loss=6.2352, lr=3.00e-04, tps=99]  Training:  49%|████▉     | 79/160 [59:16<3:08:30, 139.64s/step, loss=6.2352, lr=3.00e-04, tps=99]2026-05-26 19:59:00 | INFO | root | step 79 | epoch 1 | loss 6.2524 | grad_norm 3.0127 | lr 3.00e-04 | mem 69.48 GiB | tps 1480.68(185.09/gpu) | num_label_tokens 15712
+Training:  49%|████▉     | 79/160 [59:44<3:08:30, 139.64s/step, loss=6.2524, lr=3.00e-04, tps=1481]Training:  50%|█████     | 80/160 [59:44<2:21:15, 105.94s/step, loss=6.2524, lr=3.00e-04, tps=1481]2026-05-26 20:05:21 | INFO | root | [val] name "default" | step 79 | epoch 1 | loss 6.2679 | lr 3.00e-04 | num_label_tokens 1231570
+2026-05-26 20:05:46 | INFO | root | step 80 | epoch 1 | loss 6.3122 | grad_norm 2.2240 | lr 3.00e-04 | mem 69.48 GiB | tps 98.49(12.31/gpu) | num_label_tokens 15536
+Training:  50%|█████     | 80/160 [1:06:30<2:21:15, 105.94s/step, loss=6.3122, lr=3.00e-04, tps=98]Training:  51%|█████     | 81/160 [1:06:30<4:18:14, 196.13s/step, loss=6.3122, lr=3.00e-04, tps=98]2026-05-26 20:06:11 | INFO | root | step 81 | epoch 1 | loss 6.3364 | grad_norm 2.2836 | lr 3.00e-04 | mem 69.48 GiB | tps 1676.40(209.55/gpu) | num_label_tokens 16053
+Training:  51%|█████     | 81/160 [1:06:55<4:18:14, 196.13s/step, loss=6.3364, lr=3.00e-04, tps=1676]Training:  51%|█████▏    | 82/160 [1:06:55<3:08:01, 144.63s/step, loss=6.3364, lr=3.00e-04, tps=1676]2026-05-26 20:06:38 | INFO | root | step 82 | epoch 1 | loss 6.3146 | grad_norm 2.3235 | lr 3.00e-04 | mem 69.48 GiB | tps 1563.19(195.40/gpu) | num_label_tokens 16483
+Training:  51%|█████▏    | 82/160 [1:07:21<3:08:01, 144.63s/step, loss=6.3146, lr=3.00e-04, tps=1563]Training:  52%|█████▏    | 83/160 [1:07:21<2:20:14, 109.28s/step, loss=6.3146, lr=3.00e-04, tps=1563]2026-05-26 20:07:04 | INFO | root | step 83 | epoch 1 | loss 6.2530 | grad_norm 2.9447 | lr 3.00e-04 | mem 69.48 GiB | tps 1563.95(195.49/gpu) | num_label_tokens 15832
+Training:  52%|█████▏    | 83/160 [1:07:47<2:20:14, 109.28s/step, loss=6.2530, lr=3.00e-04, tps=1564]Training:  52%|█████▎    | 84/160 [1:07:47<1:46:48, 84.33s/step, loss=6.2530, lr=3.00e-04, tps=1564] 2026-05-26 20:07:28 | INFO | root | step 84 | epoch 1 | loss 6.2030 | grad_norm 2.4851 | lr 3.00e-04 | mem 69.48 GiB | tps 1685.83(210.73/gpu) | num_label_tokens 15932
+Training:  52%|█████▎    | 84/160 [1:08:12<1:46:48, 84.33s/step, loss=6.2030, lr=3.00e-04, tps=1686]Training:  53%|█████▎    | 85/160 [1:08:12<1:22:53, 66.31s/step, loss=6.2030, lr=3.00e-04, tps=1686]2026-05-26 20:07:53 | INFO | root | step 85 | epoch 1 | loss 6.2320 | grad_norm 3.0848 | lr 3.00e-04 | mem 69.48 GiB | tps 1613.18(201.65/gpu) | num_label_tokens 15712
+Training:  53%|█████▎    | 85/160 [1:08:37<1:22:53, 66.31s/step, loss=6.2320, lr=3.00e-04, tps=1613]Training:  54%|█████▍    | 86/160 [1:08:37<1:06:30, 53.92s/step, loss=6.2320, lr=3.00e-04, tps=1613]2026-05-26 20:08:20 | INFO | root | step 86 | epoch 1 | loss 6.3423 | grad_norm 2.5357 | lr 3.00e-04 | mem 69.48 GiB | tps 1565.22(195.65/gpu) | num_label_tokens 16601
+Training:  54%|█████▍    | 86/160 [1:09:04<1:06:30, 53.92s/step, loss=6.3423, lr=3.00e-04, tps=1565]Training:  54%|█████▍    | 87/160 [1:09:04<55:43, 45.81s/step, loss=6.3423, lr=3.00e-04, tps=1565]  2026-05-26 20:08:46 | INFO | root | step 87 | epoch 1 | loss 6.2411 | grad_norm 3.4493 | lr 3.00e-04 | mem 69.48 GiB | tps 1511.68(188.96/gpu) | num_label_tokens 15328
+Training:  54%|█████▍    | 87/160 [1:09:30<55:43, 45.81s/step, loss=6.2411, lr=3.00e-04, tps=1512]Training:  55%|█████▌    | 88/160 [1:09:30<47:51, 39.88s/step, loss=6.2411, lr=3.00e-04, tps=1512]2026-05-26 20:09:10 | INFO | root | step 88 | epoch 1 | loss 6.2581 | grad_norm 3.5520 | lr 3.00e-04 | mem 69.48 GiB | tps 1662.92(207.86/gpu) | num_label_tokens 15786
+Training:  55%|█████▌    | 88/160 [1:09:54<47:51, 39.88s/step, loss=6.2581, lr=3.00e-04, tps=1663]Training:  56%|█████▌    | 89/160 [1:09:54<41:39, 35.21s/step, loss=6.2581, lr=3.00e-04, tps=1663]2026-05-26 20:09:35 | INFO | root | step 89 | epoch 1 | loss 6.2716 | grad_norm 3.4124 | lr 3.00e-04 | mem 69.48 GiB | tps 1690.88(211.36/gpu) | num_label_tokens 16072
+Training:  56%|█████▌    | 89/160 [1:10:19<41:39, 35.21s/step, loss=6.2716, lr=3.00e-04, tps=1691]Training:  56%|█████▋    | 90/160 [1:10:19<37:23, 32.05s/step, loss=6.2716, lr=3.00e-04, tps=1691]2026-05-26 20:10:02 | INFO | root | step 90 | epoch 1 | loss 6.2166 | grad_norm 3.2300 | lr 3.00e-04 | mem 69.48 GiB | tps 1484.77(185.60/gpu) | num_label_tokens 15713
+Training:  56%|█████▋    | 90/160 [1:10:45<37:23, 32.05s/step, loss=6.2166, lr=3.00e-04, tps=1485]Training:  57%|█████▋    | 91/160 [1:10:45<35:00, 30.44s/step, loss=6.2166, lr=3.00e-04, tps=1485]2026-05-26 20:10:27 | INFO | root | step 91 | epoch 1 | loss 6.2249 | grad_norm 3.6351 | lr 3.00e-04 | mem 69.48 GiB | tps 1595.95(199.49/gpu) | num_label_tokens 15892
+Training:  57%|█████▋    | 91/160 [1:11:11<35:00, 30.44s/step, loss=6.2249, lr=3.00e-04, tps=1596]Training:  57%|█████▊    | 92/160 [1:11:11<32:54, 29.04s/step, loss=6.2249, lr=3.00e-04, tps=1596]2026-05-26 20:10:52 | INFO | root | step 92 | epoch 1 | loss 6.2150 | grad_norm 3.4641 | lr 3.00e-04 | mem 69.48 GiB | tps 1584.18(198.02/gpu) | num_label_tokens 15237
+Training:  57%|█████▊    | 92/160 [1:11:36<32:54, 29.04s/step, loss=6.2150, lr=3.00e-04, tps=1584]Training:  58%|█████▊    | 93/160 [1:11:36<31:06, 27.86s/step, loss=6.2150, lr=3.00e-04, tps=1584]2026-05-26 20:11:17 | INFO | root | step 93 | epoch 1 | loss 6.3077 | grad_norm 2.5544 | lr 3.00e-04 | mem 69.48 GiB | tps 1679.54(209.94/gpu) | num_label_tokens 16019
+Training:  58%|█████▊    | 93/160 [1:12:01<31:06, 27.86s/step, loss=6.3077, lr=3.00e-04, tps=1680]Training:  59%|█████▉    | 94/160 [1:12:01<29:33, 26.88s/step, loss=6.3077, lr=3.00e-04, tps=1680]2026-05-26 20:11:44 | INFO | root | step 94 | epoch 1 | loss 6.2303 | grad_norm 2.9056 | lr 3.00e-04 | mem 69.48 GiB | tps 1502.81(187.85/gpu) | num_label_tokens 15638
+Training:  59%|█████▉    | 94/160 [1:12:28<29:33, 26.88s/step, loss=6.2303, lr=3.00e-04, tps=1503]Training:  59%|█████▉    | 95/160 [1:12:28<29:09, 26.92s/step, loss=6.2303, lr=3.00e-04, tps=1503]2026-05-26 20:12:09 | INFO | root | step 95 | epoch 1 | loss 6.1984 | grad_norm 2.7802 | lr 3.00e-04 | mem 69.48 GiB | tps 1619.31(202.41/gpu) | num_label_tokens 15990
+Training:  59%|█████▉    | 95/160 [1:12:53<29:09, 26.92s/step, loss=6.1984, lr=3.00e-04, tps=1619]Training:  60%|██████    | 96/160 [1:12:53<28:09, 26.40s/step, loss=6.1984, lr=3.00e-04, tps=1619]2026-05-26 20:12:36 | INFO | root | step 96 | epoch 1 | loss 6.1568 | grad_norm 2.5702 | lr 3.00e-04 | mem 69.48 GiB | tps 1561.17(195.15/gpu) | num_label_tokens 16025
+Training:  60%|██████    | 96/160 [1:13:19<28:09, 26.40s/step, loss=6.1568, lr=3.00e-04, tps=1561]Training:  61%|██████    | 97/160 [1:13:19<27:43, 26.40s/step, loss=6.1568, lr=3.00e-04, tps=1561]2026-05-26 20:13:00 | INFO | root | step 97 | epoch 1 | loss 6.1814 | grad_norm 2.9225 | lr 3.00e-04 | mem 69.48 GiB | tps 1665.85(208.23/gpu) | num_label_tokens 15900
+Training:  61%|██████    | 97/160 [1:13:44<27:43, 26.40s/step, loss=6.1814, lr=3.00e-04, tps=1666]Training:  61%|██████▏   | 98/160 [1:13:44<26:42, 25.85s/step, loss=6.1814, lr=3.00e-04, tps=1666]2026-05-26 20:13:27 | INFO | root | step 98 | epoch 1 | loss 6.2219 | grad_norm 2.8332 | lr 3.00e-04 | mem 69.48 GiB | tps 1536.95(192.12/gpu) | num_label_tokens 16141
+Training:  61%|██████▏   | 98/160 [1:14:10<26:42, 25.85s/step, loss=6.2219, lr=3.00e-04, tps=1537]Training:  62%|██████▏   | 99/160 [1:14:10<26:26, 26.01s/step, loss=6.2219, lr=3.00e-04, tps=1537]2026-05-26 20:13:52 | INFO | root | step 99 | epoch 1 | loss 6.1226 | grad_norm 2.7085 | lr 3.00e-04 | mem 69.48 GiB | tps 1547.69(193.46/gpu) | num_label_tokens 15587
+Training:  62%|██████▏   | 99/160 [1:14:36<26:26, 26.01s/step, loss=6.1226, lr=3.00e-04, tps=1548]Training:  62%|██████▎   | 100/160 [1:14:36<25:55, 25.92s/step, loss=6.1226, lr=3.00e-04, tps=1548]2026-05-26 20:20:18 | INFO | root | [val] name "default" | step 99 | epoch 1 | loss 6.1385 | lr 3.00e-04 | num_label_tokens 1231570
+2026-05-26 20:20:43 | INFO | root | step 100 | epoch 1 | loss 6.1904 | grad_norm 2.5870 | lr 3.00e-04 | mem 69.48 GiB | tps 96.81(12.10/gpu) | num_label_tokens 15332
+Training:  62%|██████▎   | 100/160 [1:21:27<25:55, 25.92s/step, loss=6.1904, lr=3.00e-04, tps=97]  Training:  63%|██████▎   | 101/160 [1:21:27<2:19:05, 141.45s/step, loss=6.1904, lr=3.00e-04, tps=97]2026-05-26 20:21:08 | INFO | root | step 101 | epoch 1 | loss 6.1886 | grad_norm 2.7130 | lr 3.00e-04 | mem 69.48 GiB | tps 1607.13(200.89/gpu) | num_label_tokens 15664
+Training:  63%|██████▎   | 101/160 [1:21:52<2:19:05, 141.45s/step, loss=6.1886, lr=3.00e-04, tps=1607]Training:  64%|██████▍   | 102/160 [1:21:52<1:42:58, 106.53s/step, loss=6.1886, lr=3.00e-04, tps=1607]2026-05-26 20:21:35 | INFO | root | step 102 | epoch 1 | loss 6.1098 | grad_norm 2.5917 | lr 3.00e-04 | mem 69.48 GiB | tps 1556.04(194.50/gpu) | num_label_tokens 15835
+Training:  64%|██████▍   | 102/160 [1:22:18<1:42:58, 106.53s/step, loss=6.1098, lr=3.00e-04, tps=1556]Training:  64%|██████▍   | 103/160 [1:22:18<1:18:21, 82.48s/step, loss=6.1098, lr=3.00e-04, tps=1556] 2026-05-26 20:22:00 | INFO | root | step 103 | epoch 1 | loss 6.1949 | grad_norm 2.8133 | lr 3.00e-04 | mem 69.48 GiB | tps 1644.73(205.59/gpu) | num_label_tokens 16010
+Training:  64%|██████▍   | 103/160 [1:22:43<1:18:21, 82.48s/step, loss=6.1949, lr=3.00e-04, tps=1645]Training:  65%|██████▌   | 104/160 [1:22:43<1:00:52, 65.22s/step, loss=6.1949, lr=3.00e-04, tps=1645]2026-05-26 20:22:26 | INFO | root | step 104 | epoch 1 | loss 6.1040 | grad_norm 2.7415 | lr 3.00e-04 | mem 69.48 GiB | tps 1592.39(199.05/gpu) | num_label_tokens 16076
+Training:  65%|██████▌   | 104/160 [1:23:09<1:00:52, 65.22s/step, loss=6.1040, lr=3.00e-04, tps=1592]Training:  66%|██████▌   | 105/160 [1:23:09<48:59, 53.45s/step, loss=6.1040, lr=3.00e-04, tps=1592]  2026-05-26 20:22:50 | INFO | root | step 105 | epoch 1 | loss 6.1617 | grad_norm 2.3114 | lr 3.00e-04 | mem 69.48 GiB | tps 1665.63(208.20/gpu) | num_label_tokens 16160
+Training:  66%|██████▌   | 105/160 [1:23:34<48:59, 53.45s/step, loss=6.1617, lr=3.00e-04, tps=1666]Training:  66%|██████▋   | 106/160 [1:23:34<40:19, 44.81s/step, loss=6.1617, lr=3.00e-04, tps=1666]2026-05-26 20:23:17 | INFO | root | step 106 | epoch 1 | loss 6.1602 | grad_norm 2.7093 | lr 3.00e-04 | mem 69.48 GiB | tps 1485.36(185.67/gpu) | num_label_tokens 15559
+Training:  66%|██████▋   | 106/160 [1:24:01<40:19, 44.81s/step, loss=6.1602, lr=3.00e-04, tps=1485]Training:  67%|██████▋   | 107/160 [1:24:01<34:48, 39.40s/step, loss=6.1602, lr=3.00e-04, tps=1485]2026-05-26 20:23:42 | INFO | root | step 107 | epoch 1 | loss 6.1530 | grad_norm 2.5103 | lr 3.00e-04 | mem 69.48 GiB | tps 1562.96(195.37/gpu) | num_label_tokens 15357
+Training:  67%|██████▋   | 107/160 [1:24:26<34:48, 39.40s/step, loss=6.1530, lr=3.00e-04, tps=1563]Training:  68%|██████▊   | 108/160 [1:24:26<30:24, 35.09s/step, loss=6.1530, lr=3.00e-04, tps=1563]2026-05-26 20:24:07 | INFO | root | step 108 | epoch 1 | loss 6.1745 | grad_norm 2.7264 | lr 3.00e-04 | mem 69.48 GiB | tps 1635.77(204.47/gpu) | num_label_tokens 16167
+Training:  68%|██████▊   | 108/160 [1:24:51<30:24, 35.09s/step, loss=6.1745, lr=3.00e-04, tps=1636]Training:  68%|██████▊   | 109/160 [1:24:51<27:16, 32.09s/step, loss=6.1745, lr=3.00e-04, tps=1636]2026-05-26 20:24:33 | INFO | root | step 109 | epoch 1 | loss 6.1115 | grad_norm 2.7612 | lr 3.00e-04 | mem 69.48 GiB | tps 1572.73(196.59/gpu) | num_label_tokens 15810
+Training:  68%|██████▊   | 109/160 [1:25:17<27:16, 32.09s/step, loss=6.1115, lr=3.00e-04, tps=1573]Training:  69%|██████▉   | 110/160 [1:25:17<25:09, 30.19s/step, loss=6.1115, lr=3.00e-04, tps=1573]2026-05-26 20:24:58 | INFO | root | step 110 | epoch 1 | loss 6.1366 | grad_norm 2.9224 | lr 3.00e-04 | mem 69.48 GiB | tps 1567.22(195.90/gpu) | num_label_tokens 15319
+Training:  69%|██████▉   | 110/160 [1:25:42<25:09, 30.19s/step, loss=6.1366, lr=3.00e-04, tps=1567]Training:  69%|██████▉   | 111/160 [1:25:42<23:30, 28.78s/step, loss=6.1366, lr=3.00e-04, tps=1567]2026-05-26 20:25:24 | INFO | root | step 111 | epoch 1 | loss 6.1593 | grad_norm 2.3073 | lr 3.00e-04 | mem 69.48 GiB | tps 1615.11(201.89/gpu) | num_label_tokens 16239
+Training:  69%|██████▉   | 111/160 [1:26:08<23:30, 28.78s/step, loss=6.1593, lr=3.00e-04, tps=1615]Training:  70%|███████   | 112/160 [1:26:08<22:14, 27.81s/step, loss=6.1593, lr=3.00e-04, tps=1615]2026-05-26 20:25:49 | INFO | root | step 112 | epoch 1 | loss 6.0988 | grad_norm 3.0594 | lr 3.00e-04 | mem 69.48 GiB | tps 1525.81(190.73/gpu) | num_label_tokens 15059
+Training:  70%|███████   | 112/160 [1:26:33<22:14, 27.81s/step, loss=6.0988, lr=3.00e-04, tps=1526]Training:  71%|███████   | 113/160 [1:26:33<21:14, 27.12s/step, loss=6.0988, lr=3.00e-04, tps=1526]2026-05-26 20:26:15 | INFO | root | step 113 | epoch 1 | loss 6.0862 | grad_norm 2.4878 | lr 3.00e-04 | mem 69.48 GiB | tps 1604.31(200.54/gpu) | num_label_tokens 16072
+Training:  71%|███████   | 113/160 [1:26:59<21:14, 27.12s/step, loss=6.0862, lr=3.00e-04, tps=1604]Training:  71%|███████▏  | 114/160 [1:26:59<20:29, 26.72s/step, loss=6.0862, lr=3.00e-04, tps=1604]2026-05-26 20:26:40 | INFO | root | step 114 | epoch 1 | loss 6.1355 | grad_norm 2.6104 | lr 3.00e-04 | mem 69.48 GiB | tps 1632.94(204.12/gpu) | num_label_tokens 15919
+Training:  71%|███████▏  | 114/160 [1:27:24<20:29, 26.72s/step, loss=6.1355, lr=3.00e-04, tps=1633]Training:  72%|███████▏  | 115/160 [1:27:24<19:38, 26.20s/step, loss=6.1355, lr=3.00e-04, tps=1633]2026-05-26 20:27:07 | INFO | root | step 115 | epoch 1 | loss 6.1952 | grad_norm 2.8503 | lr 3.00e-04 | mem 69.48 GiB | tps 1615.38(201.92/gpu) | num_label_tokens 16764
+Training:  72%|███████▏  | 115/160 [1:27:50<19:38, 26.20s/step, loss=6.1952, lr=3.00e-04, tps=1615]Training:  72%|███████▎  | 116/160 [1:27:50<19:14, 26.24s/step, loss=6.1952, lr=3.00e-04, tps=1615]2026-05-26 20:27:32 | INFO | root | step 116 | epoch 1 | loss 6.0808 | grad_norm 2.9152 | lr 3.00e-04 | mem 69.48 GiB | tps 1653.94(206.74/gpu) | num_label_tokens 16405
+Training:  72%|███████▎  | 116/160 [1:28:16<19:14, 26.24s/step, loss=6.0808, lr=3.00e-04, tps=1654]Training:  73%|███████▎  | 117/160 [1:28:16<18:35, 25.95s/step, loss=6.0808, lr=3.00e-04, tps=1654]2026-05-26 20:27:58 | INFO | root | step 117 | epoch 1 | loss 6.1921 | grad_norm 2.7857 | lr 3.00e-04 | mem 69.48 GiB | tps 1584.90(198.11/gpu) | num_label_tokens 16148
+Training:  73%|███████▎  | 117/160 [1:28:41<18:35, 25.95s/step, loss=6.1921, lr=3.00e-04, tps=1585]Training:  74%|███████▍  | 118/160 [1:28:41<18:08, 25.91s/step, loss=6.1921, lr=3.00e-04, tps=1585]2026-05-26 20:28:23 | INFO | root | step 118 | epoch 1 | loss 6.1398 | grad_norm 2.7042 | lr 3.00e-04 | mem 69.48 GiB | tps 1557.59(194.70/gpu) | num_label_tokens 15159
+Training:  74%|███████▍  | 118/160 [1:29:07<18:08, 25.91s/step, loss=6.1398, lr=3.00e-04, tps=1558]Training:  74%|███████▍  | 119/160 [1:29:07<17:38, 25.82s/step, loss=6.1398, lr=3.00e-04, tps=1558]2026-05-26 20:28:49 | INFO | root | step 119 | epoch 1 | loss 6.1205 | grad_norm 2.7897 | lr 3.00e-04 | mem 69.48 GiB | tps 1495.87(186.98/gpu) | num_label_tokens 15260
+Training:  74%|███████▍  | 119/160 [1:29:33<17:38, 25.82s/step, loss=6.1205, lr=3.00e-04, tps=1496]Training:  75%|███████▌  | 120/160 [1:29:33<17:16, 25.92s/step, loss=6.1205, lr=3.00e-04, tps=1496]2026-05-26 20:35:13 | INFO | root | [val] name "default" | step 119 | epoch 1 | loss 6.0546 | lr 3.00e-04 | num_label_tokens 1231570
+2026-05-26 20:35:40 | INFO | root | step 120 | epoch 1 | loss 6.0945 | grad_norm 2.5389 | lr 3.00e-04 | mem 69.48 GiB | tps 99.98(12.50/gpu) | num_label_tokens 15687
+Training:  75%|███████▌  | 120/160 [1:36:23<17:16, 25.92s/step, loss=6.0945, lr=3.00e-04, tps=100] Training:  76%|███████▌  | 121/160 [1:36:23<1:31:46, 141.20s/step, loss=6.0945, lr=3.00e-04, tps=100]2026-05-26 20:36:05 | INFO | root | step 121 | epoch 1 | loss 6.1020 | grad_norm 2.3865 | lr 3.00e-04 | mem 69.48 GiB | tps 1621.60(202.70/gpu) | num_label_tokens 15887
+Training:  76%|███████▌  | 121/160 [1:36:49<1:31:46, 141.20s/step, loss=6.1020, lr=3.00e-04, tps=1622]Training:  76%|███████▋  | 122/160 [1:36:49<1:07:21, 106.37s/step, loss=6.1020, lr=3.00e-04, tps=1622]2026-05-26 20:36:31 | INFO | root | step 122 | epoch 1 | loss 6.0622 | grad_norm 3.1304 | lr 3.00e-04 | mem 69.48 GiB | tps 1542.12(192.77/gpu) | num_label_tokens 15811
+Training:  76%|███████▋  | 122/160 [1:37:15<1:07:21, 106.37s/step, loss=6.0622, lr=3.00e-04, tps=1542]Training:  77%|███████▋  | 123/160 [1:37:15<50:49, 82.43s/step, loss=6.0622, lr=3.00e-04, tps=1542]   2026-05-26 20:36:56 | INFO | root | step 123 | epoch 1 | loss 6.1371 | grad_norm 3.0263 | lr 3.00e-04 | mem 69.48 GiB | tps 1591.57(198.95/gpu) | num_label_tokens 15568
+Training:  77%|███████▋  | 123/160 [1:37:40<50:49, 82.43s/step, loss=6.1371, lr=3.00e-04, tps=1592]Training:  78%|███████▊  | 124/160 [1:37:40<39:09, 65.27s/step, loss=6.1371, lr=3.00e-04, tps=1592]2026-05-26 20:37:22 | INFO | root | step 124 | epoch 1 | loss 6.1136 | grad_norm 2.7321 | lr 3.00e-04 | mem 69.48 GiB | tps 1622.43(202.80/gpu) | num_label_tokens 15839
+Training:  78%|███████▊  | 124/160 [1:38:05<39:09, 65.27s/step, loss=6.1136, lr=3.00e-04, tps=1622]Training:  78%|███████▊  | 125/160 [1:38:05<31:02, 53.22s/step, loss=6.1136, lr=3.00e-04, tps=1622]2026-05-26 20:37:48 | INFO | root | step 125 | epoch 1 | loss 6.1280 | grad_norm 2.5999 | lr 3.00e-04 | mem 69.48 GiB | tps 1551.13(193.89/gpu) | num_label_tokens 15839
+Training:  78%|███████▊  | 125/160 [1:38:32<31:02, 53.22s/step, loss=6.1280, lr=3.00e-04, tps=1551]Training:  79%|███████▉  | 126/160 [1:38:32<25:37, 45.21s/step, loss=6.1280, lr=3.00e-04, tps=1551]2026-05-26 20:38:14 | INFO | root | step 126 | epoch 1 | loss 6.0954 | grad_norm 2.2446 | lr 3.00e-04 | mem 69.48 GiB | tps 1568.73(196.09/gpu) | num_label_tokens 15728
+Training:  79%|███████▉  | 126/160 [1:38:58<25:37, 45.21s/step, loss=6.0954, lr=3.00e-04, tps=1569]Training:  79%|███████▉  | 127/160 [1:38:58<21:39, 39.39s/step, loss=6.0954, lr=3.00e-04, tps=1569]2026-05-26 20:38:39 | INFO | root | step 127 | epoch 1 | loss 6.0861 | grad_norm 2.3438 | lr 3.00e-04 | mem 69.48 GiB | tps 1557.95(194.74/gpu) | num_label_tokens 15261
+Training:  79%|███████▉  | 127/160 [1:39:23<21:39, 39.39s/step, loss=6.0861, lr=3.00e-04, tps=1558]Training:  80%|████████  | 128/160 [1:39:23<18:45, 35.16s/step, loss=6.0861, lr=3.00e-04, tps=1558]2026-05-26 20:39:05 | INFO | root | step 128 | epoch 1 | loss 6.0155 | grad_norm 2.8439 | lr 3.00e-04 | mem 69.48 GiB | tps 1588.23(198.53/gpu) | num_label_tokens 15661
+Training:  80%|████████  | 128/160 [1:39:49<18:45, 35.16s/step, loss=6.0155, lr=3.00e-04, tps=1588]Training:  81%|████████  | 129/160 [1:39:49<16:40, 32.28s/step, loss=6.0155, lr=3.00e-04, tps=1588]2026-05-26 20:39:31 | INFO | root | step 129 | epoch 1 | loss 6.0306 | grad_norm 2.3955 | lr 3.00e-04 | mem 69.48 GiB | tps 1509.15(188.64/gpu) | num_label_tokens 15521
+Training:  81%|████████  | 129/160 [1:40:15<16:40, 32.28s/step, loss=6.0306, lr=3.00e-04, tps=1509]Training:  81%|████████▏ | 130/160 [1:40:15<15:16, 30.54s/step, loss=6.0306, lr=3.00e-04, tps=1509]2026-05-26 20:39:57 | INFO | root | step 130 | epoch 1 | loss 6.0734 | grad_norm 2.5998 | lr 3.00e-04 | mem 69.48 GiB | tps 1550.28(193.79/gpu) | num_label_tokens 15363
+Training:  81%|████████▏ | 130/160 [1:40:41<15:16, 30.54s/step, loss=6.0734, lr=3.00e-04, tps=1550]Training:  82%|████████▏ | 131/160 [1:40:41<14:02, 29.07s/step, loss=6.0734, lr=3.00e-04, tps=1550]2026-05-26 20:40:22 | INFO | root | step 131 | epoch 1 | loss 6.0644 | grad_norm 2.6678 | lr 3.00e-04 | mem 69.48 GiB | tps 1606.23(200.78/gpu) | num_label_tokens 15662
+Training:  82%|████████▏ | 131/160 [1:41:06<14:02, 29.07s/step, loss=6.0644, lr=3.00e-04, tps=1606]Training:  82%|████████▎ | 132/160 [1:41:06<13:00, 27.89s/step, loss=6.0644, lr=3.00e-04, tps=1606]2026-05-26 20:40:47 | INFO | root | step 132 | epoch 1 | loss 6.0761 | grad_norm 2.3663 | lr 3.00e-04 | mem 69.48 GiB | tps 1572.01(196.50/gpu) | num_label_tokens 15526
+Training:  82%|████████▎ | 132/160 [1:41:31<13:00, 27.89s/step, loss=6.0761, lr=3.00e-04, tps=1572]Training:  83%|████████▎ | 133/160 [1:41:31<12:10, 27.06s/step, loss=6.0761, lr=3.00e-04, tps=1572]2026-05-26 20:41:14 | INFO | root | step 133 | epoch 1 | loss 6.0292 | grad_norm 3.0611 | lr 3.00e-04 | mem 69.48 GiB | tps 1569.10(196.14/gpu) | num_label_tokens 16381
+Training:  83%|████████▎ | 133/160 [1:41:57<12:10, 27.06s/step, loss=6.0292, lr=3.00e-04, tps=1569]Training:  84%|████████▍ | 134/160 [1:41:57<11:38, 26.88s/step, loss=6.0292, lr=3.00e-04, tps=1569]2026-05-26 20:41:39 | INFO | root | step 134 | epoch 1 | loss 6.0140 | grad_norm 3.4106 | lr 3.00e-04 | mem 69.48 GiB | tps 1522.94(190.37/gpu) | num_label_tokens 15324
+Training:  84%|████████▍ | 134/160 [1:42:23<11:38, 26.88s/step, loss=6.0140, lr=3.00e-04, tps=1523]Training:  84%|████████▍ | 135/160 [1:42:23<11:04, 26.57s/step, loss=6.0140, lr=3.00e-04, tps=1523]2026-05-26 20:42:05 | INFO | root | step 135 | epoch 1 | loss 6.0898 | grad_norm 2.2871 | lr 3.00e-04 | mem 69.48 GiB | tps 1584.66(198.08/gpu) | num_label_tokens 16183
+Training:  84%|████████▍ | 135/160 [1:42:49<11:04, 26.57s/step, loss=6.0898, lr=3.00e-04, tps=1585]Training:  85%|████████▌ | 136/160 [1:42:49<10:32, 26.35s/step, loss=6.0898, lr=3.00e-04, tps=1585]2026-05-26 20:42:31 | INFO | root | step 136 | epoch 1 | loss 6.0476 | grad_norm 2.6609 | lr 3.00e-04 | mem 69.48 GiB | tps 1589.95(198.74/gpu) | num_label_tokens 15550
+Training:  85%|████████▌ | 136/160 [1:43:14<10:32, 26.35s/step, loss=6.0476, lr=3.00e-04, tps=1590]Training:  86%|████████▌ | 137/160 [1:43:14<09:58, 26.02s/step, loss=6.0476, lr=3.00e-04, tps=1590]2026-05-26 20:42:57 | INFO | root | step 137 | epoch 1 | loss 5.9654 | grad_norm 3.1660 | lr 3.00e-04 | mem 69.48 GiB | tps 1562.26(195.28/gpu) | num_label_tokens 15713
+Training:  86%|████████▌ | 137/160 [1:43:40<09:58, 26.02s/step, loss=5.9654, lr=3.00e-04, tps=1562]Training:  86%|████████▋ | 138/160 [1:43:40<09:32, 26.01s/step, loss=5.9654, lr=3.00e-04, tps=1562]2026-05-26 20:43:22 | INFO | root | step 138 | epoch 1 | loss 6.0847 | grad_norm 2.2602 | lr 3.00e-04 | mem 69.48 GiB | tps 1580.95(197.62/gpu) | num_label_tokens 15823
+Training:  86%|████████▋ | 138/160 [1:44:06<09:32, 26.01s/step, loss=6.0847, lr=3.00e-04, tps=1581]Training:  87%|████████▋ | 139/160 [1:44:06<09:05, 25.99s/step, loss=6.0847, lr=3.00e-04, tps=1581]2026-05-26 20:43:49 | INFO | root | step 139 | epoch 1 | loss 6.0531 | grad_norm 2.5928 | lr 3.00e-04 | mem 69.48 GiB | tps 1579.37(197.42/gpu) | num_label_tokens 16423
+Training:  87%|████████▋ | 139/160 [1:44:33<09:05, 25.99s/step, loss=6.0531, lr=3.00e-04, tps=1579]Training:  88%|████████▊ | 140/160 [1:44:33<08:43, 26.20s/step, loss=6.0531, lr=3.00e-04, tps=1579]2026-05-26 20:50:16 | INFO | root | [val] name "default" | step 139 | epoch 1 | loss 5.9684 | lr 3.00e-04 | num_label_tokens 1231570
+2026-05-26 20:50:42 | INFO | root | step 140 | epoch 1 | loss 6.0536 | grad_norm 2.7908 | lr 3.00e-04 | mem 69.48 GiB | tps 94.65(11.83/gpu) | num_label_tokens 15110
+Training:  88%|████████▊ | 140/160 [1:51:25<08:43, 26.20s/step, loss=6.0536, lr=3.00e-04, tps=95]  Training:  88%|████████▊ | 141/160 [1:51:25<44:59, 142.07s/step, loss=6.0536, lr=3.00e-04, tps=95]2026-05-26 20:51:07 | INFO | root | step 141 | epoch 1 | loss 5.9643 | grad_norm 2.4114 | lr 3.00e-04 | mem 69.48 GiB | tps 1544.11(193.01/gpu) | num_label_tokens 15618
+Training:  88%|████████▊ | 141/160 [1:51:51<44:59, 142.07s/step, loss=5.9643, lr=3.00e-04, tps=1544]Training:  89%|████████▉ | 142/160 [1:51:51<32:09, 107.19s/step, loss=5.9643, lr=3.00e-04, tps=1544]2026-05-26 20:51:34 | INFO | root | step 142 | epoch 1 | loss 5.9642 | grad_norm 2.5702 | lr 3.00e-04 | mem 69.48 GiB | tps 1563.21(195.40/gpu) | num_label_tokens 16335
+Training:  89%|████████▉ | 142/160 [1:52:18<32:09, 107.19s/step, loss=5.9642, lr=3.00e-04, tps=1563]Training:  89%|████████▉ | 143/160 [1:52:18<23:30, 82.99s/step, loss=5.9642, lr=3.00e-04, tps=1563] 2026-05-26 20:51:59 | INFO | root | step 143 | epoch 1 | loss 6.0127 | grad_norm 2.5750 | lr 3.00e-04 | mem 69.48 GiB | tps 1588.62(198.58/gpu) | num_label_tokens 15680
+Training:  89%|████████▉ | 143/160 [1:52:43<23:30, 82.99s/step, loss=6.0127, lr=3.00e-04, tps=1589]Training:  90%|█████████ | 144/160 [1:52:43<17:30, 65.65s/step, loss=6.0127, lr=3.00e-04, tps=1589]2026-05-26 20:52:24 | INFO | root | step 144 | epoch 1 | loss 6.0050 | grad_norm 2.1003 | lr 3.00e-04 | mem 69.48 GiB | tps 1613.68(201.71/gpu) | num_label_tokens 15896
+Training:  90%|█████████ | 144/160 [1:53:08<17:30, 65.65s/step, loss=6.0050, lr=3.00e-04, tps=1614]Training:  91%|█████████ | 145/160 [1:53:08<13:23, 53.55s/step, loss=6.0050, lr=3.00e-04, tps=1614]2026-05-26 20:52:50 | INFO | root | step 145 | epoch 1 | loss 5.9768 | grad_norm 2.3340 | lr 3.00e-04 | mem 69.48 GiB | tps 1618.05(202.26/gpu) | num_label_tokens 15929
+Training:  91%|█████████ | 145/160 [1:53:33<13:23, 53.55s/step, loss=5.9768, lr=3.00e-04, tps=1618]Training:  91%|█████████▏| 146/160 [1:53:33<10:30, 45.05s/step, loss=5.9768, lr=3.00e-04, tps=1618]2026-05-26 20:53:17 | INFO | root | step 146 | epoch 1 | loss 6.0154 | grad_norm 2.3242 | lr 3.00e-04 | mem 69.48 GiB | tps 1465.73(183.22/gpu) | num_label_tokens 15276
+Training:  91%|█████████▏| 146/160 [1:54:00<10:30, 45.05s/step, loss=6.0154, lr=3.00e-04, tps=1466]Training:  92%|█████████▏| 147/160 [1:54:00<08:35, 39.64s/step, loss=6.0154, lr=3.00e-04, tps=1466]2026-05-26 20:53:42 | INFO | root | step 147 | epoch 1 | loss 6.0291 | grad_norm 2.9364 | lr 3.00e-04 | mem 69.48 GiB | tps 1650.21(206.28/gpu) | num_label_tokens 16475
+Training:  92%|█████████▏| 147/160 [1:54:26<08:35, 39.64s/step, loss=6.0291, lr=3.00e-04, tps=1650]Training:  92%|█████████▎| 148/160 [1:54:26<07:03, 35.30s/step, loss=6.0291, lr=3.00e-04, tps=1650]2026-05-26 20:54:08 | INFO | root | step 148 | epoch 1 | loss 6.0201 | grad_norm 2.2646 | lr 3.00e-04 | mem 69.48 GiB | tps 1573.88(196.74/gpu) | num_label_tokens 15833
+Training:  92%|█████████▎| 148/160 [1:54:52<07:03, 35.30s/step, loss=6.0201, lr=3.00e-04, tps=1574]Training:  93%|█████████▎| 149/160 [1:54:52<05:57, 32.48s/step, loss=6.0201, lr=3.00e-04, tps=1574]2026-05-26 20:54:33 | INFO | root | step 149 | epoch 1 | loss 6.0271 | grad_norm 2.5304 | lr 3.00e-04 | mem 69.48 GiB | tps 1597.26(199.66/gpu) | num_label_tokens 15551
+Training:  93%|█████████▎| 149/160 [1:55:17<05:57, 32.48s/step, loss=6.0271, lr=3.00e-04, tps=1597]Training:  94%|█████████▍| 150/160 [1:55:17<05:03, 30.31s/step, loss=6.0271, lr=3.00e-04, tps=1597]2026-05-26 20:55:00 | INFO | root | step 150 | epoch 1 | loss 6.0190 | grad_norm 2.4726 | lr 3.00e-04 | mem 69.48 GiB | tps 1508.40(188.55/gpu) | num_label_tokens 15709
+Training:  94%|█████████▍| 150/160 [1:55:43<05:03, 30.31s/step, loss=6.0190, lr=3.00e-04, tps=1508]Training:  94%|█████████▍| 151/160 [1:55:43<04:22, 29.19s/step, loss=6.0190, lr=3.00e-04, tps=1508]2026-05-26 20:55:25 | INFO | root | step 151 | epoch 1 | loss 6.0738 | grad_norm 2.5706 | lr 3.00e-04 | mem 69.48 GiB | tps 1605.71(200.71/gpu) | num_label_tokens 16148
+Training:  94%|█████████▍| 151/160 [1:56:09<04:22, 29.19s/step, loss=6.0738, lr=3.00e-04, tps=1606]Training:  95%|█████████▌| 152/160 [1:56:09<03:45, 28.19s/step, loss=6.0738, lr=3.00e-04, tps=1606]2026-05-26 20:55:51 | INFO | root | step 152 | epoch 1 | loss 5.9731 | grad_norm 2.1892 | lr 3.00e-04 | mem 69.48 GiB | tps 1603.95(200.49/gpu) | num_label_tokens 15739
+Training:  95%|█████████▌| 152/160 [1:56:34<03:45, 28.19s/step, loss=5.9731, lr=3.00e-04, tps=1604]Training:  96%|█████████▌| 153/160 [1:56:34<03:10, 27.27s/step, loss=5.9731, lr=3.00e-04, tps=1604]2026-05-26 20:56:16 | INFO | root | step 153 | epoch 1 | loss 6.0173 | grad_norm 2.9538 | lr 3.00e-04 | mem 69.48 GiB | tps 1615.76(201.97/gpu) | num_label_tokens 15596
+Training:  96%|█████████▌| 153/160 [1:57:00<03:10, 27.27s/step, loss=6.0173, lr=3.00e-04, tps=1616]Training:  96%|█████████▋| 154/160 [1:57:00<02:39, 26.64s/step, loss=6.0173, lr=3.00e-04, tps=1616]2026-05-26 20:56:42 | INFO | root | step 154 | epoch 1 | loss 5.9811 | grad_norm 2.4940 | lr 3.00e-04 | mem 69.48 GiB | tps 1541.14(192.64/gpu) | num_label_tokens 15854
+Training:  96%|█████████▋| 154/160 [1:57:26<02:39, 26.64s/step, loss=5.9811, lr=3.00e-04, tps=1541]Training:  97%|█████████▋| 155/160 [1:57:26<02:12, 26.54s/step, loss=5.9811, lr=3.00e-04, tps=1541]2026-05-26 20:57:07 | INFO | root | step 155 | epoch 1 | loss 6.0556 | grad_norm 2.0868 | lr 3.00e-04 | mem 69.48 GiB | tps 1495.96(186.99/gpu) | num_label_tokens 14719
+Training:  97%|█████████▋| 155/160 [1:57:51<02:12, 26.54s/step, loss=6.0556, lr=3.00e-04, tps=1496]Training:  98%|█████████▊| 156/160 [1:57:51<01:44, 26.14s/step, loss=6.0556, lr=3.00e-04, tps=1496]2026-05-26 21:03:34 | INFO | root | [val] name "default" | step 155 | epoch 1 | loss 5.9275 | lr 3.00e-04 | num_label_tokens 1231570
+2026-05-26 21:03:59 | INFO | root | step 156 | epoch 2 | loss 5.9203 | grad_norm 2.6302 | lr 3.00e-04 | mem 69.48 GiB | tps 96.32(12.04/gpu) | num_label_tokens 15537
+Training:  98%|█████████▊| 156/160 [2:04:42<01:44, 26.14s/step, loss=5.9203, lr=3.00e-04, tps=96]  Training:  98%|█████████▊| 157/160 [2:04:42<07:05, 141.69s/step, loss=5.9203, lr=3.00e-04, tps=96]2026-05-26 21:04:24 | INFO | root | step 157 | epoch 2 | loss 5.9012 | grad_norm 1.9980 | lr 3.00e-04 | mem 69.48 GiB | tps 1618.81(202.35/gpu) | num_label_tokens 16243
+Training:  98%|█████████▊| 157/160 [2:05:08<07:05, 141.69s/step, loss=5.9012, lr=3.00e-04, tps=1619]Training:  99%|█████████▉| 158/160 [2:05:08<03:33, 106.81s/step, loss=5.9012, lr=3.00e-04, tps=1619]2026-05-26 21:04:51 | INFO | root | step 158 | epoch 2 | loss 5.9050 | grad_norm 2.6394 | lr 3.00e-04 | mem 69.48 GiB | tps 1454.65(181.83/gpu) | num_label_tokens 15473
+Training:  99%|█████████▉| 158/160 [2:05:35<03:33, 106.81s/step, loss=5.9050, lr=3.00e-04, tps=1455]Training:  99%|█████████▉| 159/160 [2:05:35<01:22, 82.91s/step, loss=5.9050, lr=3.00e-04, tps=1455] 2026-05-26 21:05:17 | INFO | root | step 159 | epoch 2 | loss 5.9495 | grad_norm 2.5879 | lr 3.00e-04 | mem 69.48 GiB | tps 1534.46(191.81/gpu) | num_label_tokens 15373
+Training:  99%|█████████▉| 159/160 [2:06:01<01:22, 82.91s/step, loss=5.9495, lr=3.00e-04, tps=1534]Training: 100%|██████████| 160/160 [2:06:01<00:00, 65.71s/step, loss=5.9495, lr=3.00e-04, tps=1534]2026-05-26 21:11:44 | INFO | root | [val] name "default" | step 159 | epoch 2 | loss 5.9303 | lr 3.00e-04 | num_label_tokens 1231570
+Training: 100%|██████████| 160/160 [2:12:28<00:00, 49.68s/step, loss=5.9495, lr=3.00e-04, tps=1534]
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml

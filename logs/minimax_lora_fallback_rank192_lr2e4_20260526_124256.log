@@ -1,0 +1,1392 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 26.02 (build 305635159)
+PyTorch Version 2.11.0a0+eb65b36
+Container image Copyright (c) 2025, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+GOVERNING TERMS: The software and materials are governed by the NVIDIA Software License Agreement
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-software-license-agreement/)
+and the Product-Specific Terms for NVIDIA AI Products
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/product-specific-terms-for-ai-products/).
+
+NOTE: CUDA Forward Compatibility mode ENABLED.
+  Using CUDA 13.1 driver version 590.48.01 with kernel driver version 580.126.09.
+  See https://docs.nvidia.com/deploy/cuda-compatibility/ for details.
+
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+W0526 12:43:14.744000 1 torch/distributed/run.py:851] 
+W0526 12:43:14.744000 1 torch/distributed/run.py:851] *****************************************
+W0526 12:43:14.744000 1 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0526 12:43:14.744000 1 torch/distributed/run.py:851] *****************************************
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+> initializing torch distributed with 8 workers.
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+2026-05-26 12:43:30 | INFO | nemo_automodel.components.loggers.log_utils | Setting logging level to 20
+2026-05-26 12:43:30 | INFO | nemo_automodel.shared.te_patches | Applied FusedAdam QuantizedTensor monkey-patch.
+2026-05-26 12:43:30 | INFO | root | Experiment_details:
+2026-05-26 12:43:30 | INFO | root | Timestamp: '2026-05-26T12:43:30'
+2026-05-26 12:43:30 | INFO | root | User: root
+2026-05-26 12:43:30 | INFO | root | Host: shadecloud
+2026-05-26 12:43:30 | INFO | root | World size: 8
+2026-05-26 12:43:30 | INFO | root | Backend: nccl
+2026-05-26 12:43:30 | INFO | root | Recipe: TrainFinetuneRecipeForNextTokenPrediction
+2026-05-26 12:43:30 | INFO | root | Model name: MiniMaxAI/MiniMax-M2.7
+recipe: TrainFinetuneRecipeForNextTokenPrediction
+seed: 1234
+step_scheduler:
+  global_batch_size: 512
+  local_batch_size: 4
+  ckpt_every_steps: 1000
+  val_every_steps: 1000
+  max_steps: 160
+distributed:
+  strategy: fsdp2
+  tp_size: 1
+  cp_size: 1
+  pp_size: 1
+  dp_replicate_size: 1
+  ep_size: 8
+  sequence_parallel: false
+  moe:
+    reshard_after_forward: false
+    wrap_outer_model: false
+  activation_checkpointing: true
+dist_env:
+  backend: nccl
+  timeout_minutes: 10
+model:
+  _target_: nemo_automodel.NeMoAutoModelForCausalLM.from_pretrained
+  pretrained_model_name_or_path: MiniMaxAI/MiniMax-M2.7
+  trust_remote_code: true
+  backend:
+    _target_: nemo_automodel.components.models.common.BackendConfig
+    attn: te
+    linear: torch
+    rms_norm: torch_fp32
+    rope_fusion: true
+    dispatcher: deepep
+    experts: gmm
+    fake_balanced_gate: false
+    enable_hf_state_dict_adapter: true
+    enable_fsdp_optimizations: true
+  config:
+    pad_token_id: 0
+peft:
+  _target_: nemo_automodel.components._peft.lora.PeftConfig
+  match_all_linear: true
+  dim: 192
+  alpha: 384
+  use_triton: true
+checkpoint:
+  enabled: false
+loss_fn:
+  _target_: nemo_automodel.components.loss.masked_ce.MaskedCrossEntropy
+dataset:
+  _target_: nemo_automodel.components.datasets.llm.hellaswag.HellaSwag
+  path_or_dataset: rowan/hellaswag
+  split: train
+packed_sequence:
+  packed_sequence_size: 0
+dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  collate_fn:
+    _target_: nemo_automodel.components.datasets.utils.default_collater
+    pad_seq_len_divisible: 160
+  shuffle: true
+validation_dataset:
+  _target_: nemo_automodel.components.datasets.llm.hellaswag.HellaSwag
+  path_or_dataset: rowan/hellaswag
+  split: train
+validation_dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  collate_fn:
+    _target_: nemo_automodel.components.datasets.utils.default_collater
+    pad_seq_len_divisible: 160
+  shuffle: true
+  drop_last: true
+optimizer:
+  _target_: torch.optim.Adam
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-08
+  lr: 0.0002
+  weight_decay: 0
+master-port: 29620
+moe_metrics:
+  enabled: true
+  mode: brief
+lr_scheduler:
+  lr_decay_style: cosine
+  lr_warmup_steps: 16
+  min_lr: 2.0e-05
+2026-05-26 12:43:30 | INFO | root | Library versions:
+2026-05-26 12:43:30 | INFO | root | - nemo_automodel: 0.4.0 (/opt/Automodel/nemo_automodel/__init__.py)
+2026-05-26 12:43:30 | INFO | root | - transformers: 5.5.0 (/opt/venv/lib/python3.12/site-packages/transformers/__init__.py)
+2026-05-26 12:43:30 | INFO | root | - torch: 2.11.0a0+eb65b36914.nv26.02 CUDA 13.1
+2026-05-26 12:43:30 | INFO | root | No clip_grad_norm.max_norm specified in config, using default value of 1.0
+Instantiation failed for `from_pretrained`
+Accepted signature : (pretrained_model_name_or_path, *model_args, use_liger_kernel: bool = True, use_sdpa_patching: bool = True, sdpa_method: Optional[List[Union[torch.nn.attention._SDPBackend, str]]] = None, torch_dtype='auto', attn_implementation: str = 'flash_attention_2', quantization_config=None, force_hf: bool = False, device_mesh: Optional[ForwardRef('DeviceMesh')] = None, moe_mesh: Optional[ForwardRef('DeviceMesh')] = None, tp_plan: Optional[dict] = None, distributed_config: Union[ForwardRef('FSDP2Config'), ForwardRef('MegatronFSDPConfig'), ForwardRef('DDPConfig'), NoneType] = None, pipeline_config: Optional[nemo_automodel.components.distributed.pipelining.config.PipelineConfig] = None, qat_config: Optional[nemo_automodel.components.quantization.qat.QATConfig] = None, moe_config: Optional[nemo_automodel.components.moe.config.MoEParallelizerConfig] = None, activation_checkpointing: bool = False, peft_config: Optional[dict] = None, fp8_config: Optional[ForwardRef('FP8Config')] = None, compile_config: Optional[ForwardRef('CompileConfig')] = None, **kwargs) -> transformers.modeling_utils.PreTrainedModel
+Positional args    : ()
+Keyword args       : {   'activation_checkpointing': True,
+    'backend': BackendConfig(attn='te',
+                             linear='torch',
+                             rms_norm='torch_fp32',
+                             rope_fusion=True,
+                             experts='gmm',
+                             dispatcher='deepep',
+                             dispatcher_num_sms=20,
+                             dispatcher_share_token_dispatcher=True,
+                             dispatcher_async_dispatch=False,
+                             disable_shared_expert_overlap=False,
+                             enable_deepep=None,
+                             fake_balanced_gate=False,
+                             fake_gate_noise=0.0,
+                             enable_hf_state_dict_adapter=True,
+                             enable_fsdp_optimizations=True,
+                             te_fp8=None,
+                             gate_precision=None),
+    'config': {'pad_token_id': '******'},
+    'device_mesh': DeviceMesh((MeshAxisName.PP=1, MeshAxisName.DP_REPLICATE=1, MeshAxisName.DP_SHARD=8, MeshAxisName.CP=1, MeshAxisName.TP=1), 'cuda', stride=(8, 8, 1, 1, 1)),
+    'distributed_config': FSDP2Config(sequence_parallel=False,
+                                      tp_plan=None,
+                                      patch_is_packed_sequence=False,
+                                      mp_policy=MixedPrecisionPolicy(param_dtype=torch.bfloat16,
+                                                                     reduce_dtype=torch.float32,
+                                                                     output_dtype=torch.bfloat16,
+                                                                     cast_forward_inputs=True),
+                                      offload_policy=None,
+                                      autocast_dtype=None,
+                                      activation_checkpointing=False,
+                                      defer_fsdp_grad_sync=True,
+                                      backend='nccl',
+                                      enable_async_tensor_parallel=False,
+                                      enable_compile=False,
+                                      enable_fsdp2_prefetch=False,
+                                      fsdp2_backward_prefetch_depth=2,
+                                      fsdp2_forward_prefetch_depth=1),
+    'has_packed_sequence': False,
+    'moe_config': MoEParallelizerConfig(ignore_router_for_ac=False,
+                                        reshard_after_forward=False,
+                                        lm_head_precision=None,
+                                        wrap_outer_model=False,
+                                        mp_policy=None),
+    'moe_mesh': DeviceMesh((MeshAxisName.EP_SHARD=1, MeshAxisName.EP=8), 'cuda', stride=(8, 1)),
+    'peft_config': PeftConfig(target_modules=[],
+                              exclude_modules=[],
+                              match_all_linear=True,
+                              dim=192,
+                              alpha=384,
+                              use_dora=False,
+                              dropout=0.0,
+                              dropout_position='post',
+                              lora_A_init='xavier',
+                              lora_dtype=None,
+                              use_triton=True,
+                              moe_rank_scaling=False),
+    'pipeline_config': None,
+    'pretrained_model_name_or_path': 'MiniMaxAI/MiniMax-M2.7',
+    'sdpa_method': None,
+    'trust_remote_code': True}
+Exception          : cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+Instantiation failed for `from_pretrained`
+Accepted signature : (pretrained_model_name_or_path, *model_args, use_liger_kernel: bool = True, use_sdpa_patching: bool = True, sdpa_method: Optional[List[Union[torch.nn.attention._SDPBackend, str]]] = None, torch_dtype='auto', attn_implementation: str = 'flash_attention_2', quantization_config=None, force_hf: bool = False, device_mesh: Optional[ForwardRef('DeviceMesh')] = None, moe_mesh: Optional[ForwardRef('DeviceMesh')] = None, tp_plan: Optional[dict] = None, distributed_config: Union[ForwardRef('FSDP2Config'), ForwardRef('MegatronFSDPConfig'), ForwardRef('DDPConfig'), NoneType] = None, pipeline_config: Optional[nemo_automodel.components.distributed.pipelining.config.PipelineConfig] = None, qat_config: Optional[nemo_automodel.components.quantization.qat.QATConfig] = None, moe_config: Optional[nemo_automodel.components.moe.config.MoEParallelizerConfig] = None, activation_checkpointing: bool = False, peft_config: Optional[dict] = None, fp8_config: Optional[ForwardRef('FP8Config')] = None, compile_config: Optional[ForwardRef('CompileConfig')] = None, **kwargs) -> transformers.modeling_utils.PreTrainedModel
+Positional args    : ()
+Keyword args       : {   'activation_checkpointing': True,
+    'backend': BackendConfig(attn='te',
+                             linear='torch',
+                             rms_norm='torch_fp32',
+                             rope_fusion=True,
+                             experts='gmm',
+                             dispatcher='deepep',
+                             dispatcher_num_sms=20,
+                             dispatcher_share_token_dispatcher=True,
+                             dispatcher_async_dispatch=False,
+                             disable_shared_expert_overlap=False,
+                             enable_deepep=None,
+                             fake_balanced_gate=False,
+                             fake_gate_noise=0.0,
+                             enable_hf_state_dict_adapter=True,
+                             enable_fsdp_optimizations=True,
+                             te_fp8=None,
+                             gate_precision=None),
+    'config': {'pad_token_id': '******'},
+    'device_mesh': DeviceMesh((MeshAxisName.PP=1, MeshAxisName.DP_REPLICATE=1, MeshAxisName.DP_SHARD=8, MeshAxisName.CP=1, MeshAxisName.TP=1), 'cuda', stride=(8, 8, 1, 1, 1)),
+    'distributed_config': FSDP2Config(sequence_parallel=False,
+                                      tp_plan=None,
+                                      patch_is_packed_sequence=False,
+                                      mp_policy=MixedPrecisionPolicy(param_dtype=torch.bfloat16,
+                                                                     reduce_dtype=torch.float32,
+                                                                     output_dtype=torch.bfloat16,
+                                                                     cast_forward_inputs=True),
+                                      offload_policy=None,
+                                      autocast_dtype=None,
+                                      activation_checkpointing=False,
+                                      defer_fsdp_grad_sync=True,
+                                      backend='nccl',
+                                      enable_async_tensor_parallel=False,
+                                      enable_compile=False,
+                                      enable_fsdp2_prefetch=False,
+                                      fsdp2_backward_prefetch_depth=2,
+                                      fsdp2_forward_prefetch_depth=1),
+    'has_packed_sequence': False,
+    'moe_config': MoEParallelizerConfig(ignore_router_for_ac=False,
+                                        reshard_after_forward=False,
+                                        lm_head_precision=None,
+                                        wrap_outer_model=False,
+                                        mp_policy=None),
+    'moe_mesh': DeviceMesh((MeshAxisName.EP_SHARD=1, MeshAxisName.EP=8), 'cuda', stride=(8, 1)),
+    'peft_config': PeftConfig(target_modules=[],
+                              exclude_modules=[],
+                              match_all_linear=True,
+                              dim=192,
+                              alpha=384,
+                              use_dora=False,
+                              dropout=0.0,
+                              dropout_position='post',
+                              lora_A_init='xavier',
+                              lora_dtype=None,
+                              use_triton=True,
+                              moe_rank_scaling=False),
+    'pipeline_config': None,
+    'pretrained_model_name_or_path': 'MiniMaxAI/MiniMax-M2.7',
+    'sdpa_method': None,
+    'trust_remote_code': True}
+Exception          : cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+Instantiation failed for `from_pretrained`
+Accepted signature : (pretrained_model_name_or_path, *model_args, use_liger_kernel: bool = True, use_sdpa_patching: bool = True, sdpa_method: Optional[List[Union[torch.nn.attention._SDPBackend, str]]] = None, torch_dtype='auto', attn_implementation: str = 'flash_attention_2', quantization_config=None, force_hf: bool = False, device_mesh: Optional[ForwardRef('DeviceMesh')] = None, moe_mesh: Optional[ForwardRef('DeviceMesh')] = None, tp_plan: Optional[dict] = None, distributed_config: Union[ForwardRef('FSDP2Config'), ForwardRef('MegatronFSDPConfig'), ForwardRef('DDPConfig'), NoneType] = None, pipeline_config: Optional[nemo_automodel.components.distributed.pipelining.config.PipelineConfig] = None, qat_config: Optional[nemo_automodel.components.quantization.qat.QATConfig] = None, moe_config: Optional[nemo_automodel.components.moe.config.MoEParallelizerConfig] = None, activation_checkpointing: bool = False, peft_config: Optional[dict] = None, fp8_config: Optional[ForwardRef('FP8Config')] = None, compile_config: Optional[ForwardRef('CompileConfig')] = None, **kwargs) -> transformers.modeling_utils.PreTrainedModel
+Positional args    : ()
+Keyword args       : {   'activation_checkpointing': True,
+    'backend': BackendConfig(attn='te',
+                             linear='torch',
+                             rms_norm='torch_fp32',
+                             rope_fusion=True,
+                             experts='gmm',
+                             dispatcher='deepep',
+                             dispatcher_num_sms=20,
+                             dispatcher_share_token_dispatcher=True,
+                             dispatcher_async_dispatch=False,
+                             disable_shared_expert_overlap=False,
+                             enable_deepep=None,
+                             fake_balanced_gate=False,
+                             fake_gate_noise=0.0,
+                             enable_hf_state_dict_adapter=True,
+                             enable_fsdp_optimizations=True,
+                             te_fp8=None,
+                             gate_precision=None),
+    'config': {'pad_token_id': '******'},
+    'device_mesh': DeviceMesh((MeshAxisName.PP=1, MeshAxisName.DP_REPLICATE=1, MeshAxisName.DP_SHARD=8, MeshAxisName.CP=1, MeshAxisName.TP=1), 'cuda', stride=(8, 8, 1, 1, 1)),
+    'distributed_config': FSDP2Config(sequence_parallel=False,
+                                      tp_plan=None,
+                                      patch_is_packed_sequence=False,
+                                      mp_policy=MixedPrecisionPolicy(param_dtype=torch.bfloat16,
+                                                                     reduce_dtype=torch.float32,
+                                                                     output_dtype=torch.bfloat16,
+                                                                     cast_forward_inputs=True),
+                                      offload_policy=None,
+                                      autocast_dtype=None,
+                                      activation_checkpointing=False,
+                                      defer_fsdp_grad_sync=True,
+                                      backend='nccl',
+                                      enable_async_tensor_parallel=False,
+                                      enable_compile=False,
+                                      enable_fsdp2_prefetch=False,
+                                      fsdp2_backward_prefetch_depth=2,
+                                      fsdp2_forward_prefetch_depth=1),
+    'has_packed_sequence': False,
+    'moe_config': MoEParallelizerConfig(ignore_router_for_ac=False,
+                                        reshard_after_forward=False,
+                                        lm_head_precision=None,
+                                        wrap_outer_model=False,
+                                        mp_policy=None),
+    'moe_mesh': DeviceMesh((MeshAxisName.EP_SHARD=1, MeshAxisName.EP=8), 'cuda', stride=(8, 1)),
+    'peft_config': PeftConfig(target_modules=[],
+                              exclude_modules=[],
+                              match_all_linear=True,
+                              dim=192,
+                              alpha=384,
+                              use_dora=False,
+                              dropout=0.0,
+                              dropout_position='post',
+                              lora_A_init='xavier',
+                              lora_dtype=None,
+                              use_triton=True,
+                              moe_rank_scaling=False),
+    'pipeline_config': None,
+    'pretrained_model_name_or_path': 'MiniMaxAI/MiniMax-M2.7',
+    'sdpa_method': None,
+    'trust_remote_code': True}
+Exception          : cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+Instantiation failed for `from_pretrained`
+Accepted signature : (pretrained_model_name_or_path, *model_args, use_liger_kernel: bool = True, use_sdpa_patching: bool = True, sdpa_method: Optional[List[Union[torch.nn.attention._SDPBackend, str]]] = None, torch_dtype='auto', attn_implementation: str = 'flash_attention_2', quantization_config=None, force_hf: bool = False, device_mesh: Optional[ForwardRef('DeviceMesh')] = None, moe_mesh: Optional[ForwardRef('DeviceMesh')] = None, tp_plan: Optional[dict] = None, distributed_config: Union[ForwardRef('FSDP2Config'), ForwardRef('MegatronFSDPConfig'), ForwardRef('DDPConfig'), NoneType] = None, pipeline_config: Optional[nemo_automodel.components.distributed.pipelining.config.PipelineConfig] = None, qat_config: Optional[nemo_automodel.components.quantization.qat.QATConfig] = None, moe_config: Optional[nemo_automodel.components.moe.config.MoEParallelizerConfig] = None, activation_checkpointing: bool = False, peft_config: Optional[dict] = None, fp8_config: Optional[ForwardRef('FP8Config')] = None, compile_config: Optional[ForwardRef('CompileConfig')] = None, **kwargs) -> transformers.modeling_utils.PreTrainedModel
+Positional args    : ()
+Keyword args       : {   'activation_checkpointing': True,
+    'backend': BackendConfig(attn='te',
+                             linear='torch',
+                             rms_norm='torch_fp32',
+                             rope_fusion=True,
+                             experts='gmm',
+                             dispatcher='deepep',
+                             dispatcher_num_sms=20,
+                             dispatcher_share_token_dispatcher=True,
+                             dispatcher_async_dispatch=False,
+                             disable_shared_expert_overlap=False,
+                             enable_deepep=None,
+                             fake_balanced_gate=False,
+                             fake_gate_noise=0.0,
+                             enable_hf_state_dict_adapter=True,
+                             enable_fsdp_optimizations=True,
+                             te_fp8=None,
+                             gate_precision=None),
+    'config': {'pad_token_id': '******'},
+    'device_mesh': DeviceMesh((MeshAxisName.PP=1, MeshAxisName.DP_REPLICATE=1, MeshAxisName.DP_SHARD=8, MeshAxisName.CP=1, MeshAxisName.TP=1), 'cuda', stride=(8, 8, 1, 1, 1)),
+    'distributed_config': FSDP2Config(sequence_parallel=False,
+                                      tp_plan=None,
+                                      patch_is_packed_sequence=False,
+                                      mp_policy=MixedPrecisionPolicy(param_dtype=torch.bfloat16,
+                                                                     reduce_dtype=torch.float32,
+                                                                     output_dtype=torch.bfloat16,
+                                                                     cast_forward_inputs=True),
+                                      offload_policy=None,
+                                      autocast_dtype=None,
+                                      activation_checkpointing=False,
+                                      defer_fsdp_grad_sync=True,
+                                      backend='nccl',
+                                      enable_async_tensor_parallel=False,
+                                      enable_compile=False,
+                                      enable_fsdp2_prefetch=False,
+                                      fsdp2_backward_prefetch_depth=2,
+                                      fsdp2_forward_prefetch_depth=1),
+    'has_packed_sequence': False,
+    'moe_config': MoEParallelizerConfig(ignore_router_for_ac=False,
+                                        reshard_after_forward=False,
+                                        lm_head_precision=None,
+                                        wrap_outer_model=False,
+                                        mp_policy=None),
+    'moe_mesh': DeviceMesh((MeshAxisName.EP_SHARD=1, MeshAxisName.EP=8), 'cuda', stride=(8, 1)),
+    'peft_config': PeftConfig(target_modules=[],
+                              exclude_modules=[],
+                              match_all_linear=True,
+                              dim=192,
+                              alpha=384,
+                              use_dora=False,
+                              dropout=0.0,
+                              dropout_position='post',
+                              lora_A_init='xavier',
+                              lora_dtype=None,
+                              use_triton=True,
+                              moe_rank_scaling=False),
+    'pipeline_config': None,
+    'pretrained_model_name_or_path': 'MiniMaxAI/MiniMax-M2.7',
+    'sdpa_method': None,
+    'trust_remote_code': True}
+Exception          : cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+Instantiation failed for `from_pretrained`
+Accepted signature : (pretrained_model_name_or_path, *model_args, use_liger_kernel: bool = True, use_sdpa_patching: bool = True, sdpa_method: Optional[List[Union[torch.nn.attention._SDPBackend, str]]] = None, torch_dtype='auto', attn_implementation: str = 'flash_attention_2', quantization_config=None, force_hf: bool = False, device_mesh: Optional[ForwardRef('DeviceMesh')] = None, moe_mesh: Optional[ForwardRef('DeviceMesh')] = None, tp_plan: Optional[dict] = None, distributed_config: Union[ForwardRef('FSDP2Config'), ForwardRef('MegatronFSDPConfig'), ForwardRef('DDPConfig'), NoneType] = None, pipeline_config: Optional[nemo_automodel.components.distributed.pipelining.config.PipelineConfig] = None, qat_config: Optional[nemo_automodel.components.quantization.qat.QATConfig] = None, moe_config: Optional[nemo_automodel.components.moe.config.MoEParallelizerConfig] = None, activation_checkpointing: bool = False, peft_config: Optional[dict] = None, fp8_config: Optional[ForwardRef('FP8Config')] = None, compile_config: Optional[ForwardRef('CompileConfig')] = None, **kwargs) -> transformers.modeling_utils.PreTrainedModel
+Positional args    : ()
+Keyword args       : {   'activation_checkpointing': True,
+    'backend': BackendConfig(attn='te',
+                             linear='torch',
+                             rms_norm='torch_fp32',
+                             rope_fusion=True,
+                             experts='gmm',
+                             dispatcher='deepep',
+                             dispatcher_num_sms=20,
+                             dispatcher_share_token_dispatcher=True,
+                             dispatcher_async_dispatch=False,
+                             disable_shared_expert_overlap=False,
+                             enable_deepep=None,
+                             fake_balanced_gate=False,
+                             fake_gate_noise=0.0,
+                             enable_hf_state_dict_adapter=True,
+                             enable_fsdp_optimizations=True,
+                             te_fp8=None,
+                             gate_precision=None),
+    'config': {'pad_token_id': '******'},
+    'device_mesh': DeviceMesh((MeshAxisName.PP=1, MeshAxisName.DP_REPLICATE=1, MeshAxisName.DP_SHARD=8, MeshAxisName.CP=1, MeshAxisName.TP=1), 'cuda', stride=(8, 8, 1, 1, 1)),
+    'distributed_config': FSDP2Config(sequence_parallel=False,
+                                      tp_plan=None,
+                                      patch_is_packed_sequence=False,
+                                      mp_policy=MixedPrecisionPolicy(param_dtype=torch.bfloat16,
+                                                                     reduce_dtype=torch.float32,
+                                                                     output_dtype=torch.bfloat16,
+                                                                     cast_forward_inputs=True),
+                                      offload_policy=None,
+                                      autocast_dtype=None,
+                                      activation_checkpointing=False,
+                                      defer_fsdp_grad_sync=True,
+                                      backend='nccl',
+                                      enable_async_tensor_parallel=False,
+                                      enable_compile=False,
+                                      enable_fsdp2_prefetch=False,
+                                      fsdp2_backward_prefetch_depth=2,
+                                      fsdp2_forward_prefetch_depth=1),
+    'has_packed_sequence': False,
+    'moe_config': MoEParallelizerConfig(ignore_router_for_ac=False,
+                                        reshard_after_forward=False,
+                                        lm_head_precision=None,
+                                        wrap_outer_model=False,
+                                        mp_policy=None),
+    'moe_mesh': DeviceMesh((MeshAxisName.EP_SHARD=1, MeshAxisName.EP=8), 'cuda', stride=(8, 1)),
+    'peft_config': PeftConfig(target_modules=[],
+                              exclude_modules=[],
+                              match_all_linear=True,
+                              dim=192,
+                              alpha=384,
+                              use_dora=False,
+                              dropout=0.0,
+                              dropout_position='post',
+                              lora_A_init='xavier',
+                              lora_dtype=None,
+                              use_triton=True,
+                              moe_rank_scaling=False),
+    'pipeline_config': None,
+    'pretrained_model_name_or_path': 'MiniMaxAI/MiniMax-M2.7',
+    'sdpa_method': None,
+    'trust_remote_code': True}
+Exception          : cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+Instantiation failed for `from_pretrained`
+Accepted signature : (pretrained_model_name_or_path, *model_args, use_liger_kernel: bool = True, use_sdpa_patching: bool = True, sdpa_method: Optional[List[Union[torch.nn.attention._SDPBackend, str]]] = None, torch_dtype='auto', attn_implementation: str = 'flash_attention_2', quantization_config=None, force_hf: bool = False, device_mesh: Optional[ForwardRef('DeviceMesh')] = None, moe_mesh: Optional[ForwardRef('DeviceMesh')] = None, tp_plan: Optional[dict] = None, distributed_config: Union[ForwardRef('FSDP2Config'), ForwardRef('MegatronFSDPConfig'), ForwardRef('DDPConfig'), NoneType] = None, pipeline_config: Optional[nemo_automodel.components.distributed.pipelining.config.PipelineConfig] = None, qat_config: Optional[nemo_automodel.components.quantization.qat.QATConfig] = None, moe_config: Optional[nemo_automodel.components.moe.config.MoEParallelizerConfig] = None, activation_checkpointing: bool = False, peft_config: Optional[dict] = None, fp8_config: Optional[ForwardRef('FP8Config')] = None, compile_config: Optional[ForwardRef('CompileConfig')] = None, **kwargs) -> transformers.modeling_utils.PreTrainedModel
+Positional args    : ()
+Keyword args       : {   'activation_checkpointing': True,
+    'backend': BackendConfig(attn='te',
+                             linear='torch',
+                             rms_norm='torch_fp32',
+                             rope_fusion=True,
+                             experts='gmm',
+                             dispatcher='deepep',
+                             dispatcher_num_sms=20,
+                             dispatcher_share_token_dispatcher=True,
+                             dispatcher_async_dispatch=False,
+                             disable_shared_expert_overlap=False,
+                             enable_deepep=None,
+                             fake_balanced_gate=False,
+                             fake_gate_noise=0.0,
+                             enable_hf_state_dict_adapter=True,
+                             enable_fsdp_optimizations=True,
+                             te_fp8=None,
+                             gate_precision=None),
+    'config': {'pad_token_id': '******'},
+    'device_mesh': DeviceMesh((MeshAxisName.PP=1, MeshAxisName.DP_REPLICATE=1, MeshAxisName.DP_SHARD=8, MeshAxisName.CP=1, MeshAxisName.TP=1), 'cuda', stride=(8, 8, 1, 1, 1)),
+    'distributed_config': FSDP2Config(sequence_parallel=False,
+                                      tp_plan=None,
+                                      patch_is_packed_sequence=False,
+                                      mp_policy=MixedPrecisionPolicy(param_dtype=torch.bfloat16,
+                                                                     reduce_dtype=torch.float32,
+                                                                     output_dtype=torch.bfloat16,
+                                                                     cast_forward_inputs=True),
+                                      offload_policy=None,
+                                      autocast_dtype=None,
+                                      activation_checkpointing=False,
+                                      defer_fsdp_grad_sync=True,
+                                      backend='nccl',
+                                      enable_async_tensor_parallel=False,
+                                      enable_compile=False,
+                                      enable_fsdp2_prefetch=False,
+                                      fsdp2_backward_prefetch_depth=2,
+                                      fsdp2_forward_prefetch_depth=1),
+    'has_packed_sequence': False,
+    'moe_config': MoEParallelizerConfig(ignore_router_for_ac=False,
+                                        reshard_after_forward=False,
+                                        lm_head_precision=None,
+                                        wrap_outer_model=False,
+                                        mp_policy=None),
+    'moe_mesh': DeviceMesh((MeshAxisName.EP_SHARD=1, MeshAxisName.EP=8), 'cuda', stride=(8, 1)),
+    'peft_config': PeftConfig(target_modules=[],
+                              exclude_modules=[],
+                              match_all_linear=True,
+                              dim=192,
+                              alpha=384,
+                              use_dora=False,
+                              dropout=0.0,
+                              dropout_position='post',
+                              lora_A_init='xavier',
+                              lora_dtype=None,
+                              use_triton=True,
+                              moe_rank_scaling=False),
+    'pipeline_config': None,
+    'pretrained_model_name_or_path': 'MiniMaxAI/MiniMax-M2.7',
+    'sdpa_method': None,
+    'trust_remote_code': True}
+Exception          : cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+
+Instantiation failed for `from_pretrained`
+Accepted signature : (pretrained_model_name_or_path, *model_args, use_liger_kernel: bool = True, use_sdpa_patching: bool = True, sdpa_method: Optional[List[Union[torch.nn.attention._SDPBackend, str]]] = None, torch_dtype='auto', attn_implementation: str = 'flash_attention_2', quantization_config=None, force_hf: bool = False, device_mesh: Optional[ForwardRef('DeviceMesh')] = None, moe_mesh: Optional[ForwardRef('DeviceMesh')] = None, tp_plan: Optional[dict] = None, distributed_config: Union[ForwardRef('FSDP2Config'), ForwardRef('MegatronFSDPConfig'), ForwardRef('DDPConfig'), NoneType] = None, pipeline_config: Optional[nemo_automodel.components.distributed.pipelining.config.PipelineConfig] = None, qat_config: Optional[nemo_automodel.components.quantization.qat.QATConfig] = None, moe_config: Optional[nemo_automodel.components.moe.config.MoEParallelizerConfig] = None, activation_checkpointing: bool = False, peft_config: Optional[dict] = None, fp8_config: Optional[ForwardRef('FP8Config')] = None, compile_config: Optional[ForwardRef('CompileConfig')] = None, **kwargs) -> transformers.modeling_utils.PreTrainedModel
+Positional args    : ()
+Keyword args       : {   'activation_checkpointing': True,
+    'backend': BackendConfig(attn='te',
+                             linear='torch',
+                             rms_norm='torch_fp32',
+                             rope_fusion=True,
+                             experts='gmm',
+                             dispatcher='deepep',
+                             dispatcher_num_sms=20,
+                             dispatcher_share_token_dispatcher=True,
+                             dispatcher_async_dispatch=False,
+                             disable_shared_expert_overlap=False,
+                             enable_deepep=None,
+                             fake_balanced_gate=False,
+                             fake_gate_noise=0.0,
+                             enable_hf_state_dict_adapter=True,
+                             enable_fsdp_optimizations=True,
+                             te_fp8=None,
+                             gate_precision=None),
+    'config': {'pad_token_id': '******'},
+    'device_mesh': DeviceMesh((MeshAxisName.PP=1, MeshAxisName.DP_REPLICATE=1, MeshAxisName.DP_SHARD=8, MeshAxisName.CP=1, MeshAxisName.TP=1), 'cuda', stride=(8, 8, 1, 1, 1)),
+    'distributed_config': FSDP2Config(sequence_parallel=False,
+                                      tp_plan=None,
+                                      patch_is_packed_sequence=False,
+                                      mp_policy=MixedPrecisionPolicy(param_dtype=torch.bfloat16,
+                                                                     reduce_dtype=torch.float32,
+                                                                     output_dtype=torch.bfloat16,
+                                                                     cast_forward_inputs=True),
+                                      offload_policy=None,
+                                      autocast_dtype=None,
+                                      activation_checkpointing=False,
+                                      defer_fsdp_grad_sync=True,
+                                      backend='nccl',
+                                      enable_async_tensor_parallel=False,
+                                      enable_compile=False,
+                                      enable_fsdp2_prefetch=False,
+                                      fsdp2_backward_prefetch_depth=2,
+                                      fsdp2_forward_prefetch_depth=1),
+    'has_packed_sequence': False,
+    'moe_config': MoEParallelizerConfig(ignore_router_for_ac=False,
+                                        reshard_after_forward=False,
+                                        lm_head_precision=None,
+                                        wrap_outer_model=False,
+                                        mp_policy=None),
+    'moe_mesh': DeviceMesh((MeshAxisName.EP_SHARD=1, MeshAxisName.EP=8), 'cuda', stride=(8, 1)),
+    'peft_config': PeftConfig(target_modules=[],
+                              exclude_modules=[],
+                              match_all_linear=True,
+                              dim=192,
+                              alpha=384,
+                              use_dora=False,
+                              dropout=0.0,
+                              dropout_position='post',
+                              lora_A_init='xavier',
+                              lora_dtype=None,
+                              use_triton=True,
+                              moe_rank_scaling=False),
+    'pipeline_config': None,
+    'pretrained_model_name_or_path': 'MiniMaxAI/MiniMax-M2.7',
+    'sdpa_method': None,
+    'trust_remote_code': True}
+Exception          : cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+Instantiation failed for `from_pretrained`
+Accepted signature : (pretrained_model_name_or_path, *model_args, use_liger_kernel: bool = True, use_sdpa_patching: bool = True, sdpa_method: Optional[List[Union[torch.nn.attention._SDPBackend, str]]] = None, torch_dtype='auto', attn_implementation: str = 'flash_attention_2', quantization_config=None, force_hf: bool = False, device_mesh: Optional[ForwardRef('DeviceMesh')] = None, moe_mesh: Optional[ForwardRef('DeviceMesh')] = None, tp_plan: Optional[dict] = None, distributed_config: Union[ForwardRef('FSDP2Config'), ForwardRef('MegatronFSDPConfig'), ForwardRef('DDPConfig'), NoneType] = None, pipeline_config: Optional[nemo_automodel.components.distributed.pipelining.config.PipelineConfig] = None, qat_config: Optional[nemo_automodel.components.quantization.qat.QATConfig] = None, moe_config: Optional[nemo_automodel.components.moe.config.MoEParallelizerConfig] = None, activation_checkpointing: bool = False, peft_config: Optional[dict] = None, fp8_config: Optional[ForwardRef('FP8Config')] = None, compile_config: Optional[ForwardRef('CompileConfig')] = None, **kwargs) -> transformers.modeling_utils.PreTrainedModel
+Positional args    : ()
+Keyword args       : {   'activation_checkpointing': True,
+    'backend': BackendConfig(attn='te',
+                             linear='torch',
+                             rms_norm='torch_fp32',
+                             rope_fusion=True,
+                             experts='gmm',
+                             dispatcher='deepep',
+                             dispatcher_num_sms=20,
+                             dispatcher_share_token_dispatcher=True,
+                             dispatcher_async_dispatch=False,
+                             disable_shared_expert_overlap=False,
+                             enable_deepep=None,
+                             fake_balanced_gate=False,
+                             fake_gate_noise=0.0,
+                             enable_hf_state_dict_adapter=True,
+                             enable_fsdp_optimizations=True,
+                             te_fp8=None,
+                             gate_precision=None),
+    'config': {'pad_token_id': '******'},
+    'device_mesh': DeviceMesh((MeshAxisName.PP=1, MeshAxisName.DP_REPLICATE=1, MeshAxisName.DP_SHARD=8, MeshAxisName.CP=1, MeshAxisName.TP=1), 'cuda', stride=(8, 8, 1, 1, 1)),
+    'distributed_config': FSDP2Config(sequence_parallel=False,
+                                      tp_plan=None,
+                                      patch_is_packed_sequence=False,
+                                      mp_policy=MixedPrecisionPolicy(param_dtype=torch.bfloat16,
+                                                                     reduce_dtype=torch.float32,
+                                                                     output_dtype=torch.bfloat16,
+                                                                     cast_forward_inputs=True),
+                                      offload_policy=None,
+                                      autocast_dtype=None,
+                                      activation_checkpointing=False,
+                                      defer_fsdp_grad_sync=True,
+                                      backend='nccl',
+                                      enable_async_tensor_parallel=False,
+                                      enable_compile=False,
+                                      enable_fsdp2_prefetch=False,
+                                      fsdp2_backward_prefetch_depth=2,
+                                      fsdp2_forward_prefetch_depth=1),
+    'has_packed_sequence': False,
+    'moe_config': MoEParallelizerConfig(ignore_router_for_ac=False,
+                                        reshard_after_forward=False,
+                                        lm_head_precision=None,
+                                        wrap_outer_model=False,
+                                        mp_policy=None),
+    'moe_mesh': DeviceMesh((MeshAxisName.EP_SHARD=1, MeshAxisName.EP=8), 'cuda', stride=(8, 1)),
+    'peft_config': PeftConfig(target_modules=[],
+                              exclude_modules=[],
+                              match_all_linear=True,
+                              dim=192,
+                              alpha=384,
+                              use_dora=False,
+                              dropout=0.0,
+                              dropout_position='post',
+                              lora_A_init='xavier',
+                              lora_dtype=None,
+                              use_triton=True,
+                              moe_rank_scaling=False),
+    'pipeline_config': None,
+    'pretrained_model_name_or_path': 'MiniMaxAI/MiniMax-M2.7',
+    'sdpa_method': None,
+    'trust_remote_code': True}
+Exception          : cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+Traceback (most recent call last):
+  File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+    return func(*args, **config_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+    return cls._build_model(
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+    is_custom_model, model = _init_model(
+                             ^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+    is_custom_model, model = __init_model(
+                             ^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+    model = cls._from_pretrained_parent_class(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+    model = super().from_pretrained(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+    return get_class_in_module(class_name, final_module, force_reload=force_download)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+    from transformers.utils.generic import OutputRecorder, check_model_inputs
+ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+Traceback (most recent call last):
+  File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+    return func(*args, **config_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+    return cls._build_model(
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+    is_custom_model, model = _init_model(
+                             ^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+    is_custom_model, model = __init_model(
+                             ^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+    model = cls._from_pretrained_parent_class(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+    model = super().from_pretrained(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+    return get_class_in_module(class_name, final_module, force_reload=force_download)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+    from transformers.utils.generic import OutputRecorder, check_model_inputs
+ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+Traceback (most recent call last):
+  File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+    return func(*args, **config_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+    return cls._build_model(
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+    is_custom_model, model = _init_model(
+                             ^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+    is_custom_model, model = __init_model(
+                             ^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+    model = cls._from_pretrained_parent_class(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+    model = super().from_pretrained(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+    return get_class_in_module(class_name, final_module, force_reload=force_download)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+    from transformers.utils.generic import OutputRecorder, check_model_inputs
+ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank1]:     main()
+[rank1]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1768, in main
+[rank1]:     trainer.setup()
+[rank1]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1005, in setup
+[rank1]:     model = build_model(
+[rank1]:             ^^^^^^^^^^^^
+[rank1]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 270, in build_model
+[rank1]:     model = cfg_model.instantiate(**kwargs)
+[rank1]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 505, in instantiate
+[rank1]:     raise e
+[rank1]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+[rank1]:     return func(*args, **config_kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+[rank1]:     return cls._build_model(
+[rank1]:            ^^^^^^^^^^^^^^^^^
+[rank1]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+[rank1]:     is_custom_model, model = _init_model(
+[rank1]:                              ^^^^^^^^^^^^
+[rank1]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+[rank1]:     is_custom_model, model = __init_model(
+[rank1]:                              ^^^^^^^^^^^^^
+[rank1]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+[rank1]:     model = cls._from_pretrained_parent_class(
+[rank1]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+[rank1]:     model = super().from_pretrained(*args, **kwargs)
+[rank1]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+[rank1]:     model_class = get_class_from_dynamic_module(
+[rank1]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+[rank1]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+[rank1]:     module_spec.loader.exec_module(module)
+[rank1]:   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+[rank1]:   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+[rank1]:   File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+[rank1]:     from transformers.utils.generic import OutputRecorder, check_model_inputs
+[rank1]: ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+Traceback (most recent call last):
+  File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+    return func(*args, **config_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+    return cls._build_model(
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+    is_custom_model, model = _init_model(
+                             ^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+    is_custom_model, model = __init_model(
+                             ^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+    model = cls._from_pretrained_parent_class(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+    model = super().from_pretrained(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+    return get_class_in_module(class_name, final_module, force_reload=force_download)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+    from transformers.utils.generic import OutputRecorder, check_model_inputs
+ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank7]:     main()
+[rank7]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1768, in main
+[rank7]:     trainer.setup()
+[rank7]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1005, in setup
+[rank7]:     model = build_model(
+[rank7]:             ^^^^^^^^^^^^
+[rank7]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 270, in build_model
+[rank7]:     model = cfg_model.instantiate(**kwargs)
+[rank7]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 505, in instantiate
+[rank7]:     raise e
+[rank7]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+[rank7]:     return func(*args, **config_kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+[rank7]:     return cls._build_model(
+[rank7]:            ^^^^^^^^^^^^^^^^^
+[rank7]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+[rank7]:     is_custom_model, model = _init_model(
+[rank7]:                              ^^^^^^^^^^^^
+[rank7]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+[rank7]:     is_custom_model, model = __init_model(
+[rank7]:                              ^^^^^^^^^^^^^
+[rank7]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+[rank7]:     model = cls._from_pretrained_parent_class(
+[rank7]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+[rank7]:     model = super().from_pretrained(*args, **kwargs)
+[rank7]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+[rank7]:     model_class = get_class_from_dynamic_module(
+[rank7]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+[rank7]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+[rank7]:     module_spec.loader.exec_module(module)
+[rank7]:   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+[rank7]:   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+[rank7]:   File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+[rank7]:     from transformers.utils.generic import OutputRecorder, check_model_inputs
+[rank7]: ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+Traceback (most recent call last):
+  File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+    return func(*args, **config_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+    return cls._build_model(
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+    is_custom_model, model = _init_model(
+                             ^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+    is_custom_model, model = __init_model(
+                             ^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+    model = cls._from_pretrained_parent_class(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+    model = super().from_pretrained(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+    return get_class_in_module(class_name, final_module, force_reload=force_download)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+    from transformers.utils.generic import OutputRecorder, check_model_inputs
+ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+Traceback (most recent call last):
+  File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+    return func(*args, **config_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+    return cls._build_model(
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+    is_custom_model, model = _init_model(
+                             ^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+    is_custom_model, model = __init_model(
+                             ^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+    model = cls._from_pretrained_parent_class(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+    model = super().from_pretrained(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+    return get_class_in_module(class_name, final_module, force_reload=force_download)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+    from transformers.utils.generic import OutputRecorder, check_model_inputs
+ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+Traceback (most recent call last):
+  File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+    return func(*args, **config_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+    return cls._build_model(
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+    is_custom_model, model = _init_model(
+                             ^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+    is_custom_model, model = __init_model(
+                             ^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+    model = cls._from_pretrained_parent_class(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+    model = super().from_pretrained(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+    return get_class_in_module(class_name, final_module, force_reload=force_download)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+    from transformers.utils.generic import OutputRecorder, check_model_inputs
+ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+
+Traceback (most recent call last):
+  File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+    return func(*args, **config_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+    return cls._build_model(
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+    is_custom_model, model = _init_model(
+                             ^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+    is_custom_model, model = __init_model(
+                             ^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+    model = cls._from_pretrained_parent_class(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+    model = super().from_pretrained(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+    return get_class_in_module(class_name, final_module, force_reload=force_download)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+    from transformers.utils.generic import OutputRecorder, check_model_inputs
+ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank3]:     main()
+[rank3]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1768, in main
+[rank3]:     trainer.setup()
+[rank3]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1005, in setup
+[rank3]:     model = build_model(
+[rank3]:             ^^^^^^^^^^^^
+[rank3]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 270, in build_model
+[rank3]:     model = cfg_model.instantiate(**kwargs)
+[rank3]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 505, in instantiate
+[rank3]:     raise e
+[rank3]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+[rank3]:     return func(*args, **config_kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+[rank3]:     return cls._build_model(
+[rank3]:            ^^^^^^^^^^^^^^^^^
+[rank3]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+[rank3]:     is_custom_model, model = _init_model(
+[rank3]:                              ^^^^^^^^^^^^
+[rank3]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+[rank3]:     is_custom_model, model = __init_model(
+[rank3]:                              ^^^^^^^^^^^^^
+[rank3]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+[rank3]:     model = cls._from_pretrained_parent_class(
+[rank3]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+[rank3]:     model = super().from_pretrained(*args, **kwargs)
+[rank3]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+[rank3]:     model_class = get_class_from_dynamic_module(
+[rank3]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+[rank3]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+[rank3]:     module_spec.loader.exec_module(module)
+[rank3]:   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+[rank3]:   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+[rank3]:   File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+[rank3]:     from transformers.utils.generic import OutputRecorder, check_model_inputs
+[rank3]: ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank6]:     main()
+[rank6]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1768, in main
+[rank6]:     trainer.setup()
+[rank6]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1005, in setup
+[rank6]:     model = build_model(
+[rank6]:             ^^^^^^^^^^^^
+[rank6]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 270, in build_model
+[rank6]:     model = cfg_model.instantiate(**kwargs)
+[rank6]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 505, in instantiate
+[rank6]:     raise e
+[rank6]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+[rank6]:     return func(*args, **config_kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+[rank6]:     return cls._build_model(
+[rank6]:            ^^^^^^^^^^^^^^^^^
+[rank6]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+[rank6]:     is_custom_model, model = _init_model(
+[rank6]:                              ^^^^^^^^^^^^
+[rank6]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+[rank6]:     is_custom_model, model = __init_model(
+[rank6]:                              ^^^^^^^^^^^^^
+[rank6]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+[rank6]:     model = cls._from_pretrained_parent_class(
+[rank6]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+[rank6]:     model = super().from_pretrained(*args, **kwargs)
+[rank6]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+[rank6]:     model_class = get_class_from_dynamic_module(
+[rank6]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+[rank6]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+[rank6]:     module_spec.loader.exec_module(module)
+[rank6]:   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+[rank6]:   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+[rank6]:   File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+[rank6]:     from transformers.utils.generic import OutputRecorder, check_model_inputs
+[rank6]: ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank0]:     main()
+[rank0]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1768, in main
+[rank0]:     trainer.setup()
+[rank0]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1005, in setup
+[rank0]:     model = build_model(
+[rank0]:             ^^^^^^^^^^^^
+[rank0]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 270, in build_model
+[rank0]:     model = cfg_model.instantiate(**kwargs)
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 505, in instantiate
+[rank0]:     raise e
+[rank0]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+[rank0]:     return func(*args, **config_kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+[rank0]:     return cls._build_model(
+[rank0]:            ^^^^^^^^^^^^^^^^^
+[rank0]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+[rank0]:     is_custom_model, model = _init_model(
+[rank0]:                              ^^^^^^^^^^^^
+[rank0]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+[rank0]:     is_custom_model, model = __init_model(
+[rank0]:                              ^^^^^^^^^^^^^
+[rank0]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+[rank0]:     model = cls._from_pretrained_parent_class(
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+[rank0]:     model = super().from_pretrained(*args, **kwargs)
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+[rank0]:     model_class = get_class_from_dynamic_module(
+[rank0]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+[rank0]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+[rank0]:     module_spec.loader.exec_module(module)
+[rank0]:   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+[rank0]:   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+[rank0]:   File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+[rank0]:     from transformers.utils.generic import OutputRecorder, check_model_inputs
+[rank0]: ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank2]:     main()
+[rank2]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1768, in main
+[rank2]:     trainer.setup()
+[rank2]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1005, in setup
+[rank2]:     model = build_model(
+[rank2]:             ^^^^^^^^^^^^
+[rank2]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 270, in build_model
+[rank2]:     model = cfg_model.instantiate(**kwargs)
+[rank2]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 505, in instantiate
+[rank2]:     raise e
+[rank2]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+[rank2]:     return func(*args, **config_kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+[rank2]:     return cls._build_model(
+[rank2]:            ^^^^^^^^^^^^^^^^^
+[rank2]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+[rank2]:     is_custom_model, model = _init_model(
+[rank2]:                              ^^^^^^^^^^^^
+[rank2]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+[rank2]:     is_custom_model, model = __init_model(
+[rank2]:                              ^^^^^^^^^^^^^
+[rank2]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+[rank2]:     model = cls._from_pretrained_parent_class(
+[rank2]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+[rank2]:     model = super().from_pretrained(*args, **kwargs)
+[rank2]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+[rank2]:     model_class = get_class_from_dynamic_module(
+[rank2]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+[rank2]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+[rank2]:     module_spec.loader.exec_module(module)
+[rank2]:   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+[rank2]:   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+[rank2]:   File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+[rank2]:     from transformers.utils.generic import OutputRecorder, check_model_inputs
+[rank2]: ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank5]:     main()
+[rank5]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1768, in main
+[rank5]:     trainer.setup()
+[rank5]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1005, in setup
+[rank5]:     model = build_model(
+[rank5]:             ^^^^^^^^^^^^
+[rank5]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 270, in build_model
+[rank5]:     model = cfg_model.instantiate(**kwargs)
+[rank5]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 505, in instantiate
+[rank5]:     raise e
+[rank5]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+[rank5]:     return func(*args, **config_kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+[rank5]:     return cls._build_model(
+[rank5]:            ^^^^^^^^^^^^^^^^^
+[rank5]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+[rank5]:     is_custom_model, model = _init_model(
+[rank5]:                              ^^^^^^^^^^^^
+[rank5]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+[rank5]:     is_custom_model, model = __init_model(
+[rank5]:                              ^^^^^^^^^^^^^
+[rank5]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+[rank5]:     model = cls._from_pretrained_parent_class(
+[rank5]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+[rank5]:     model = super().from_pretrained(*args, **kwargs)
+[rank5]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+[rank5]:     model_class = get_class_from_dynamic_module(
+[rank5]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+[rank5]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+[rank5]:     module_spec.loader.exec_module(module)
+[rank5]:   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+[rank5]:   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+[rank5]:   File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+[rank5]:     from transformers.utils.generic import OutputRecorder, check_model_inputs
+[rank5]: ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank4]:     main()
+[rank4]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1768, in main
+[rank4]:     trainer.setup()
+[rank4]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1005, in setup
+[rank4]:     model = build_model(
+[rank4]:             ^^^^^^^^^^^^
+[rank4]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 270, in build_model
+[rank4]:     model = cfg_model.instantiate(**kwargs)
+[rank4]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 505, in instantiate
+[rank4]:     raise e
+[rank4]:   File "/opt/Automodel/nemo_automodel/components/config/loader.py", line 486, in instantiate
+[rank4]:     return func(*args, **config_kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 692, in from_pretrained
+[rank4]:     return cls._build_model(
+[rank4]:            ^^^^^^^^^^^^^^^^^
+[rank4]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 459, in _build_model
+[rank4]:     is_custom_model, model = _init_model(
+[rank4]:                              ^^^^^^^^^^^^
+[rank4]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 884, in _init_model
+[rank4]:     is_custom_model, model = __init_model(
+[rank4]:                              ^^^^^^^^^^^^^
+[rank4]:   File "/opt/Automodel/nemo_automodel/_transformers/model_init.py", line 829, in __init_model
+[rank4]:     model = cls._from_pretrained_parent_class(
+[rank4]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/opt/Automodel/nemo_automodel/_transformers/auto_model.py", line 263, in _from_pretrained_parent_class
+[rank4]:     model = super().from_pretrained(*args, **kwargs)
+[rank4]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/opt/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 369, in from_pretrained
+[rank4]:     model_class = get_class_from_dynamic_module(
+[rank4]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
+[rank4]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/opt/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+[rank4]:     module_spec.loader.exec_module(module)
+[rank4]:   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+[rank4]:   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+[rank4]:   File "/root/.cache/huggingface/modules/transformers_modules/MiniMaxAI/MiniMax_hyphen_M2_dot_7/d494266a4affc0d2995ba1fa35c8481cbd84294b/modeling_minimax_m2.py", line 46, in <module>
+[rank4]:     from transformers.utils.generic import OutputRecorder, check_model_inputs
+[rank4]: ImportError: cannot import name 'OutputRecorder' from 'transformers.utils.generic' (/opt/venv/lib/python3.12/site-packages/transformers/utils/generic.py)
+W0526 12:43:33.695000 1 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 268 closing signal SIGTERM
+W0526 12:43:33.695000 1 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 271 closing signal SIGTERM
+W0526 12:43:33.696000 1 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 272 closing signal SIGTERM
+W0526 12:43:33.696000 1 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 273 closing signal SIGTERM
+W0526 12:43:33.696000 1 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 274 closing signal SIGTERM
+W0526 12:43:33.696000 1 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 275 closing signal SIGTERM
+E0526 12:43:34.174000 1 torch/distributed/elastic/multiprocessing/api.py:984] failed (exitcode: 1) local_rank: 1 (pid: 269) of binary: /opt/venv/bin/python3
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+Traceback (most recent call last):
+  File "/opt/venv/bin/automodel", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/Automodel/nemo_automodel/cli/app.py", line 159, in main
+    return InteractiveLauncher().launch(cfg, config_path, recipe_target, args.nproc_per_node, extra)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/components/launcher/interactive.py", line 141, in launch
+    return thrun(torchrun_args)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-05-26_12:43:33
+  host      : shadecloud.datacrunch.io
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 270)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-05-26_12:43:34
+  host      : shadecloud.datacrunch.io
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 268)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-05-26_12:43:34
+  host      : shadecloud.datacrunch.io
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 271)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-05-26_12:43:34
+  host      : shadecloud.datacrunch.io
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 272)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-05-26_12:43:34
+  host      : shadecloud.datacrunch.io
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 273)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-05-26_12:43:34
+  host      : shadecloud.datacrunch.io
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 274)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-05-26_12:43:34
+  host      : shadecloud.datacrunch.io
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 275)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-26_12:43:33
+  host      : shadecloud.datacrunch.io
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 269)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

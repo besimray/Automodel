@@ -16,12 +16,16 @@ fi
 SESSION_NAME="${SESSION_NAME:-minimax_m27_1600}"
 MODE="${MODE:-train}" # train | prep | sweep
 MAX_STEPS="${MAX_STEPS:-1600}"
+NUM_EPOCHS="${NUM_EPOCHS:-}"
 LOCAL_BATCH_SIZE="${LOCAL_BATCH_SIZE:-2}"
 GLOBAL_BATCH_SIZE="${GLOBAL_BATCH_SIZE:-32}"
 EP_SIZE="${EP_SIZE:-4}"
+NPROC_PER_NODE="${NPROC_PER_NODE:-8}"
 LR="${LR:-1e-5}"
 PEFT_DIM="${PEFT_DIM:-8}"
 PEFT_ALPHA="${PEFT_ALPHA:-32}"
+PEFT_TARGET="${PEFT_TARGET:-attn_plus_experts}" # all_linear | attn_only | attn_plus_experts | experts_only
+PEFT_MOE_RANK_SCALING="${PEFT_MOE_RANK_SCALING:-1}"
 PRINT_PARAM_GRADS="${PRINT_PARAM_GRADS:-0}"
 PARAM_GRAD_MAX_LINES="${PARAM_GRAD_MAX_LINES:-0}"
 ENABLE_LR_SCHEDULER="${ENABLE_LR_SCHEDULER:-0}"
@@ -30,11 +34,13 @@ LR_WARMUP_STEPS="${LR_WARMUP_STEPS:-16}"
 LR_MIN="${LR_MIN:-2e-6}"
 HF_OFFLINE="${HF_OFFLINE:-0}"
 TRAIN_DISABLE_CHECKPOINT="${TRAIN_DISABLE_CHECKPOINT:-0}"
+EXTRA_ARGS="${EXTRA_ARGS:-}"
 PREP_CKPT_EVERY_STEPS="${PREP_CKPT_EVERY_STEPS:-1}"
 PREP_VAL_EVERY_STEPS="${PREP_VAL_EVERY_STEPS:-1000000}"
 RESTORE_FROM_PATH="${RESTORE_FROM_PATH:-}"
 CHECKPOINT_DIR="${CHECKPOINT_DIR:-${ROOT_DIR}/checkpoints/sweep_cache}"
 IMAGE="${IMAGE:-nvcr.io/nvidia/nemo-automodel:26.04}"
+MASTER_PORT="${MASTER_PORT:-29500}"
 
 TIMESTAMP="$(date +%Y%m%d_%H%M%S)"
 LOG_FILE="${LOG_DIR}/${SESSION_NAME}_${TIMESTAMP}.log"
@@ -42,6 +48,10 @@ LOG_FILE="${LOG_DIR}/${SESSION_NAME}_${TIMESTAMP}.log"
 SCHEDULER_OVERRIDES=""
 if [[ "${ENABLE_LR_SCHEDULER}" == "1" || "${ENABLE_LR_SCHEDULER}" == "true" ]]; then
   SCHEDULER_OVERRIDES="--lr_scheduler.lr_decay_style ${LR_DECAY_STYLE} --lr_scheduler.lr_warmup_steps ${LR_WARMUP_STEPS} --lr_scheduler.min_lr ${LR_MIN}"
+fi
+
+if [[ -n "${NUM_EPOCHS}" ]]; then
+  SCHEDULER_OVERRIDES="${SCHEDULER_OVERRIDES} --step_scheduler.num_epochs ${NUM_EPOCHS}"
 fi
 
 CKPT_DIR_EFFECTIVE="${CHECKPOINT_DIR}"
@@ -73,6 +83,36 @@ case "${MODE}" in
     ;;
 esac
 
+PEFT_OVERRIDES=""
+PEFT_TARGET_MODULES_ARG=""
+case "${PEFT_TARGET}" in
+  all_linear)
+    PEFT_OVERRIDES="--peft.match_all_linear true"
+    ;;
+  attn_only)
+    PEFT_OVERRIDES="--peft.match_all_linear false"
+    PEFT_TARGET_MODULES_ARG="--peft.target_modules '[\"*.self_attn.q_proj\",\"*.self_attn.k_proj\",\"*.self_attn.v_proj\",\"*.self_attn.o_proj\"]'"
+    ;;
+  attn_plus_experts)
+    PEFT_OVERRIDES="--peft.match_all_linear false"
+    PEFT_TARGET_MODULES_ARG="--peft.target_modules '[\"*.self_attn.q_proj\",\"*.self_attn.k_proj\",\"*.self_attn.v_proj\",\"*.self_attn.o_proj\",\"*.mlp.experts\"]'"
+    ;;
+  experts_only)
+    PEFT_OVERRIDES="--peft.match_all_linear false"
+    PEFT_TARGET_MODULES_ARG="--peft.target_modules '[\"*.mlp.experts\"]'"
+    ;;
+  *)
+    echo "Error: unsupported PEFT_TARGET='${PEFT_TARGET}'. Use all_linear, attn_only, attn_plus_experts, or experts_only."
+    exit 1
+    ;;
+esac
+
+if [[ "${PEFT_MOE_RANK_SCALING}" == "1" || "${PEFT_MOE_RANK_SCALING}" == "true" ]]; then
+  PEFT_OVERRIDES="${PEFT_OVERRIDES} --peft.moe_rank_scaling true"
+else
+  PEFT_OVERRIDES="${PEFT_OVERRIDES} --peft.moe_rank_scaling false"
+fi
+
 DOCKER_CMD=$(cat <<EOF
 cd "${ROOT_DIR}" && docker run --rm --gpus all --network host --shm-size=64g \
   -v "${ROOT_DIR}:/opt/Automodel" \
@@ -86,18 +126,21 @@ cd "${ROOT_DIR}" && docker run --rm --gpus all --network host --shm-size=64g \
   -e AUTOMODEL_PRINT_PARAM_GRAD_INFO=${PRINT_PARAM_GRADS} \
   -e AUTOMODEL_PRINT_PARAM_GRAD_MAX_LINES=${PARAM_GRAD_MAX_LINES} \
   "${IMAGE}" \
-  automodel --nproc-per-node=4 \
+  automodel --nproc-per-node=${NPROC_PER_NODE} --master-port=${MASTER_PORT} \
   examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml \
   --distributed.ep_size ${EP_SIZE} \
   --distributed.activation_checkpointing true \
   --optimizer.lr ${LR} \
   --peft.dim ${PEFT_DIM} \
   --peft.alpha ${PEFT_ALPHA} \
+  ${PEFT_OVERRIDES} \
+  ${PEFT_TARGET_MODULES_ARG} \
   --step_scheduler.local_batch_size ${LOCAL_BATCH_SIZE} \
   --step_scheduler.global_batch_size ${GLOBAL_BATCH_SIZE} \
   --step_scheduler.max_steps ${MAX_STEPS} \
   ${SCHEDULER_OVERRIDES} \
   ${MODE_OVERRIDES} \
+  ${EXTRA_ARGS} \
   2>&1 | tee "${LOG_FILE}"
 EOF
 )
@@ -118,6 +161,10 @@ screen -dmS "${SESSION_NAME}" bash -lc "${DOCKER_CMD}"
 echo "Started training in detached screen session: ${SESSION_NAME}"
 echo "Log file: ${LOG_FILE}"
 echo "Mode: ${MODE}"
+echo "nproc-per-node: ${NPROC_PER_NODE}"
+echo "master-port: ${MASTER_PORT}"
+echo "PEFT target: ${PEFT_TARGET}"
+echo "PEFT moe_rank_scaling: ${PEFT_MOE_RANK_SCALING}"
 if [[ "${MODE}" == "prep" ]]; then
   echo "Checkpoint dir: ${CKPT_DIR_EFFECTIVE}"
 fi

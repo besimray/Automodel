@@ -311,7 +311,16 @@ def build_model(
                 cache_dir=hf_constants.HF_HUB_CACHE,
             )
 
-    # Explicitly unfreeze specified modules (e.g. task heads) that need full fine-tuning
+    # Explicitly unfreeze specified modules (e.g. task heads) that need full fine-tuning.
+    # CLI overrides can pass this as a string (e.g. "[mlp.gate]" or '["mlp.gate"]').
+    if isinstance(unfreeze_modules, str):
+        normalized = unfreeze_modules.strip()
+        if normalized.startswith("[") and normalized.endswith("]"):
+            normalized = normalized[1:-1]
+        unfreeze_modules = [
+            token.strip().strip("'").strip('"') for token in normalized.split(",") if token.strip()
+        ] or [unfreeze_modules]
+
     if unfreeze_modules:
         for name, param in model.named_parameters():
             if any(module_name in name for module_name in unfreeze_modules):
@@ -1017,6 +1026,7 @@ class TrainFinetuneRecipeForNextTokenPrediction(BaseRecipe):
             cfg_qat=self.cfg.get("qat", None),
             cfg_moe=self.dist_setup.moe_config,
             activation_checkpointing=self.dist_setup.activation_checkpointing,
+            unfreeze_modules=self.cfg.get("unfreeze_modules", None),
             sdpa_method=self.cfg.get("sdpa_method", None),
         )
         self.optimizer = build_optimizer(model, self.cfg.optimizer, self.distributed_config, self.device_mesh)

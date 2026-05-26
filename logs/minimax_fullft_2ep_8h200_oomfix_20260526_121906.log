@@ -1,0 +1,1361 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 26.02 (build 305635159)
+PyTorch Version 2.11.0a0+eb65b36
+Container image Copyright (c) 2025, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+GOVERNING TERMS: The software and materials are governed by the NVIDIA Software License Agreement
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-software-license-agreement/)
+and the Product-Specific Terms for NVIDIA AI Products
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/product-specific-terms-for-ai-products/).
+
+NOTE: CUDA Forward Compatibility mode ENABLED.
+  Using CUDA 13.1 driver version 590.48.01 with kernel driver version 580.126.09.
+  See https://docs.nvidia.com/deploy/cuda-compatibility/ for details.
+
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+W0526 12:19:25.058000 1 torch/distributed/run.py:851] 
+W0526 12:19:25.058000 1 torch/distributed/run.py:851] *****************************************
+W0526 12:19:25.058000 1 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0526 12:19:25.058000 1 torch/distributed/run.py:851] *****************************************
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_pp.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_pp.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_pp.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_pp.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_pp.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_pp.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_pp.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_pp.yaml
+> initializing torch distributed with 8 workers.
+2026-05-26 12:19:40 | INFO | nemo_automodel.components.loggers.log_utils | Setting logging level to 20
+2026-05-26 12:19:40 | INFO | nemo_automodel.shared.te_patches | Applied FusedAdam QuantizedTensor monkey-patch.
+2026-05-26 12:19:40 | INFO | root | Experiment_details:
+2026-05-26 12:19:40 | INFO | root | Timestamp: '2026-05-26T12:19:40'
+2026-05-26 12:19:40 | INFO | root | User: root
+2026-05-26 12:19:40 | INFO | root | Host: shadecloud
+2026-05-26 12:19:40 | INFO | root | World size: 8
+2026-05-26 12:19:40 | INFO | root | Backend: nccl
+2026-05-26 12:19:40 | INFO | root | Recipe: TrainFinetuneRecipeForNextTokenPrediction
+2026-05-26 12:19:40 | INFO | root | Model name: MiniMaxAI/MiniMax-M2.7
+recipe: TrainFinetuneRecipeForNextTokenPrediction
+seed: 1234
+step_scheduler:
+  global_batch_size: 512
+  local_batch_size: 2
+  ckpt_every_steps: 1000
+  val_every_steps: 1000
+  num_epochs: 2
+distributed:
+  strategy: fsdp2
+  tp_size: 1
+  cp_size: 1
+  pp_size: 2
+  dp_replicate_size: 1
+  ep_size: 4
+  sequence_parallel: false
+  pipeline:
+    pp_schedule: interleaved1f1b
+    pp_microbatch_size: 1
+    round_virtual_stages_to_pp_multiple: down
+    scale_grads_in_schedule: false
+    patch_inner_model: false
+    patch_causal_lm_model: false
+    layers_per_stage: 2
+  moe:
+    reshard_after_forward: false
+    wrap_outer_model: false
+  activation_checkpointing: true
+dist_env:
+  backend: nccl
+  timeout_minutes: 10
+model:
+  _target_: nemo_automodel.NeMoAutoModelForCausalLM.from_pretrained
+  pretrained_model_name_or_path: MiniMaxAI/MiniMax-M2.7
+  trust_remote_code: true
+  backend:
+    _target_: nemo_automodel.components.models.common.BackendConfig
+    attn: te
+    linear: te
+    rms_norm: torch_fp32
+    rope_fusion: false
+    experts: torch_mm
+    dispatcher: deepep
+    fake_balanced_gate: false
+    enable_hf_state_dict_adapter: true
+    enable_fsdp_optimizations: true
+checkpoint:
+  enabled: false
+loss_fn:
+  _target_: nemo_automodel.components.loss.masked_ce.MaskedCrossEntropy
+dataset:
+  _target_: nemo_automodel.components.datasets.llm.hellaswag.HellaSwag
+  path_or_dataset: rowan/hellaswag
+  split: train
+packed_sequence:
+  packed_sequence_size: 0
+dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  collate_fn:
+    _target_: nemo_automodel.components.datasets.utils.default_collater
+    pad_seq_len_divisible: 160
+  shuffle: true
+validation_dataset:
+  _target_: nemo_automodel.components.datasets.llm.hellaswag.HellaSwag
+  path_or_dataset: rowan/hellaswag
+  split: train
+validation_dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  collate_fn:
+    _target_: nemo_automodel.components.datasets.utils.default_collater
+    pad_seq_len_divisible: 160
+  shuffle: true
+  drop_last: true
+optimizer:
+  _target_: torch.optim.Adam
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-08
+  lr: 1.0e-05
+  weight_decay: 0
+ci:
+  recipe_owner: hemildesai
+  time: 00:20:00
+  nodes: 8
+master-port: 29617
+2026-05-26 12:19:40 | INFO | root | Library versions:
+2026-05-26 12:19:40 | INFO | root | - nemo_automodel: 0.4.0 (/opt/Automodel/nemo_automodel/__init__.py)
+2026-05-26 12:19:40 | INFO | root | - transformers: 5.5.0 (/opt/venv/lib/python3.12/site-packages/transformers/__init__.py)
+2026-05-26 12:19:40 | INFO | root | - torch: 2.11.0a0+eb65b36914.nv26.02 CUDA 13.1
+2026-05-26 12:19:40 | INFO | root | No clip_grad_norm.max_norm specified in config, using default value of 1.0
+2026-05-26 12:19:40 | INFO | nemo_automodel._transformers.model_init | HF_HUB_OFFLINE=1: skipping weight download for MiniMaxAI/MiniMax-M2.7 (using cached weights)
+2026-05-26 12:19:40 | INFO | nemo_automodel._transformers.model_init | Using custom model implementation for MiniMaxM2ForCausalLM
+2026-05-26 12:19:42 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 0: Keeping modules: ['model.layers.0', 'model.layers.1', 'model.layers.2', 'model.audio_encoder', 'model.audio_model', 'model.audio_projector', 'model.audio_tower', 'model.embed_tokens', 'model.embed_vision', 'model.image_encoder', 'model.mm_projector', 'model.multi_modal_projector', 'model.multimodal_projector', 'model.rotary_emb', 'model.vision_encoder', 'model.vision_projector', 'model.vision_tower', 'model.visual']
+2026-05-26 12:19:42 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 2: Keeping modules: ['model.layers.6', 'model.layers.7', 'model.rotary_emb']
+2026-05-26 12:19:42 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 4: Keeping modules: ['model.layers.10', 'model.layers.11', 'model.rotary_emb']
+2026-05-26 12:19:42 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 6: Keeping modules: ['model.layers.14', 'model.layers.15', 'model.rotary_emb']
+2026-05-26 12:19:42 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 8: Keeping modules: ['model.layers.18', 'model.layers.19', 'model.rotary_emb']
+2026-05-26 12:19:42 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 10: Keeping modules: ['model.layers.22', 'model.layers.23', 'model.rotary_emb']
+2026-05-26 12:19:42 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 12: Keeping modules: ['model.layers.26', 'model.layers.27', 'model.rotary_emb']
+2026-05-26 12:19:42 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 14: Keeping modules: ['model.layers.30', 'model.layers.31', 'model.rotary_emb']
+2026-05-26 12:19:43 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 16: Keeping modules: ['model.layers.34', 'model.layers.35', 'model.rotary_emb']
+2026-05-26 12:19:43 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 18: Keeping modules: ['model.layers.38', 'model.layers.39', 'model.rotary_emb']
+2026-05-26 12:19:43 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 20: Keeping modules: ['model.layers.42', 'model.layers.43', 'model.rotary_emb']
+2026-05-26 12:19:43 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 22: Keeping modules: ['model.layers.46', 'model.layers.47', 'model.rotary_emb']
+2026-05-26 12:19:43 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 24: Keeping modules: ['model.layers.50', 'model.layers.51', 'model.rotary_emb']
+2026-05-26 12:19:43 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 26: Keeping modules: ['model.layers.54', 'model.layers.55', 'model.rotary_emb']
+2026-05-26 12:19:43 | INFO | nemo_automodel.components.distributed.pipelining.functional | PP Rank 0: Stage 28: Keeping modules: ['model.layers.58', 'model.layers.59', 'model.rotary_emb']
+2026-05-26 12:19:44 | INFO | nemo_automodel.components.distributed.pipelining.functional | Using pipeline schedule interleaved1f1b with 2 microbatches and 15 stages.
+2026-05-26 12:19:44 | INFO | nemo_automodel.components.distributed.pipelining.functional | Patched pipeline stages with backward_maybe_with_nosync (reduce_grad_per_microbatch=False)
+2026-05-26 12:25:13 | INFO | root | Using model config to instantiate tokenizer
+2026-05-26 12:25:14 | WARNING | nemo_automodel._transformers.tokenization.nemo_auto_tokenizer | Tokenizer 'MiniMaxAI/MiniMax-M2.7' has pad_token_id=None; defaulting to 0. This can cause incorrect MoE auxiliary loss calculations if valid tokens share token ID 0. Set pad_token_id explicitly in your tokenizer config to avoid this.
+2026-05-26 12:25:18 | INFO | root | Using model config to instantiate tokenizer
+2026-05-26 12:25:19 | WARNING | nemo_automodel._transformers.tokenization.nemo_auto_tokenizer | Tokenizer 'MiniMaxAI/MiniMax-M2.7' has pad_token_id=None; defaulting to 0. This can cause incorrect MoE auxiliary loss calculations if valid tokens share token ID 0. Set pad_token_id explicitly in your tokenizer config to avoid this.
+2026-05-26 12:25:24 | INFO | nemo_automodel.components.training.step_scheduler | max_steps not provided; will run for up to 156 steps
+2026-05-26 12:25:24 | INFO | root | Signal handler installed for 15
+2026-05-26 12:25:24 | INFO | root | Model Part 0:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): FSDPEmbedding(200064, 3072)
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (0): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (1): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 1:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (6): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (7): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 2:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (10): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (11): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 3:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (14): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (15): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 4:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (18): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (19): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 5:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (22): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (23): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 6:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (26): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (27): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 7:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (30): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (31): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 8:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (34): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (35): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 9:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (38): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (39): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 10:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (42): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (43): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 11:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (46): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (47): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 12:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (50): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (51): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 13:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (54): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (55): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Model Part 14:
+2026-05-26 12:25:24 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 12:25:24 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 12:25:24 | INFO | root |     (embed_tokens): None
+2026-05-26 12:25:24 | INFO | root |     (layers): ModuleDict(
+2026-05-26 12:25:24 | INFO | root |       (58): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 12:25:24 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 12:25:24 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 12:25:24 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 12:25:24 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 12:25:24 | INFO | root |               )
+2026-05-26 12:25:24 | INFO | root |             )
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (mlp): MoE(
+2026-05-26 12:25:24 | INFO | root |             (gate): Gate()
+2026-05-26 12:25:24 | INFO | root |             (experts): GroupedExpertsDeepEP()
+2026-05-26 12:25:24 | INFO | root |           )
+2026-05-26 12:25:24 | INFO | root |           (input_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |           (post_attention_layernorm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |         )
+2026-05-26 12:25:24 | INFO | root |       )
+2026-05-26 12:25:24 | INFO | root |       (59): FSDPCheckpointWrapper(
+2026-05-26 12:25:24 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 12:25:24 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 12:25:24 | INFO | root |             (q_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (k_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (v_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (o_proj): Linear()
+2026-05-26 12:25:24 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 12:25:24 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 12:25:24 | INFO | root | ...
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | Optimizer:
+2026-05-26 12:25:24 | INFO | root | Adam (
+2026-05-26 12:25:24 | INFO | root | Parameter Group 0
+2026-05-26 12:25:24 | INFO | root |     amsgrad: False
+2026-05-26 12:25:24 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 12:25:24 | INFO | root |     capturable: False
+2026-05-26 12:25:24 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 12:25:24 | INFO | root |     differentiable: False
+2026-05-26 12:25:24 | INFO | root |     eps: 1e-08
+2026-05-26 12:25:24 | INFO | root |     foreach: None
+2026-05-26 12:25:24 | INFO | root |     fused: None
+2026-05-26 12:25:24 | INFO | root |     lr: 1e-05
+2026-05-26 12:25:24 | INFO | root |     maximize: False
+2026-05-26 12:25:24 | INFO | root |     weight_decay: 0
+2026-05-26 12:25:24 | INFO | root | )
+2026-05-26 12:25:24 | INFO | root | LR scheduler: <unavailable>
+2026-05-26 12:25:24 | INFO | root | Step scheduler:
+2026-05-26 12:25:24 | INFO | root | - Gradient accumulation steps: 64
+2026-05-26 12:25:24 | INFO | root | - Checkpoint every steps: 1000
+2026-05-26 12:25:24 | INFO | root | - Garbage collect every steps: None
+2026-05-26 12:25:24 | INFO | root | - Current Epoch: 0
+2026-05-26 12:25:24 | INFO | root | - Number of epochs: 2
+2026-05-26 12:25:24 | INFO | root | - Validation every steps: 1000
+2026-05-26 12:25:24 | INFO | root | - Max train steps: 156
+Training:   0%|          | 0/156 [00:00<?, ?step/s]2026-05-26 12:25:29 | INFO | nemo_automodel.components.distributed.pipelining.functional | Precomputed pipeline stage shapes (seq_len=160, microbatch_size=1) — serial shape inference bypassed
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank4]:     main()
+[rank4]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1769, in main
+[rank4]:     trainer.run_train_validation_loop()
+[rank4]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1276, in run_train_validation_loop
+[rank4]:     train_log_data = self._run_train_optim_step(batches, self.max_grad_norm)
+[rank4]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1516, in _run_train_optim_step
+[rank4]:     opt.step()
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 526, in wrapper
+[rank4]:     out = func(*args, **kwargs)
+[rank4]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 81, in _use_grad
+[rank4]:     ret = func(*args, **kwargs)
+[rank4]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 248, in step
+[rank4]:     adam(
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 151, in maybe_fallback
+[rank4]:     return func(*args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 971, in adam
+[rank4]:     func(
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 791, in _multi_tensor_adam
+[rank4]:     exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)
+[rank4]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.12 GiB. GPU 4 has a total capacity of 139.80 GiB of which 730.81 MiB is free. Process 64122 has 139.08 GiB memory in use. Of the allocated memory 134.12 GiB is allocated by PyTorch, and 412.20 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank6]:     main()
+[rank6]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1769, in main
+[rank6]:     trainer.run_train_validation_loop()
+[rank6]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1276, in run_train_validation_loop
+[rank6]:     train_log_data = self._run_train_optim_step(batches, self.max_grad_norm)
+[rank6]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1516, in _run_train_optim_step
+[rank6]:     opt.step()
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 526, in wrapper
+[rank6]:     out = func(*args, **kwargs)
+[rank6]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 81, in _use_grad
+[rank6]:     ret = func(*args, **kwargs)
+[rank6]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 248, in step
+[rank6]:     adam(
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 151, in maybe_fallback
+[rank6]:     return func(*args, **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 971, in adam
+[rank6]:     func(
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 791, in _multi_tensor_adam
+[rank6]:     exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)
+[rank6]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.12 GiB. GPU 6 has a total capacity of 139.80 GiB of which 714.81 MiB is free. Process 64124 has 139.09 GiB memory in use. Of the allocated memory 134.12 GiB is allocated by PyTorch, and 428.22 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Training:   0%|          | 0/156 [01:45<?, ?step/s]
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank0]:     main()
+[rank0]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1769, in main
+[rank0]:     trainer.run_train_validation_loop()
+[rank0]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1276, in run_train_validation_loop
+[rank0]:     train_log_data = self._run_train_optim_step(batches, self.max_grad_norm)
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1516, in _run_train_optim_step
+[rank0]:     opt.step()
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 526, in wrapper
+[rank0]:     out = func(*args, **kwargs)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 81, in _use_grad
+[rank0]:     ret = func(*args, **kwargs)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 248, in step
+[rank0]:     adam(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 151, in maybe_fallback
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 971, in adam
+[rank0]:     func(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 791, in _multi_tensor_adam
+[rank0]:     exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)
+[rank0]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 576.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 468.81 MiB is free. Process 64118 has 139.33 GiB memory in use. Of the allocated memory 132.00 GiB is allocated by PyTorch, and 545.07 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank7]:     main()
+[rank7]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1769, in main
+[rank7]:     trainer.run_train_validation_loop()
+[rank7]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1276, in run_train_validation_loop
+[rank7]:     train_log_data = self._run_train_optim_step(batches, self.max_grad_norm)
+[rank7]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1516, in _run_train_optim_step
+[rank7]:     opt.step()
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 526, in wrapper
+[rank7]:     out = func(*args, **kwargs)
+[rank7]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 81, in _use_grad
+[rank7]:     ret = func(*args, **kwargs)
+[rank7]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 248, in step
+[rank7]:     adam(
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 151, in maybe_fallback
+[rank7]:     return func(*args, **kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 971, in adam
+[rank7]:     func(
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 791, in _multi_tensor_adam
+[rank7]:     exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)
+[rank7]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.12 GiB. GPU 7 has a total capacity of 139.80 GiB of which 696.81 MiB is free. Process 64125 has 139.11 GiB memory in use. Of the allocated memory 134.12 GiB is allocated by PyTorch, and 446.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank3]:     main()
+[rank3]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1769, in main
+[rank3]:     trainer.run_train_validation_loop()
+[rank3]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1276, in run_train_validation_loop
+[rank3]:     train_log_data = self._run_train_optim_step(batches, self.max_grad_norm)
+[rank3]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1516, in _run_train_optim_step
+[rank3]:     opt.step()
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 526, in wrapper
+[rank3]:     out = func(*args, **kwargs)
+[rank3]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 81, in _use_grad
+[rank3]:     ret = func(*args, **kwargs)
+[rank3]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 248, in step
+[rank3]:     adam(
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 151, in maybe_fallback
+[rank3]:     return func(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 971, in adam
+[rank3]:     func(
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 791, in _multi_tensor_adam
+[rank3]:     exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)
+[rank3]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.12 GiB. GPU 3 has a total capacity of 139.80 GiB of which 556.81 MiB is free. Process 64121 has 139.25 GiB memory in use. Of the allocated memory 134.29 GiB is allocated by PyTorch, and 414.32 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank2]:     main()
+[rank2]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1769, in main
+[rank2]:     trainer.run_train_validation_loop()
+[rank2]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1276, in run_train_validation_loop
+[rank2]:     train_log_data = self._run_train_optim_step(batches, self.max_grad_norm)
+[rank2]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1516, in _run_train_optim_step
+[rank2]:     opt.step()
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 526, in wrapper
+[rank2]:     out = func(*args, **kwargs)
+[rank2]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 81, in _use_grad
+[rank2]:     ret = func(*args, **kwargs)
+[rank2]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 248, in step
+[rank2]:     adam(
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 151, in maybe_fallback
+[rank2]:     return func(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 971, in adam
+[rank2]:     func(
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 791, in _multi_tensor_adam
+[rank2]:     exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)
+[rank2]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.12 GiB. GPU 2 has a total capacity of 139.80 GiB of which 574.81 MiB is free. Process 64120 has 139.23 GiB memory in use. Of the allocated memory 134.29 GiB is allocated by PyTorch, and 396.33 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank5]:     main()
+[rank5]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1769, in main
+[rank5]:     trainer.run_train_validation_loop()
+[rank5]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1276, in run_train_validation_loop
+[rank5]:     train_log_data = self._run_train_optim_step(batches, self.max_grad_norm)
+[rank5]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1516, in _run_train_optim_step
+[rank5]:     opt.step()
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 526, in wrapper
+[rank5]:     out = func(*args, **kwargs)
+[rank5]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 81, in _use_grad
+[rank5]:     ret = func(*args, **kwargs)
+[rank5]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 248, in step
+[rank5]:     adam(
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 151, in maybe_fallback
+[rank5]:     return func(*args, **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 971, in adam
+[rank5]:     func(
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 791, in _multi_tensor_adam
+[rank5]:     exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)
+[rank5]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.12 GiB. GPU 5 has a total capacity of 139.80 GiB of which 734.81 MiB is free. Process 64123 has 139.07 GiB memory in use. Of the allocated memory 134.12 GiB is allocated by PyTorch, and 408.25 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1773, in <module>
+[rank1]:     main()
+[rank1]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1769, in main
+[rank1]:     trainer.run_train_validation_loop()
+[rank1]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1276, in run_train_validation_loop
+[rank1]:     train_log_data = self._run_train_optim_step(batches, self.max_grad_norm)
+[rank1]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py", line 1516, in _run_train_optim_step
+[rank1]:     opt.step()
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 526, in wrapper
+[rank1]:     out = func(*args, **kwargs)
+[rank1]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 81, in _use_grad
+[rank1]:     ret = func(*args, **kwargs)
+[rank1]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 248, in step
+[rank1]:     adam(
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py", line 151, in maybe_fallback
+[rank1]:     return func(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 971, in adam
+[rank1]:     func(
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/optim/adam.py", line 791, in _multi_tensor_adam
+[rank1]:     exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)
+[rank1]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.12 GiB. GPU 1 has a total capacity of 139.80 GiB of which 576.81 MiB is free. Process 64119 has 139.23 GiB memory in use. Of the allocated memory 134.29 GiB is allocated by PyTorch, and 394.40 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+W0526 12:27:19.664000 1 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 268 closing signal SIGTERM
+W0526 12:27:19.664000 1 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 270 closing signal SIGTERM
+W0526 12:27:19.664000 1 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 271 closing signal SIGTERM
+W0526 12:27:19.665000 1 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 272 closing signal SIGTERM
+W0526 12:27:19.665000 1 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 273 closing signal SIGTERM
+W0526 12:27:19.665000 1 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 274 closing signal SIGTERM
+W0526 12:27:19.665000 1 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 275 closing signal SIGTERM
+E0526 12:27:23.554000 1 torch/distributed/elastic/multiprocessing/api.py:984] failed (exitcode: 1) local_rank: 1 (pid: 269) of binary: /opt/venv/bin/python3
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_pp.yaml
+Traceback (most recent call last):
+  File "/opt/venv/bin/automodel", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/Automodel/nemo_automodel/cli/app.py", line 159, in main
+    return InteractiveLauncher().launch(cfg, config_path, recipe_target, args.nproc_per_node, extra)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/Automodel/nemo_automodel/components/launcher/interactive.py", line 141, in launch
+    return thrun(torchrun_args)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/opt/Automodel/nemo_automodel/recipes/llm/train_ft.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-05-26_12:27:23
+  host      : shadecloud.datacrunch.io
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 268)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-05-26_12:27:23
+  host      : shadecloud.datacrunch.io
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 270)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-05-26_12:27:23
+  host      : shadecloud.datacrunch.io
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 271)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-05-26_12:27:23
+  host      : shadecloud.datacrunch.io
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 272)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-05-26_12:27:23
+  host      : shadecloud.datacrunch.io
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 273)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-05-26_12:27:23
+  host      : shadecloud.datacrunch.io
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 274)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-05-26_12:27:23
+  host      : shadecloud.datacrunch.io
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 275)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-26_12:27:19
+  host      : shadecloud.datacrunch.io
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 269)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

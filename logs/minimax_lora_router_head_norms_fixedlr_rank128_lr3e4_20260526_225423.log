@@ -1,0 +1,344 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 26.02 (build 305635159)
+PyTorch Version 2.11.0a0+eb65b36
+Container image Copyright (c) 2025, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+GOVERNING TERMS: The software and materials are governed by the NVIDIA Software License Agreement
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-software-license-agreement/)
+and the Product-Specific Terms for NVIDIA AI Products
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/product-specific-terms-for-ai-products/).
+
+NOTE: CUDA Forward Compatibility mode ENABLED.
+  Using CUDA 13.1 driver version 590.48.01 with kernel driver version 580.126.09.
+  See https://docs.nvidia.com/deploy/cuda-compatibility/ for details.
+
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+W0526 22:54:41.180000 1 torch/distributed/run.py:851] 
+W0526 22:54:41.180000 1 torch/distributed/run.py:851] *****************************************
+W0526 22:54:41.180000 1 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0526 22:54:41.180000 1 torch/distributed/run.py:851] *****************************************
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+> initializing torch distributed with 8 workers.
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+cfg-path: /opt/Automodel/examples/llm_finetune/minimax_m2/minimax_m2.7_hellaswag_lora.yaml
+2026-05-26 22:54:56 | INFO | nemo_automodel.components.loggers.log_utils | Setting logging level to 20
+2026-05-26 22:54:56 | INFO | nemo_automodel.shared.te_patches | Applied FusedAdam QuantizedTensor monkey-patch.
+2026-05-26 22:54:56 | INFO | root | Experiment_details:
+2026-05-26 22:54:56 | INFO | root | Timestamp: '2026-05-26T22:54:56'
+2026-05-26 22:54:56 | INFO | root | User: root
+2026-05-26 22:54:56 | INFO | root | Host: shadecloud
+2026-05-26 22:54:56 | INFO | root | World size: 8
+2026-05-26 22:54:56 | INFO | root | Backend: nccl
+2026-05-26 22:54:56 | INFO | root | Recipe: TrainFinetuneRecipeForNextTokenPrediction
+2026-05-26 22:54:56 | INFO | root | Model name: MiniMaxAI/MiniMax-M2.7
+recipe: TrainFinetuneRecipeForNextTokenPrediction
+seed: 1234
+step_scheduler:
+  global_batch_size: 512
+  local_batch_size: 4
+  ckpt_every_steps: 1000
+  val_every_steps: 20
+  max_steps: 160
+distributed:
+  strategy: fsdp2
+  tp_size: 1
+  cp_size: 1
+  pp_size: 1
+  dp_replicate_size: 1
+  ep_size: 8
+  sequence_parallel: false
+  moe:
+    reshard_after_forward: false
+    wrap_outer_model: false
+  activation_checkpointing: true
+dist_env:
+  backend: nccl
+  timeout_minutes: 10
+model:
+  _target_: nemo_automodel.NeMoAutoModelForCausalLM.from_pretrained
+  pretrained_model_name_or_path: MiniMaxAI/MiniMax-M2.7
+  trust_remote_code: true
+  backend:
+    _target_: nemo_automodel.components.models.common.BackendConfig
+    attn: te
+    linear: torch
+    rms_norm: torch_fp32
+    rope_fusion: true
+    dispatcher: deepep
+    experts: gmm
+    fake_balanced_gate: false
+    enable_hf_state_dict_adapter: true
+    enable_fsdp_optimizations: true
+peft:
+  _target_: nemo_automodel.components._peft.lora.PeftConfig
+  match_all_linear: false
+  dim: 128
+  alpha: 256
+  use_triton: true
+  moe_rank_scaling: true
+  target_modules:
+  - '*.self_attn.q_proj'
+  - '*.self_attn.k_proj'
+  - '*.self_attn.v_proj'
+  - '*.self_attn.o_proj'
+  - '*.mlp.experts'
+checkpoint:
+  enabled: false
+loss_fn:
+  _target_: nemo_automodel.components.loss.masked_ce.MaskedCrossEntropy
+dataset:
+  _target_: nemo_automodel.components.datasets.llm.hellaswag.HellaSwag
+  path_or_dataset: rowan/hellaswag
+  split: train
+packed_sequence:
+  packed_sequence_size: 0
+dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  collate_fn:
+    _target_: nemo_automodel.components.datasets.utils.default_collater
+    pad_seq_len_divisible: 160
+  shuffle: true
+validation_dataset:
+  _target_: nemo_automodel.components.datasets.llm.hellaswag.HellaSwag
+  path_or_dataset: rowan/hellaswag
+  split: train
+validation_dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  collate_fn:
+    _target_: nemo_automodel.components.datasets.utils.default_collater
+    pad_seq_len_divisible: 160
+  shuffle: true
+  drop_last: true
+optimizer:
+  _target_: torch.optim.Adam
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-08
+  lr: 0.0003
+  weight_decay: 0
+master-port: 29671
+unfreeze_modules: mlp.gate,lm_head,model.norm,input_layernorm,post_attention_layernorm
+2026-05-26 22:54:56 | INFO | root | Library versions:
+2026-05-26 22:54:56 | INFO | root | - nemo_automodel: 0.4.0 (/opt/Automodel/nemo_automodel/__init__.py)
+2026-05-26 22:54:56 | INFO | root | - transformers: 5.5.0 (/opt/venv/lib/python3.12/site-packages/transformers/__init__.py)
+2026-05-26 22:54:56 | INFO | root | - torch: 2.11.0a0+eb65b36914.nv26.02 CUDA 13.1
+2026-05-26 22:54:56 | INFO | root | No clip_grad_norm.max_norm specified in config, using default value of 1.0
+2026-05-26 22:54:56 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 22:54:56 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 22:54:56 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 22:54:56 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 22:54:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 22:54:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 22:54:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 22:54:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 22:54:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 22:54:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 22:54:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 22:54:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 22:54:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 22:54:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 22:54:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 22:54:57 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 22:54:58 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 22:54:58 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 22:54:58 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7/revision/main "HTTP/1.1 200 OK"
+Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 12106.74it/s]
+2026-05-26 22:54:58 | INFO | nemo_automodel._transformers.model_init | Using custom model implementation for MiniMaxM2ForCausalLM
+Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 10982.52it/s]
+Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 10890.74it/s]
+Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 11448.66it/s]
+Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 13071.76it/s]
+Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files:   0%|          | 0/151 [00:00<?, ?it/s]Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 11093.13it/s]
+Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 12195.56it/s]
+Fetching 151 files: 100%|██████████| 151/151 [00:00<00:00, 12072.82it/s]
+2026-05-26 23:00:49 | INFO | root | Model summary:
+2026-05-26 23:00:49 | INFO | root | --------------------------------
+2026-05-26 23:00:49 | INFO | root | Trainable parameters: 2,941,779,968
+2026-05-26 23:00:49 | INFO | root | Total parameters: 231,631,528,960
+2026-05-26 23:00:49 | INFO | root | Trainable parameters percentage: 1.27%
+2026-05-26 23:00:49 | INFO | root | Param L2 norm: 4805178.8919
+2026-05-26 23:00:49 | INFO | root | --------------------------------
+2026-05-26 23:00:49 | INFO | root | Unfroze parameters matching: ['mlp.gate', 'lm_head', 'model.norm', 'input_layernorm', 'post_attention_layernorm']
+2026-05-26 23:00:49 | INFO | root | Using model config to instantiate tokenizer
+2026-05-26 23:00:49 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:49 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 23:00:49 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:49 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 23:00:50 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:50 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 23:00:50 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:50 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 23:00:50 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:50 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 23:00:50 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:50 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 23:00:50 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:50 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-26 23:00:50 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:50 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-26 23:00:51 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-26 23:00:51 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-26 23:00:52 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7 "HTTP/1.1 200 OK"
+2026-05-26 23:00:52 | WARNING | nemo_automodel._transformers.tokenization.nemo_auto_tokenizer | Tokenizer 'MiniMaxAI/MiniMax-M2.7' has pad_token_id=None; defaulting to 0. This can cause incorrect MoE auxiliary loss calculations if valid tokens share token ID 0. Set pad_token_id explicitly in your tokenizer config to avoid this.
+2026-05-26 23:00:52 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:52 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:52 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/Rowan/hellaswag/218ec52e09a7e7462a5400043bb9a69a41d06b76/README.md "HTTP/1.1 200 OK"
+2026-05-26 23:00:52 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/hellaswag.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:52 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/hellaswag.py "HTTP/1.1 404 Not Found"
+2026-05-26 23:00:53 | INFO | httpx | HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/rowan/hellaswag/rowan/hellaswag.py "HTTP/1.1 404 Not Found"
+2026-05-26 23:00:53 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/datasets/rowan/hellaswag/revision/218ec52e09a7e7462a5400043bb9a69a41d06b76 "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:53 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/datasets/Rowan/hellaswag/revision/218ec52e09a7e7462a5400043bb9a69a41d06b76 "HTTP/1.1 200 OK"
+2026-05-26 23:00:53 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/.huggingface.yaml "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:53 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-05-26 23:00:54 | INFO | httpx | HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=rowan/hellaswag "HTTP/1.1 404 Not Found"
+2026-05-26 23:00:54 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/datasets/rowan/hellaswag/tree/218ec52e09a7e7462a5400043bb9a69a41d06b76/data?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:54 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/datasets/Rowan/hellaswag/tree/218ec52e09a7e7462a5400043bb9a69a41d06b76/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-26 23:00:54 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/datasets/rowan/hellaswag/tree/218ec52e09a7e7462a5400043bb9a69a41d06b76?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:54 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/datasets/Rowan/hellaswag/tree/218ec52e09a7e7462a5400043bb9a69a41d06b76?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-05-26 23:00:54 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/dataset_infos.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:54 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-05-26 23:00:59 | INFO | root | Using model config to instantiate tokenizer
+2026-05-26 23:00:59 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:59 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 23:00:59 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:59 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 23:00:59 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:59 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 23:00:59 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:00:59 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 23:00:59 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/configuration_minimax_m2.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:01:00 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/configuration_minimax_m2.py "HTTP/1.1 200 OK"
+2026-05-26 23:01:00 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:01:00 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json "HTTP/1.1 200 OK"
+2026-05-26 23:01:00 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:01:00 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-26 23:01:00 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/MiniMaxAI/MiniMax-M2.7/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:01:00 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/MiniMaxAI/MiniMax-M2.7/d494266a4affc0d2995ba1fa35c8481cbd84294b/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-26 23:01:00 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-26 23:01:00 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-26 23:01:01 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2.7 "HTTP/1.1 200 OK"
+2026-05-26 23:01:01 | WARNING | nemo_automodel._transformers.tokenization.nemo_auto_tokenizer | Tokenizer 'MiniMaxAI/MiniMax-M2.7' has pad_token_id=None; defaulting to 0. This can cause incorrect MoE auxiliary loss calculations if valid tokens share token ID 0. Set pad_token_id explicitly in your tokenizer config to avoid this.
+2026-05-26 23:01:01 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:01:01 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:01:01 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/Rowan/hellaswag/218ec52e09a7e7462a5400043bb9a69a41d06b76/README.md "HTTP/1.1 200 OK"
+2026-05-26 23:01:02 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/hellaswag.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:01:02 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/hellaswag.py "HTTP/1.1 404 Not Found"
+2026-05-26 23:01:02 | INFO | httpx | HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/rowan/hellaswag/rowan/hellaswag.py "HTTP/1.1 404 Not Found"
+2026-05-26 23:01:02 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/.huggingface.yaml "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:01:02 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-05-26 23:01:03 | INFO | httpx | HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=rowan/hellaswag "HTTP/1.1 404 Not Found"
+2026-05-26 23:01:03 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/dataset_infos.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-26 23:01:03 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-05-26 23:01:08 | INFO | root | Signal handler installed for 15
+2026-05-26 23:01:08 | INFO | root | Model Part 0:
+2026-05-26 23:01:08 | INFO | root | MiniMaxM2ForCausalLM(
+2026-05-26 23:01:08 | INFO | root |   (model): FSDPMiniMaxM2Model(
+2026-05-26 23:01:08 | INFO | root |     (embed_tokens): FSDPEmbedding(200064, 3072)
+2026-05-26 23:01:08 | INFO | root |     (layers): ModuleDict(
+2026-05-26 23:01:08 | INFO | root |       (0): FSDPCheckpointWrapper(
+2026-05-26 23:01:08 | INFO | root |         (_checkpoint_wrapped_module): Block(
+2026-05-26 23:01:08 | INFO | root |           (self_attn): MiniMaxM2Attention(
+2026-05-26 23:01:08 | INFO | root |             (q_proj): PatchedLinearLoRA(
+2026-05-26 23:01:08 | INFO | root |               in_features=3072, out_features=6144, bias=False
+2026-05-26 23:01:08 | INFO | root |               (lora_A): Linear(in_features=3072, out_features=128, bias=False)
+2026-05-26 23:01:08 | INFO | root |               (lora_B): Linear(in_features=128, out_features=6144, bias=False)
+2026-05-26 23:01:08 | INFO | root |             )
+2026-05-26 23:01:08 | INFO | root |             (k_proj): PatchedLinearLoRA(
+2026-05-26 23:01:08 | INFO | root |               in_features=3072, out_features=1024, bias=False
+2026-05-26 23:01:08 | INFO | root |               (lora_A): Linear(in_features=3072, out_features=128, bias=False)
+2026-05-26 23:01:08 | INFO | root |               (lora_B): Linear(in_features=128, out_features=1024, bias=False)
+2026-05-26 23:01:08 | INFO | root |             )
+2026-05-26 23:01:08 | INFO | root |             (v_proj): PatchedLinearLoRA(
+2026-05-26 23:01:08 | INFO | root |               in_features=3072, out_features=1024, bias=False
+2026-05-26 23:01:08 | INFO | root |               (lora_A): Linear(in_features=3072, out_features=128, bias=False)
+2026-05-26 23:01:08 | INFO | root |               (lora_B): Linear(in_features=128, out_features=1024, bias=False)
+2026-05-26 23:01:08 | INFO | root |             )
+2026-05-26 23:01:08 | INFO | root |             (o_proj): PatchedLinearLoRA(
+2026-05-26 23:01:08 | INFO | root |               in_features=6144, out_features=3072, bias=False
+2026-05-26 23:01:08 | INFO | root |               (lora_A): Linear(in_features=6144, out_features=128, bias=False)
+2026-05-26 23:01:08 | INFO | root |               (lora_B): Linear(in_features=128, out_features=3072, bias=False)
+2026-05-26 23:01:08 | INFO | root |             )
+2026-05-26 23:01:08 | INFO | root |             (q_norm): Float32RMSNorm()
+2026-05-26 23:01:08 | INFO | root |             (k_norm): Float32RMSNorm()
+2026-05-26 23:01:08 | INFO | root |             (attn_module): DotProductAttention(
+2026-05-26 23:01:08 | INFO | root |               (flash_attention): FlashAttention()
+2026-05-26 23:01:08 | INFO | root |               (fused_attention): FusedAttention()
+2026-05-26 23:01:08 | INFO | root |               (unfused_attention): UnfusedDotProductAttention(
+2026-05-26 23:01:08 | INFO | root |                 (scale_mask_softmax): FusedScaleMaskSoftmax()
+2026-05-26 23:01:08 | INFO | root |                 (attention_dropout): Dropout(p=0.0, inplace=False)
+2026-05-26 23:01:08 | INFO | root |               )
+2026-05-26 23:01:08 | INFO | root |             )
+2026-05-26 23:01:08 | INFO | root |           )
+2026-05-26 23:01:08 | INFO | root |           (mlp): MoE(
+2026-05-26 23:01:08 | INFO | root |             (gate): Gate()
+2026-05-26 23:01:08 | INFO | root | ...
+2026-05-26 23:01:08 | INFO | root | Optimizer:
+2026-05-26 23:01:08 | INFO | root | Adam (
+2026-05-26 23:01:08 | INFO | root | Parameter Group 0
+2026-05-26 23:01:08 | INFO | root |     amsgrad: False
+2026-05-26 23:01:08 | INFO | root |     betas: (0.9, 0.999)
+2026-05-26 23:01:08 | INFO | root |     capturable: False
+2026-05-26 23:01:08 | INFO | root |     decoupled_weight_decay: False
+2026-05-26 23:01:08 | INFO | root |     differentiable: False
+2026-05-26 23:01:08 | INFO | root |     eps: 1e-08
+2026-05-26 23:01:08 | INFO | root |     foreach: None
+2026-05-26 23:01:08 | INFO | root |     fused: None
+2026-05-26 23:01:08 | INFO | root |     lr: 0.0003
+2026-05-26 23:01:08 | INFO | root |     maximize: False
+2026-05-26 23:01:08 | INFO | root |     weight_decay: 0
+2026-05-26 23:01:08 | INFO | root | )
+2026-05-26 23:01:08 | INFO | root | LR scheduler: <unavailable>
+2026-05-26 23:01:09 | INFO | root | Step scheduler:
+2026-05-26 23:01:09 | INFO | root | - Gradient accumulation steps: 16
+2026-05-26 23:01:09 | INFO | root | - Checkpoint every steps: 1000
+2026-05-26 23:01:09 | INFO | root | - Garbage collect every steps: None
+2026-05-26 23:01:09 | INFO | root | - Current Epoch: 0
+2026-05-26 23:01:09 | INFO | root | - Number of epochs: 10
+2026-05-26 23:01:09 | INFO | root | - Validation every steps: 20
+2026-05-26 23:01:09 | INFO | root | - Max train steps: 160
+Training:   0%|          | 0/160 [00:00<?, ?step/s]2026-05-26 23:02:07 | INFO | root | step 0 | epoch 0 | loss 13.0991 | grad_norm 21.8319 | lr 3.00e-04 | mem 107.72 GiB | tps 671.57(83.95/gpu) | num_label_tokens 15349
+Training:   0%|          | 0/160 [00:58<?, ?step/s, loss=13.0991, lr=3.00e-04, tps=672]Training:   1%|          | 1/160 [00:58<2:34:12, 58.19s/step, loss=13.0991, lr=3.00e-04, tps=672]2026-05-26 23:02:34 | INFO | root | step 1 | epoch 0 | loss 10.5078 | grad_norm 27.5127 | lr 3.00e-04 | mem 69.48 GiB | tps 1511.22(188.90/gpu) | num_label_tokens 15843
+Training:   1%|          | 1/160 [01:25<2:34:12, 58.19s/step, loss=10.5078, lr=3.00e-04, tps=1511]Training:   1%|▏         | 2/160 [01:25<1:44:50, 39.82s/step, loss=10.5078, lr=3.00e-04, tps=1511]2026-05-26 23:02:58 | INFO | root | step 2 | epoch 0 | loss 9.2724 | grad_norm 20.7677 | lr 3.00e-04 | mem 69.48 GiB | tps 1674.72(209.34/gpu) | num_label_tokens 15542
+Training:   1%|▏         | 2/160 [01:49<1:44:50, 39.82s/step, loss=9.2724, lr=3.00e-04, tps=1675] Training:   2%|▏         | 3/160 [01:49<1:25:23, 32.63s/step, loss=9.2724, lr=3.00e-04, tps=1675]2026-05-26 23:03:22 | INFO | root | step 3 | epoch 0 | loss 8.7451 | grad_norm 13.6408 | lr 3.00e-04 | mem 69.48 GiB | tps 1662.43(207.80/gpu) | num_label_tokens 15270
+Training:   2%|▏         | 3/160 [02:12<1:25:23, 32.63s/step, loss=8.7451, lr=3.00e-04, tps=1662]Training:   2%|▎         | 4/160 [02:12<1:15:43, 29.13s/step, loss=8.7451, lr=3.00e-04, tps=1662]
